@@ -53,6 +53,19 @@ logs/backfill/
 logs/race-details/
 ```
 
+## Gitに保存するもの
+
+GitHubには軽いデータを中心に保存する。
+
+- `data/raw/official/**/metadata.json`
+- `data/raw/official/**/collection-index.json`
+- `data/raw/official/**/races/*.metadata.json`
+- `data/normalized/`
+- `outputs/`
+- `logs/`
+
+raw HTMLは重くなりやすいため、Gitには入れず、GitHub ActionsのArtifactとして14日保存する。
+
 ## ローカルで確認するファイル
 
 ```text

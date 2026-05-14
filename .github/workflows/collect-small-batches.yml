@@ -89,6 +89,15 @@ jobs:
       - name: Aggregate Collection Statistics
         run: npm run stats:aggregate
 
+      - name: Upload Raw HTML Artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: raw-html-${{ env.TARGET_DATE }}-${{ github.run_number }}
+          path: |
+            data/raw/official/**/*.html
+          if-no-files-found: ignore
+          retention-days: 14
+
       - name: Commit Collected Data
         run: |
           git config user.name "boat-lab-data-bot"

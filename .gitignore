@@ -1,0 +1,18 @@
+# Local/editor
+.DS_Store
+Thumbs.db
+
+# Dependencies
+node_modules/
+
+# Heavy raw collection artifacts
+data/raw/official/**/resultlist.html
+data/raw/official/**/races/*.html
+
+# Keep metadata and normalized data in Git
+!data/raw/official/**/metadata.json
+!data/raw/official/**/collection-index.json
+!data/raw/official/**/races/*.metadata.json
+
+# Optional local scratch imports
+imports/

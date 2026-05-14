@@ -86,6 +86,7 @@
 - [docs/project-audit.md](docs/project-audit.md)
 - [docs/legacy-import-index.md](docs/legacy-import-index.md)
 - [docs/collection-schedule-plan.md](docs/collection-schedule-plan.md)
+- [docs/git-setup-troubleshooting.md](docs/git-setup-troubleshooting.md)
 
 ## scripts一覧
 
