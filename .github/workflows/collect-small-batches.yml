@@ -1,0 +1,102 @@
+name: Collect Small Boat Data Batches
+
+on:
+  workflow_dispatch:
+    inputs:
+      history_days:
+        description: "How many historical result-list days to collect in this run"
+        required: false
+        default: "60"
+      historical_race_details:
+        description: "How many historical race detail pages to collect in this run"
+        required: false
+        default: "800"
+      today_race_details:
+        description: "How many race detail pages to collect for today's date"
+        required: false
+        default: "120"
+  schedule:
+    - cron: "10 0 * * *"
+    - cron: "10 6 * * *"
+    - cron: "10 12 * * *"
+
+permissions:
+  contents: write
+
+concurrency:
+  group: boat-data-collection
+  cancel-in-progress: false
+
+jobs:
+  collect:
+    runs-on: ubuntu-latest
+    timeout-minutes: 120
+    env:
+      COLLECT_DELAY_MS: "2500"
+      RACE_DETAIL_DELAY_MS: "1800"
+      BACKFILL_DAY_DELAY_MS: "3000"
+      HISTORY_START: "2023-05-14"
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: "22"
+          cache: "npm"
+
+      - name: Install
+        run: npm ci
+
+      - name: Resolve JST Date And Batch Size
+        run: |
+          echo "TARGET_DATE=$(TZ=Asia/Tokyo date +%F)" >> "$GITHUB_ENV"
+          echo "HISTORY_DAYS=${{ github.event.inputs.history_days || '60' }}" >> "$GITHUB_ENV"
+          echo "HISTORICAL_RACE_DETAILS=${{ github.event.inputs.historical_race_details || '800' }}" >> "$GITHUB_ENV"
+          echo "TODAY_RACE_DETAILS=${{ github.event.inputs.today_race_details || '120' }}" >> "$GITHUB_ENV"
+
+      - name: Check Scripts
+        run: npm run check
+
+      - name: Collect Historical Result Lists Small Batch
+        run: |
+          node scripts/backfill-resultlists-range.js \
+            --live \
+            --start="$HISTORY_START" \
+            --end="$TARGET_DATE" \
+            --max-days="$HISTORY_DAYS"
+
+      - name: Collect Today's Result List
+        run: |
+          node scripts/collect-official-race-results.js --live --date="$TARGET_DATE"
+          node scripts/normalize-race-data.js --date="$TARGET_DATE"
+          node scripts/statistical-analysis.js --date="$TARGET_DATE"
+
+      - name: Collect Today's Race Details Small Batch
+        run: |
+          node scripts/collect-race-details.js --live --date="$TARGET_DATE" --max-races="$TODAY_RACE_DETAILS"
+          node scripts/normalize-race-details.js --date="$TARGET_DATE"
+
+      - name: Collect Historical Race Details Small Batch
+        run: |
+          node scripts/collect-race-details.js \
+            --live \
+            --start="$HISTORY_START" \
+            --end="$TARGET_DATE" \
+            --max-races="$HISTORICAL_RACE_DETAILS"
+
+      - name: Aggregate Collection Statistics
+        run: npm run stats:aggregate
+
+      - name: Commit Collected Data
+        run: |
+          git config user.name "boat-lab-data-bot"
+          git config user.email "boat-lab-data-bot@users.noreply.github.com"
+          git add data logs outputs
+          if git diff --cached --quiet; then
+            echo "No collected data changes to commit."
+          else
+            git commit -m "chore(data): collect boat data batch for $TARGET_DATE"
+            git push
+          fi

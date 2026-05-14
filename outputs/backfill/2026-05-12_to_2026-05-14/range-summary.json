@@ -1,0 +1,30 @@
+{
+  "run_id": "2026-05-12_to_2026-05-14",
+  "start": "2026-05-12",
+  "end": "2026-05-14",
+  "live": true,
+  "resume": true,
+  "started_at": "2026-05-14T11:59:53.150Z",
+  "updated_at": "2026-05-14T12:01:19.840Z",
+  "dates_total": 3,
+  "dates_done": [
+    "2026-05-12",
+    "2026-05-13",
+    "2026-05-14"
+  ],
+  "dates_skipped": [
+    {
+      "date": "2026-05-14",
+      "reason": "existing collection-index saved=24"
+    }
+  ],
+  "dates_failed": [],
+  "finished_at": "2026-05-14T12:01:20.850Z",
+  "outputs": {
+    "raw": "data/raw/official/YYYY-MM-DD/",
+    "normalized": "data/normalized/YYYY-MM-DD/official-resultlist-normalized.json",
+    "statistics": "outputs/statistics/YYYY-MM-DD/",
+    "logs": "logs\\backfill\\2026-05-12_to_2026-05-14"
+  },
+  "compliance_note": "的中や利益を保証するものではありません。生活費とは分けた予算内で楽しむためのデータ活用を目的とし、見送り判断も重視します。"
+}

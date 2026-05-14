@@ -1,0 +1,39 @@
+{
+  "run_id": "2026-05-12_to_2026-05-15",
+  "start": "2026-05-12",
+  "end": "2026-05-15",
+  "live": false,
+  "resume": true,
+  "started_at": "2026-05-14T12:01:56.692Z",
+  "updated_at": "2026-05-14T12:01:57.242Z",
+  "dates_total": 4,
+  "dates_done": [
+    "2026-05-12",
+    "2026-05-13",
+    "2026-05-14",
+    "2026-05-15"
+  ],
+  "dates_skipped": [
+    {
+      "date": "2026-05-12",
+      "reason": "existing collection-index saved=24"
+    },
+    {
+      "date": "2026-05-13",
+      "reason": "existing collection-index saved=24"
+    },
+    {
+      "date": "2026-05-14",
+      "reason": "existing collection-index saved=24"
+    }
+  ],
+  "dates_failed": [],
+  "finished_at": "2026-05-14T12:01:58.246Z",
+  "outputs": {
+    "raw": "data/raw/official/YYYY-MM-DD/",
+    "normalized": "data/normalized/YYYY-MM-DD/official-resultlist-normalized.json",
+    "statistics": "outputs/statistics/YYYY-MM-DD/",
+    "logs": "logs\\backfill\\2026-05-12_to_2026-05-15"
+  },
+  "compliance_note": "的中や利益を保証するものではありません。生活費とは分けた予算内で楽しむためのデータ活用を目的とし、見送り判断も重視します。"
+}

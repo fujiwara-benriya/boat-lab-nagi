@@ -1,0 +1,31 @@
+{
+  "run_id": "2026-05-12_to_2026-05-15",
+  "start": "2026-05-12",
+  "end": "2026-05-15",
+  "live": false,
+  "resume": true,
+  "started_at": "2026-05-14T12:01:56.692Z",
+  "updated_at": "2026-05-14T12:01:57.242Z",
+  "dates_total": 4,
+  "dates_done": [
+    "2026-05-12",
+    "2026-05-13",
+    "2026-05-14",
+    "2026-05-15"
+  ],
+  "dates_skipped": [
+    {
+      "date": "2026-05-12",
+      "reason": "existing collection-index saved=24"
+    },
+    {
+      "date": "2026-05-13",
+      "reason": "existing collection-index saved=24"
+    },
+    {
+      "date": "2026-05-14",
+      "reason": "existing collection-index saved=24"
+    }
+  ],
+  "dates_failed": []
+}

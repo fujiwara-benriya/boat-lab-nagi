@@ -1,0 +1,20 @@
+{
+  "name": "boat-lab-nagi-project",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "check": "node --check scripts/backfill-one-year.js && node --check scripts/backfill-resultlists-range.js && node --check scripts/aggregate-collected-statistics.js && node --check scripts/collect-official-race-results.js && node --check scripts/collect-race-details.js && node --check scripts/collect-official-pdf-data.js && node --check scripts/normalize-race-data.js && node --check scripts/normalize-race-details.js && node --check scripts/statistical-analysis.js && node --check scripts/generate-post-drafts.js && node --check scripts/compliance-check.js",
+    "backfill:test": "node scripts/backfill-one-year.js",
+    "backfill:resultlists:dry": "node scripts/backfill-resultlists-range.js --max-days=3",
+    "backfill:resultlists:live": "node scripts/backfill-resultlists-range.js --live --start=2023-05-14 --end=2026-05-14",
+    "collect:official": "node scripts/collect-official-race-results.js --live",
+    "collect:official:dry": "node scripts/collect-official-race-results.js",
+    "collect:race-details:dry": "node scripts/collect-race-details.js --date=2026-05-14 --max-races=5",
+    "collect:race-details:live": "node scripts/collect-race-details.js --live --date=2026-05-14 --max-races=20",
+    "normalize:race-details": "node scripts/normalize-race-details.js --date=2026-05-14",
+    "stats:aggregate": "node scripts/aggregate-collected-statistics.js",
+    "daily": "node scripts/collect-official-race-results.js && node scripts/collect-official-pdf-data.js && node scripts/normalize-race-data.js && node scripts/statistical-analysis.js && node scripts/generate-post-drafts.js && node scripts/compliance-check.js"
+  },
+  "dependencies": {}
+}
