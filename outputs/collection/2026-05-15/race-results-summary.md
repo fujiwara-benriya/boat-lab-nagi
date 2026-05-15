@@ -1,11 +1,11 @@
 # 公式レース結果収集サマリー
 
 - 対象日: 2026-05-15
-- live: false
+- live: true
 - 取得元: BOAT RACE OFFICIAL WEB resultlist
 - 合計: 24
-- 保存: 0
-- DRY_RUN: 24
+- 保存: 24
+- DRY_RUN: 0
 - HTTPエラー: 0
 - 例外: 0
 - 保存先: `data/raw/official/2026-05-15/`
