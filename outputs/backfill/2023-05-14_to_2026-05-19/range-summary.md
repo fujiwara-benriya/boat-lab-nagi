@@ -3,7 +3,7 @@
 - 対象期間: 2023-05-14 to 2026-05-19
 - live: true
 - 対象日数: 1102
-- 完了日数: 730
+- 完了日数: 790
 - skip日数: 670
 - failed日数: 0
 - raw保存先: `data/raw/official/YYYY-MM-DD/`
