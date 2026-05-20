@@ -1,0 +1,475 @@
+{
+  "date": "2025-10-30",
+  "live": true,
+  "source": "BOAT RACE OFFICIAL WEB resultlist",
+  "policy": {
+    "official_site_access": "enabled_by_user_request",
+    "delay_ms": 2500,
+    "backfill_dry_run_false_used": false
+  },
+  "counts": {
+    "total": 24,
+    "saved": 24,
+    "dry_run": 0,
+    "http_error": 0,
+    "error": 0
+  },
+  "results": [
+    {
+      "date": "2025-10-30",
+      "jcd": "01",
+      "venue_name": "桐生",
+      "source": "BOAT RACE OFFICIAL WEB",
+      "url": "https://www.boatrace.jp/owpc/pc/race/resultlist?hd=20251030&jcd=01",
+      "status": "saved",
+      "http_status": 200,
+      "bytes": 143310,
+      "title": "結果一覧｜BOAT RACE オフィシャルウェブサイト",
+      "has_result_content": true,
+      "saved_files": [
+        "data/raw/official/2025-10-30/01/resultlist.html",
+        "data/raw/official/2025-10-30/01/metadata.json"
+      ],
+      "started_at": "2026-05-20T10:50:15.659Z",
+      "finished_at": "2026-05-20T10:50:16.033Z",
+      "error": null
+    },
+    {
+      "date": "2025-10-30",
+      "jcd": "02",
+      "venue_name": "戸田",
+      "source": "BOAT RACE OFFICIAL WEB",
+      "url": "https://www.boatrace.jp/owpc/pc/race/resultlist?hd=20251030&jcd=02",
+      "status": "saved",
+      "http_status": 200,
+      "bytes": 14313,
+      "title": "BOAT RACE オフィシャルウェブサイト",
+      "has_result_content": true,
+      "saved_files": [
+        "data/raw/official/2025-10-30/02/resultlist.html",
+        "data/raw/official/2025-10-30/02/metadata.json"
+      ],
+      "started_at": "2026-05-20T10:50:18.536Z",
+      "finished_at": "2026-05-20T10:50:18.721Z",
+      "error": null
+    },
+    {
+      "date": "2025-10-30",
+      "jcd": "03",
+      "venue_name": "江戸川",
+      "source": "BOAT RACE OFFICIAL WEB",
+      "url": "https://www.boatrace.jp/owpc/pc/race/resultlist?hd=20251030&jcd=03",
+      "status": "saved",
+      "http_status": 200,
+      "bytes": 143216,
+      "title": "結果一覧｜BOAT RACE オフィシャルウェブサイト",
+      "has_result_content": true,
+      "saved_files": [
+        "data/raw/official/2025-10-30/03/resultlist.html",
+        "data/raw/official/2025-10-30/03/metadata.json"
+      ],
+      "started_at": "2026-05-20T10:50:21.222Z",
+      "finished_at": "2026-05-20T10:50:21.465Z",
+      "error": null
+    },
+    {
+      "date": "2025-10-30",
+      "jcd": "04",
+      "venue_name": "平和島",
+      "source": "BOAT RACE OFFICIAL WEB",
+      "url": "https://www.boatrace.jp/owpc/pc/race/resultlist?hd=20251030&jcd=04",
+      "status": "saved",
+      "http_status": 200,
+      "bytes": 14313,
+      "title": "BOAT RACE オフィシャルウェブサイト",
+      "has_result_content": true,
+      "saved_files": [
+        "data/raw/official/2025-10-30/04/resultlist.html",
+        "data/raw/official/2025-10-30/04/metadata.json"
+      ],
+      "started_at": "2026-05-20T10:50:23.965Z",
+      "finished_at": "2026-05-20T10:50:24.232Z",
+      "error": null
+    },
+    {
+      "date": "2025-10-30",
+      "jcd": "05",
+      "venue_name": "多摩川",
+      "source": "BOAT RACE OFFICIAL WEB",
+      "url": "https://www.boatrace.jp/owpc/pc/race/resultlist?hd=20251030&jcd=05",
+      "status": "saved",
+      "http_status": 200,
+      "bytes": 143263,
+      "title": "結果一覧｜BOAT RACE オフィシャルウェブサイト",
+      "has_result_content": true,
+      "saved_files": [
+        "data/raw/official/2025-10-30/05/resultlist.html",
+        "data/raw/official/2025-10-30/05/metadata.json"
+      ],
+      "started_at": "2026-05-20T10:50:26.734Z",
+      "finished_at": "2026-05-20T10:50:26.950Z",
+      "error": null
+    },
+    {
+      "date": "2025-10-30",
+      "jcd": "06",
+      "venue_name": "浜名湖",
+      "source": "BOAT RACE OFFICIAL WEB",
+      "url": "https://www.boatrace.jp/owpc/pc/race/resultlist?hd=20251030&jcd=06",
+      "status": "saved",
+      "http_status": 200,
+      "bytes": 143182,
+      "title": "結果一覧｜BOAT RACE オフィシャルウェブサイト",
+      "has_result_content": true,
+      "saved_files": [
+        "data/raw/official/2025-10-30/06/resultlist.html",
+        "data/raw/official/2025-10-30/06/metadata.json"
+      ],
+      "started_at": "2026-05-20T10:50:29.451Z",
+      "finished_at": "2026-05-20T10:50:29.733Z",
+      "error": null
+    },
+    {
+      "date": "2025-10-30",
+      "jcd": "07",
+      "venue_name": "蒲郡",
+      "source": "BOAT RACE OFFICIAL WEB",
+      "url": "https://www.boatrace.jp/owpc/pc/race/resultlist?hd=20251030&jcd=07",
+      "status": "saved",
+      "http_status": 200,
+      "bytes": 14313,
+      "title": "BOAT RACE オフィシャルウェブサイト",
+      "has_result_content": true,
+      "saved_files": [
+        "data/raw/official/2025-10-30/07/resultlist.html",
+        "data/raw/official/2025-10-30/07/metadata.json"
+      ],
+      "started_at": "2026-05-20T10:50:32.235Z",
+      "finished_at": "2026-05-20T10:50:32.421Z",
+      "error": null
+    },
+    {
+      "date": "2025-10-30",
+      "jcd": "08",
+      "venue_name": "常滑",
+      "source": "BOAT RACE OFFICIAL WEB",
+      "url": "https://www.boatrace.jp/owpc/pc/race/resultlist?hd=20251030&jcd=08",
+      "status": "saved",
+      "http_status": 200,
+      "bytes": 14313,
+      "title": "BOAT RACE オフィシャルウェブサイト",
+      "has_result_content": true,
+      "saved_files": [
+        "data/raw/official/2025-10-30/08/resultlist.html",
+        "data/raw/official/2025-10-30/08/metadata.json"
+      ],
+      "started_at": "2026-05-20T10:50:34.922Z",
+      "finished_at": "2026-05-20T10:50:35.117Z",
+      "error": null
+    },
+    {
+      "date": "2025-10-30",
+      "jcd": "09",
+      "venue_name": "津",
+      "source": "BOAT RACE OFFICIAL WEB",
+      "url": "https://www.boatrace.jp/owpc/pc/race/resultlist?hd=20251030&jcd=09",
+      "status": "saved",
+      "http_status": 200,
+      "bytes": 142936,
+      "title": "結果一覧｜BOAT RACE オフィシャルウェブサイト",
+      "has_result_content": true,
+      "saved_files": [
+        "data/raw/official/2025-10-30/09/resultlist.html",
+        "data/raw/official/2025-10-30/09/metadata.json"
+      ],
+      "started_at": "2026-05-20T10:50:37.618Z",
+      "finished_at": "2026-05-20T10:50:37.873Z",
+      "error": null
+    },
+    {
+      "date": "2025-10-30",
+      "jcd": "10",
+      "venue_name": "三国",
+      "source": "BOAT RACE OFFICIAL WEB",
+      "url": "https://www.boatrace.jp/owpc/pc/race/resultlist?hd=20251030&jcd=10",
+      "status": "saved",
+      "http_status": 200,
+      "bytes": 143227,
+      "title": "結果一覧｜BOAT RACE オフィシャルウェブサイト",
+      "has_result_content": true,
+      "saved_files": [
+        "data/raw/official/2025-10-30/10/resultlist.html",
+        "data/raw/official/2025-10-30/10/metadata.json"
+      ],
+      "started_at": "2026-05-20T10:50:40.374Z",
+      "finished_at": "2026-05-20T10:50:40.585Z",
+      "error": null
+    },
+    {
+      "date": "2025-10-30",
+      "jcd": "11",
+      "venue_name": "びわこ",
+      "source": "BOAT RACE OFFICIAL WEB",
+      "url": "https://www.boatrace.jp/owpc/pc/race/resultlist?hd=20251030&jcd=11",
+      "status": "saved",
+      "http_status": 200,
+      "bytes": 14313,
+      "title": "BOAT RACE オフィシャルウェブサイト",
+      "has_result_content": true,
+      "saved_files": [
+        "data/raw/official/2025-10-30/11/resultlist.html",
+        "data/raw/official/2025-10-30/11/metadata.json"
+      ],
+      "started_at": "2026-05-20T10:50:43.087Z",
+      "finished_at": "2026-05-20T10:50:43.297Z",
+      "error": null
+    },
+    {
+      "date": "2025-10-30",
+      "jcd": "12",
+      "venue_name": "住之江",
+      "source": "BOAT RACE OFFICIAL WEB",
+      "url": "https://www.boatrace.jp/owpc/pc/race/resultlist?hd=20251030&jcd=12",
+      "status": "saved",
+      "http_status": 200,
+      "bytes": 14313,
+      "title": "BOAT RACE オフィシャルウェブサイト",
+      "has_result_content": true,
+      "saved_files": [
+        "data/raw/official/2025-10-30/12/resultlist.html",
+        "data/raw/official/2025-10-30/12/metadata.json"
+      ],
+      "started_at": "2026-05-20T10:50:45.799Z",
+      "finished_at": "2026-05-20T10:50:46.019Z",
+      "error": null
+    },
+    {
+      "date": "2025-10-30",
+      "jcd": "13",
+      "venue_name": "尼崎",
+      "source": "BOAT RACE OFFICIAL WEB",
+      "url": "https://www.boatrace.jp/owpc/pc/race/resultlist?hd=20251030&jcd=13",
+      "status": "saved",
+      "http_status": 200,
+      "bytes": 14313,
+      "title": "BOAT RACE オフィシャルウェブサイト",
+      "has_result_content": true,
+      "saved_files": [
+        "data/raw/official/2025-10-30/13/resultlist.html",
+        "data/raw/official/2025-10-30/13/metadata.json"
+      ],
+      "started_at": "2026-05-20T10:50:48.521Z",
+      "finished_at": "2026-05-20T10:50:48.702Z",
+      "error": null
+    },
+    {
+      "date": "2025-10-30",
+      "jcd": "14",
+      "venue_name": "鳴門",
+      "source": "BOAT RACE OFFICIAL WEB",
+      "url": "https://www.boatrace.jp/owpc/pc/race/resultlist?hd=20251030&jcd=14",
+      "status": "saved",
+      "http_status": 200,
+      "bytes": 143231,
+      "title": "結果一覧｜BOAT RACE オフィシャルウェブサイト",
+      "has_result_content": true,
+      "saved_files": [
+        "data/raw/official/2025-10-30/14/resultlist.html",
+        "data/raw/official/2025-10-30/14/metadata.json"
+      ],
+      "started_at": "2026-05-20T10:50:51.203Z",
+      "finished_at": "2026-05-20T10:50:51.459Z",
+      "error": null
+    },
+    {
+      "date": "2025-10-30",
+      "jcd": "15",
+      "venue_name": "丸亀",
+      "source": "BOAT RACE OFFICIAL WEB",
+      "url": "https://www.boatrace.jp/owpc/pc/race/resultlist?hd=20251030&jcd=15",
+      "status": "saved",
+      "http_status": 200,
+      "bytes": 142957,
+      "title": "結果一覧｜BOAT RACE オフィシャルウェブサイト",
+      "has_result_content": true,
+      "saved_files": [
+        "data/raw/official/2025-10-30/15/resultlist.html",
+        "data/raw/official/2025-10-30/15/metadata.json"
+      ],
+      "started_at": "2026-05-20T10:50:53.960Z",
+      "finished_at": "2026-05-20T10:50:54.178Z",
+      "error": null
+    },
+    {
+      "date": "2025-10-30",
+      "jcd": "16",
+      "venue_name": "児島",
+      "source": "BOAT RACE OFFICIAL WEB",
+      "url": "https://www.boatrace.jp/owpc/pc/race/resultlist?hd=20251030&jcd=16",
+      "status": "saved",
+      "http_status": 200,
+      "bytes": 14313,
+      "title": "BOAT RACE オフィシャルウェブサイト",
+      "has_result_content": true,
+      "saved_files": [
+        "data/raw/official/2025-10-30/16/resultlist.html",
+        "data/raw/official/2025-10-30/16/metadata.json"
+      ],
+      "started_at": "2026-05-20T10:50:56.679Z",
+      "finished_at": "2026-05-20T10:50:56.883Z",
+      "error": null
+    },
+    {
+      "date": "2025-10-30",
+      "jcd": "17",
+      "venue_name": "宮島",
+      "source": "BOAT RACE OFFICIAL WEB",
+      "url": "https://www.boatrace.jp/owpc/pc/race/resultlist?hd=20251030&jcd=17",
+      "status": "saved",
+      "http_status": 200,
+      "bytes": 143244,
+      "title": "結果一覧｜BOAT RACE オフィシャルウェブサイト",
+      "has_result_content": true,
+      "saved_files": [
+        "data/raw/official/2025-10-30/17/resultlist.html",
+        "data/raw/official/2025-10-30/17/metadata.json"
+      ],
+      "started_at": "2026-05-20T10:50:59.385Z",
+      "finished_at": "2026-05-20T10:50:59.642Z",
+      "error": null
+    },
+    {
+      "date": "2025-10-30",
+      "jcd": "18",
+      "venue_name": "徳山",
+      "source": "BOAT RACE OFFICIAL WEB",
+      "url": "https://www.boatrace.jp/owpc/pc/race/resultlist?hd=20251030&jcd=18",
+      "status": "saved",
+      "http_status": 200,
+      "bytes": 14313,
+      "title": "BOAT RACE オフィシャルウェブサイト",
+      "has_result_content": true,
+      "saved_files": [
+        "data/raw/official/2025-10-30/18/resultlist.html",
+        "data/raw/official/2025-10-30/18/metadata.json"
+      ],
+      "started_at": "2026-05-20T10:51:02.143Z",
+      "finished_at": "2026-05-20T10:51:02.333Z",
+      "error": null
+    },
+    {
+      "date": "2025-10-30",
+      "jcd": "19",
+      "venue_name": "下関",
+      "source": "BOAT RACE OFFICIAL WEB",
+      "url": "https://www.boatrace.jp/owpc/pc/race/resultlist?hd=20251030&jcd=19",
+      "status": "saved",
+      "http_status": 200,
+      "bytes": 143190,
+      "title": "結果一覧｜BOAT RACE オフィシャルウェブサイト",
+      "has_result_content": true,
+      "saved_files": [
+        "data/raw/official/2025-10-30/19/resultlist.html",
+        "data/raw/official/2025-10-30/19/metadata.json"
+      ],
+      "started_at": "2026-05-20T10:51:04.836Z",
+      "finished_at": "2026-05-20T10:51:05.078Z",
+      "error": null
+    },
+    {
+      "date": "2025-10-30",
+      "jcd": "20",
+      "venue_name": "若松",
+      "source": "BOAT RACE OFFICIAL WEB",
+      "url": "https://www.boatrace.jp/owpc/pc/race/resultlist?hd=20251030&jcd=20",
+      "status": "saved",
+      "http_status": 200,
+      "bytes": 14313,
+      "title": "BOAT RACE オフィシャルウェブサイト",
+      "has_result_content": true,
+      "saved_files": [
+        "data/raw/official/2025-10-30/20/resultlist.html",
+        "data/raw/official/2025-10-30/20/metadata.json"
+      ],
+      "started_at": "2026-05-20T10:51:07.580Z",
+      "finished_at": "2026-05-20T10:51:07.823Z",
+      "error": null
+    },
+    {
+      "date": "2025-10-30",
+      "jcd": "21",
+      "venue_name": "芦屋",
+      "source": "BOAT RACE OFFICIAL WEB",
+      "url": "https://www.boatrace.jp/owpc/pc/race/resultlist?hd=20251030&jcd=21",
+      "status": "saved",
+      "http_status": 200,
+      "bytes": 14313,
+      "title": "BOAT RACE オフィシャルウェブサイト",
+      "has_result_content": true,
+      "saved_files": [
+        "data/raw/official/2025-10-30/21/resultlist.html",
+        "data/raw/official/2025-10-30/21/metadata.json"
+      ],
+      "started_at": "2026-05-20T10:51:10.324Z",
+      "finished_at": "2026-05-20T10:51:10.540Z",
+      "error": null
+    },
+    {
+      "date": "2025-10-30",
+      "jcd": "22",
+      "venue_name": "福岡",
+      "source": "BOAT RACE OFFICIAL WEB",
+      "url": "https://www.boatrace.jp/owpc/pc/race/resultlist?hd=20251030&jcd=22",
+      "status": "saved",
+      "http_status": 200,
+      "bytes": 143170,
+      "title": "結果一覧｜BOAT RACE オフィシャルウェブサイト",
+      "has_result_content": true,
+      "saved_files": [
+        "data/raw/official/2025-10-30/22/resultlist.html",
+        "data/raw/official/2025-10-30/22/metadata.json"
+      ],
+      "started_at": "2026-05-20T10:51:13.041Z",
+      "finished_at": "2026-05-20T10:51:13.258Z",
+      "error": null
+    },
+    {
+      "date": "2025-10-30",
+      "jcd": "23",
+      "venue_name": "唐津",
+      "source": "BOAT RACE OFFICIAL WEB",
+      "url": "https://www.boatrace.jp/owpc/pc/race/resultlist?hd=20251030&jcd=23",
+      "status": "saved",
+      "http_status": 200,
+      "bytes": 14313,
+      "title": "BOAT RACE オフィシャルウェブサイト",
+      "has_result_content": true,
+      "saved_files": [
+        "data/raw/official/2025-10-30/23/resultlist.html",
+        "data/raw/official/2025-10-30/23/metadata.json"
+      ],
+      "started_at": "2026-05-20T10:51:15.759Z",
+      "finished_at": "2026-05-20T10:51:15.965Z",
+      "error": null
+    },
+    {
+      "date": "2025-10-30",
+      "jcd": "24",
+      "venue_name": "大村",
+      "source": "BOAT RACE OFFICIAL WEB",
+      "url": "https://www.boatrace.jp/owpc/pc/race/resultlist?hd=20251030&jcd=24",
+      "status": "saved",
+      "http_status": 200,
+      "bytes": 143139,
+      "title": "結果一覧｜BOAT RACE オフィシャルウェブサイト",
+      "has_result_content": true,
+      "saved_files": [
+        "data/raw/official/2025-10-30/24/resultlist.html",
+        "data/raw/official/2025-10-30/24/metadata.json"
+      ],
+      "started_at": "2026-05-20T10:51:18.468Z",
+      "finished_at": "2026-05-20T10:51:18.702Z",
+      "error": null
+    }
+  ]
+}
