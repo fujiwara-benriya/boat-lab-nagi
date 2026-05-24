@@ -1,0 +1,1176 @@
+<!doctype html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>ヤフオク出品CSV作成</title>
+  <style>
+    :root {
+      --bg: #f7f5ef;
+      --panel: #ffffff;
+      --ink: #1e293b;
+      --muted: #64748b;
+      --line: #d8dee8;
+      --accent: #0f766e;
+      --accent-strong: #0b5f59;
+      --warn: #b45309;
+      --danger: #b91c1c;
+      --soft: #e7f3f1;
+      --radius: 8px;
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      background: var(--bg);
+      color: var(--ink);
+    }
+
+    button,
+    input,
+    select,
+    textarea {
+      font: inherit;
+    }
+
+    button {
+      border: 1px solid var(--line);
+      border-radius: 6px;
+      background: #fff;
+      color: var(--ink);
+      min-height: 40px;
+      padding: 0 12px;
+      cursor: pointer;
+    }
+
+    button.primary {
+      border-color: var(--accent);
+      background: var(--accent);
+      color: #fff;
+    }
+
+    button.primary:hover {
+      background: var(--accent-strong);
+    }
+
+    button.danger {
+      border-color: #fecaca;
+      color: var(--danger);
+    }
+
+    button:disabled {
+      cursor: not-allowed;
+      opacity: .55;
+    }
+
+    .app {
+      min-height: 100vh;
+      display: grid;
+      grid-template-rows: auto 1fr;
+    }
+
+    header {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 16px;
+      padding: 14px 18px;
+      background: #fff;
+      border-bottom: 1px solid var(--line);
+      position: sticky;
+      top: 0;
+      z-index: 10;
+    }
+
+    h1 {
+      margin: 0;
+      font-size: 20px;
+      letter-spacing: 0;
+    }
+
+    .header-actions {
+      display: flex;
+      gap: 8px;
+      flex-wrap: wrap;
+      justify-content: flex-end;
+    }
+
+    main {
+      display: grid;
+      grid-template-columns: minmax(260px, 340px) minmax(0, 1fr);
+      min-height: 0;
+    }
+
+    aside {
+      border-right: 1px solid var(--line);
+      background: #fff;
+      min-height: 0;
+      overflow: auto;
+    }
+
+    .list-head {
+      padding: 14px;
+      border-bottom: 1px solid var(--line);
+      display: grid;
+      gap: 10px;
+    }
+
+    .summary {
+      color: var(--muted);
+      font-size: 13px;
+    }
+
+    .listing-list {
+      display: grid;
+    }
+
+    .listing-item {
+      width: 100%;
+      border: 0;
+      border-bottom: 1px solid var(--line);
+      border-radius: 0;
+      min-height: 72px;
+      padding: 10px 14px;
+      text-align: left;
+      display: grid;
+      grid-template-columns: 56px 1fr;
+      gap: 10px;
+      background: #fff;
+    }
+
+    .listing-item.active {
+      background: var(--soft);
+    }
+
+    .thumb {
+      width: 56px;
+      height: 56px;
+      border-radius: 6px;
+      background: #e2e8f0;
+      object-fit: cover;
+      border: 1px solid var(--line);
+    }
+
+    .item-title {
+      font-weight: 700;
+      line-height: 1.35;
+      overflow-wrap: anywhere;
+    }
+
+    .item-meta {
+      color: var(--muted);
+      font-size: 12px;
+      margin-top: 4px;
+    }
+
+    .workspace {
+      min-width: 0;
+      min-height: 0;
+      overflow: auto;
+      padding: 18px;
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: minmax(280px, 420px) minmax(0, 1fr);
+      gap: 18px;
+      align-items: start;
+    }
+
+    section {
+      background: var(--panel);
+      border: 1px solid var(--line);
+      border-radius: var(--radius);
+      overflow: hidden;
+    }
+
+    .section-head {
+      padding: 12px 14px;
+      border-bottom: 1px solid var(--line);
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 10px;
+    }
+
+    h2 {
+      margin: 0;
+      font-size: 16px;
+      letter-spacing: 0;
+    }
+
+    .section-body {
+      padding: 14px;
+      display: grid;
+      gap: 14px;
+    }
+
+    .camera-box {
+      display: grid;
+      gap: 12px;
+    }
+
+    video,
+    canvas {
+      width: 100%;
+      aspect-ratio: 4 / 3;
+      border: 1px solid var(--line);
+      border-radius: 6px;
+      background: #111827;
+      object-fit: cover;
+    }
+
+    .camera-actions,
+    .row-actions {
+      display: flex;
+      gap: 8px;
+      flex-wrap: wrap;
+    }
+
+    .photos {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(84px, 1fr));
+      gap: 8px;
+    }
+
+    .photo {
+      position: relative;
+      border: 1px solid var(--line);
+      border-radius: 6px;
+      overflow: hidden;
+      background: #f8fafc;
+    }
+
+    .photo img {
+      width: 100%;
+      aspect-ratio: 1 / 1;
+      object-fit: cover;
+      display: block;
+    }
+
+    .photo button {
+      position: absolute;
+      top: 4px;
+      right: 4px;
+      min-height: 28px;
+      padding: 0 8px;
+      background: rgba(255, 255, 255, .92);
+    }
+
+    form {
+      display: grid;
+      gap: 16px;
+    }
+
+    .fields {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 12px;
+    }
+
+    .field {
+      display: grid;
+      gap: 6px;
+    }
+
+    .field.full {
+      grid-column: 1 / -1;
+    }
+
+    label {
+      font-size: 13px;
+      color: #334155;
+      font-weight: 700;
+    }
+
+    input,
+    select,
+    textarea {
+      width: 100%;
+      border: 1px solid var(--line);
+      border-radius: 6px;
+      background: #fff;
+      color: var(--ink);
+      min-height: 40px;
+      padding: 8px 10px;
+    }
+
+    textarea {
+      min-height: 104px;
+      resize: vertical;
+      line-height: 1.55;
+    }
+
+    .status {
+      border-radius: 6px;
+      padding: 10px;
+      background: #f8fafc;
+      color: var(--muted);
+      font-size: 13px;
+      line-height: 1.55;
+    }
+
+    .status strong {
+      color: var(--ink);
+    }
+
+    .missing {
+      color: var(--warn);
+    }
+
+    .empty {
+      height: 100%;
+      display: grid;
+      place-items: center;
+      color: var(--muted);
+      text-align: center;
+      padding: 30px;
+    }
+
+    @media (max-width: 980px) {
+      main,
+      .grid {
+        grid-template-columns: 1fr;
+      }
+
+      aside {
+        border-right: 0;
+        border-bottom: 1px solid var(--line);
+        max-height: 280px;
+      }
+    }
+
+    @media (max-width: 620px) {
+      header {
+        align-items: stretch;
+        flex-direction: column;
+      }
+
+      .header-actions {
+        justify-content: stretch;
+      }
+
+      .header-actions button,
+      .camera-actions button,
+      .row-actions button {
+        flex: 1 1 140px;
+      }
+
+      .workspace {
+        padding: 12px;
+      }
+
+      .fields {
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="app">
+    <header>
+      <h1>ヤフオク出品CSV作成</h1>
+      <div class="header-actions">
+        <button id="newListingBtn" class="primary" type="button">新規商品</button>
+        <button id="exportCsvBtn" type="button">CSV出力</button>
+        <button id="exportImagesBtn" type="button">画像出力</button>
+        <button id="clearAllBtn" class="danger" type="button">全削除</button>
+      </div>
+    </header>
+
+    <main>
+      <aside>
+        <div class="list-head">
+          <strong>保存済み商品</strong>
+          <div id="summary" class="summary">0件</div>
+        </div>
+        <div id="listingList" class="listing-list"></div>
+      </aside>
+
+      <div id="workspace" class="workspace">
+        <div class="empty">
+          <div>
+            <p><strong>新規商品</strong>を押して、撮影と入力を始めます。</p>
+            <p>入力内容と写真はこのブラウザ内に保存されます。</p>
+          </div>
+        </div>
+      </div>
+    </main>
+  </div>
+
+  <template id="editorTemplate">
+    <div class="grid">
+      <section>
+        <div class="section-head">
+          <h2>カメラ</h2>
+          <span class="summary">撮影した順にCSV画像欄へ入ります</span>
+        </div>
+        <div class="section-body camera-box">
+          <video id="cameraPreview" playsinline muted></video>
+          <div class="camera-actions">
+            <button id="startCameraBtn" class="primary" type="button">カメラ/写真を開く</button>
+            <button id="captureBtn" type="button" disabled>ライブ撮影</button>
+            <button id="filePhotoBtn" type="button">写真を追加</button>
+            <button id="stopCameraBtn" type="button" disabled>ライブ停止</button>
+          </div>
+          <input id="filePhotoInput" type="file" accept="image/*" capture="environment" multiple hidden>
+          <div id="photos" class="photos"></div>
+        </div>
+      </section>
+
+      <section>
+        <div class="section-head">
+          <h2>出品情報</h2>
+          <span id="saveState" class="summary">保存済み</span>
+        </div>
+        <div class="section-body">
+          <form id="listingForm">
+            <div class="fields">
+              <div class="field full">
+                <label for="title">タイトル</label>
+                <input id="title" name="title" maxlength="120" required>
+              </div>
+
+              <div class="field">
+                <label for="categoryName">カテゴリ名</label>
+                <input id="categoryName" name="categoryName" placeholder="例: 家電、AV、カメラ">
+              </div>
+
+              <div class="field">
+                <label for="categoryId">カテゴリID</label>
+                <input id="categoryId" name="categoryId" inputmode="numeric">
+              </div>
+
+              <div class="field">
+                <label for="condition">状態</label>
+                <select id="condition" name="condition">
+                  <option>新品、未使用</option>
+                  <option>未使用に近い</option>
+                  <option>目立った傷や汚れなし</option>
+                  <option selected>やや傷や汚れあり</option>
+                  <option>傷や汚れあり</option>
+                  <option>全体的に状態が悪い</option>
+                </select>
+              </div>
+
+              <div class="field">
+                <label for="quantity">数量</label>
+                <input id="quantity" name="quantity" type="number" min="1" value="1">
+              </div>
+
+              <div class="field">
+                <label for="brand">ブランド</label>
+                <input id="brand" name="brand">
+              </div>
+
+              <div class="field">
+                <label for="modelNumber">型番</label>
+                <input id="modelNumber" name="modelNumber">
+              </div>
+
+              <div class="field">
+                <label for="janOrIsbn">JAN / ISBN</label>
+                <input id="janOrIsbn" name="janOrIsbn">
+              </div>
+
+              <div class="field">
+                <label for="sizeWeight">商品のサイズ</label>
+                <input id="sizeWeight" name="sizeWeight" placeholder="例: 60サイズ / 約1.2kg">
+              </div>
+
+              <div class="field">
+                <label for="startPrice">開始価格</label>
+                <input id="startPrice" name="startPrice" type="number" min="1" inputmode="numeric">
+              </div>
+
+              <div class="field">
+                <label for="buyoutPrice">即決価格</label>
+                <input id="buyoutPrice" name="buyoutPrice" type="number" min="1" inputmode="numeric">
+              </div>
+
+              <div class="field">
+                <label for="listingDays">開催日数</label>
+                <select id="listingDays" name="listingDays">
+                  <option>1</option>
+                  <option>2</option>
+                  <option>3</option>
+                  <option>4</option>
+                  <option>5</option>
+                  <option>6</option>
+                  <option selected>7</option>
+                </select>
+              </div>
+
+              <div class="field">
+                <label for="endTimeSlot">終了時間帯</label>
+                <select id="endTimeSlot" name="endTimeSlot">
+                  <option>午前</option>
+                  <option>昼</option>
+                  <option>夕方</option>
+                  <option selected>夜</option>
+                  <option>深夜</option>
+                </select>
+              </div>
+
+              <div class="field">
+                <label for="shippingPayer">送料負担</label>
+                <select id="shippingPayer" name="shippingPayer">
+                  <option selected>落札者</option>
+                  <option>出品者</option>
+                </select>
+              </div>
+
+              <div class="field">
+                <label for="shippingMethod">発送方法</label>
+                <input id="shippingMethod" name="shippingMethod" placeholder="例: ゆうパック、宅急便">
+              </div>
+
+              <div class="field">
+                <label for="shippingOrigin">発送元</label>
+                <input id="shippingOrigin" name="shippingOrigin" placeholder="例: 東京都">
+              </div>
+
+              <div class="field">
+                <label for="reviewStatus">状態</label>
+                <select id="reviewStatus" name="reviewStatus">
+                  <option value="draft">下書き</option>
+                  <option value="needs_review">確認待ち</option>
+                  <option value="ready">CSV出力OK</option>
+                  <option value="blocked">出品停止</option>
+                </select>
+              </div>
+
+              <div class="field full">
+                <label for="accessories">付属品</label>
+                <textarea id="accessories" name="accessories"></textarea>
+              </div>
+
+              <div class="field full">
+                <label for="conditionNote">状態説明</label>
+                <textarea id="conditionNote" name="conditionNote"></textarea>
+              </div>
+
+              <div class="field full">
+                <label for="description">商品説明</label>
+                <textarea id="description" name="description"></textarea>
+              </div>
+
+              <div class="field full">
+                <label for="returnsPolicy">返品について</label>
+                <textarea id="returnsPolicy" name="returnsPolicy"></textarea>
+              </div>
+
+              <div class="field full">
+                <label for="legalCheck">確認メモ</label>
+                <textarea id="legalCheck" name="legalCheck" placeholder="禁止出品物、真贋、権利侵害、危険物、医薬品等を確認"></textarea>
+              </div>
+            </div>
+
+            <div id="validationStatus" class="status"></div>
+
+            <div class="row-actions">
+              <button id="buildDescriptionBtn" type="button">説明文を整える</button>
+              <button id="duplicateBtn" type="button">複製</button>
+              <button id="deleteListingBtn" class="danger" type="button">この商品を削除</button>
+            </div>
+          </form>
+        </div>
+      </section>
+    </div>
+  </template>
+
+  <script>
+    const STORAGE_KEY = "yahooAuctionListingTool.v1";
+    const DB_NAME = "yahooAuctionListingTool";
+    const DB_VERSION = 1;
+    const DB_STORE = "appState";
+    const PHOTO_LIMIT = 10;
+
+    const state = {
+      listings: [],
+      selectedId: null,
+      stream: null,
+      saveTimer: null,
+    };
+
+    const columns = [
+      "item_id",
+      "image_1",
+      "image_2",
+      "image_3",
+      "image_4",
+      "image_5",
+      "image_6",
+      "image_7",
+      "image_8",
+      "image_9",
+      "image_10",
+      "title",
+      "category_name",
+      "category_id",
+      "condition",
+      "condition_note",
+      "brand",
+      "model_number",
+      "jan_or_isbn",
+      "accessories",
+      "size_weight",
+      "start_price",
+      "buyout_price",
+      "quantity",
+      "listing_days",
+      "end_time_slot",
+      "shipping_payer",
+      "shipping_method",
+      "shipping_origin",
+      "returns_policy",
+      "description",
+      "legal_check",
+      "review_status",
+    ];
+
+    const els = {
+      newListingBtn: document.getElementById("newListingBtn"),
+      exportCsvBtn: document.getElementById("exportCsvBtn"),
+      exportImagesBtn: document.getElementById("exportImagesBtn"),
+      clearAllBtn: document.getElementById("clearAllBtn"),
+      summary: document.getElementById("summary"),
+      listingList: document.getElementById("listingList"),
+      workspace: document.getElementById("workspace"),
+      editorTemplate: document.getElementById("editorTemplate"),
+    };
+
+    init();
+
+    async function init() {
+      await load();
+      bindShellActions();
+      render();
+    }
+
+    function bindShellActions() {
+      els.newListingBtn.addEventListener("click", () => {
+        const listing = createListing();
+        state.listings.unshift(listing);
+        state.selectedId = listing.id;
+        persist();
+        render();
+      });
+
+      els.exportCsvBtn.addEventListener("click", exportCsv);
+      els.exportImagesBtn.addEventListener("click", exportImages);
+
+      els.clearAllBtn.addEventListener("click", () => {
+        if (!confirm("保存済みの商品データをすべて削除します。よろしいですか？")) return;
+        stopCamera();
+        state.listings = [];
+        state.selectedId = null;
+        persist();
+        render();
+      });
+    }
+
+    function createListing(seed = {}) {
+      const id = seed.id || safeId();
+      const itemId = seed.itemId || buildItemId();
+      return {
+        id,
+        itemId,
+        photos: seed.photos ? structuredClone(seed.photos) : [],
+        title: seed.title || "",
+        categoryName: seed.categoryName || "",
+        categoryId: seed.categoryId || "",
+        condition: seed.condition || "やや傷や汚れあり",
+        conditionNote: seed.conditionNote || "",
+        brand: seed.brand || "",
+        modelNumber: seed.modelNumber || "",
+        janOrIsbn: seed.janOrIsbn || "",
+        accessories: seed.accessories || "",
+        sizeWeight: seed.sizeWeight || "",
+        startPrice: seed.startPrice || "",
+        buyoutPrice: seed.buyoutPrice || "",
+        quantity: seed.quantity || "1",
+        listingDays: seed.listingDays || "7",
+        endTimeSlot: seed.endTimeSlot || "夜",
+        shippingPayer: seed.shippingPayer || "落札者",
+        shippingMethod: seed.shippingMethod || "",
+        shippingOrigin: seed.shippingOrigin || "",
+        returnsPolicy: seed.returnsPolicy || "返品不可。説明と異なる重大な不備がある場合は取引メッセージで相談。",
+        description: seed.description || "",
+        legalCheck: seed.legalCheck || "",
+        reviewStatus: seed.reviewStatus || "draft",
+        createdAt: seed.createdAt || new Date().toISOString(),
+        updatedAt: new Date().toISOString(),
+      };
+    }
+
+    function buildItemId() {
+      const d = new Date();
+      const date = `${d.getFullYear()}${String(d.getMonth() + 1).padStart(2, "0")}${String(d.getDate()).padStart(2, "0")}`;
+      const seq = String(state.listings.length + 1).padStart(3, "0");
+      return `${date}-${seq}`;
+    }
+
+    function render() {
+      renderList();
+      const listing = currentListing();
+      if (!listing) {
+        stopCamera();
+        els.workspace.innerHTML = '<div class="empty"><div><p><strong>新規商品</strong>を押して、撮影と入力を始めます。</p><p>入力内容と写真はこのブラウザ内に保存されます。</p><p>スマホでは「カメラ/写真を開く」から撮影できます。</p></div></div>';
+        return;
+      }
+      renderEditor(listing);
+    }
+
+    function renderList() {
+      els.summary.textContent = `${state.listings.length}件 / CSV出力OK ${state.listings.filter((item) => item.reviewStatus === "ready").length}件`;
+      els.listingList.innerHTML = "";
+
+      for (const listing of state.listings) {
+        const button = document.createElement("button");
+        button.type = "button";
+        button.className = `listing-item${listing.id === state.selectedId ? " active" : ""}`;
+        button.innerHTML = `
+          <img class="thumb" alt="" src="${listing.photos[0]?.dataUrl || ""}">
+          <div>
+            <div class="item-title">${escapeHtml(listing.title || "タイトル未入力")}</div>
+            <div class="item-meta">${escapeHtml(listing.itemId)} / ${escapeHtml(statusLabel(listing.reviewStatus))} / 写真${listing.photos.length}枚</div>
+          </div>
+        `;
+        button.addEventListener("click", () => {
+          stopCamera();
+          state.selectedId = listing.id;
+          persist();
+          render();
+        });
+        els.listingList.appendChild(button);
+      }
+    }
+
+    function renderEditor(listing) {
+      stopCamera();
+      els.workspace.innerHTML = "";
+      els.workspace.appendChild(els.editorTemplate.content.cloneNode(true));
+
+      const form = document.getElementById("listingForm");
+      const saveState = document.getElementById("saveState");
+      const video = document.getElementById("cameraPreview");
+      const startCameraBtn = document.getElementById("startCameraBtn");
+      const captureBtn = document.getElementById("captureBtn");
+      const filePhotoBtn = document.getElementById("filePhotoBtn");
+      const filePhotoInput = document.getElementById("filePhotoInput");
+      const stopCameraBtn = document.getElementById("stopCameraBtn");
+
+      setFormValues(form, listing);
+      renderPhotos(listing);
+      updateValidation(listing);
+
+      form.addEventListener("input", () => {
+        applyFormValues(form, listing);
+        listing.updatedAt = new Date().toISOString();
+        saveState.textContent = "保存中";
+        updateValidation(listing);
+        renderList();
+        schedulePersist(() => {
+          saveState.textContent = "保存済み";
+        });
+      });
+
+      form.addEventListener("change", () => {
+        applyFormValues(form, listing);
+        listing.updatedAt = new Date().toISOString();
+        updateValidation(listing);
+        persist();
+        renderList();
+      });
+
+      startCameraBtn.addEventListener("click", async () => {
+        filePhotoInput.click();
+      });
+
+      video.addEventListener("dblclick", async () => {
+        try {
+          if (!navigator.mediaDevices?.getUserMedia) {
+            filePhotoInput.click();
+            return;
+          }
+          state.stream = await navigator.mediaDevices.getUserMedia({
+            video: { facingMode: { ideal: "environment" } },
+            audio: false,
+          });
+          video.srcObject = state.stream;
+          await video.play();
+          startCameraBtn.disabled = true;
+          captureBtn.disabled = false;
+          stopCameraBtn.disabled = false;
+        } catch (error) {
+          filePhotoInput.click();
+        }
+      });
+
+      captureBtn.addEventListener("click", () => {
+        if (!state.stream || listing.photos.length >= PHOTO_LIMIT) return;
+        const dataUrl = captureVideo(video);
+        const index = listing.photos.length + 1;
+        listing.photos.push({
+          id: safeId(),
+          fileName: `${listing.itemId}_${String(index).padStart(2, "0")}.jpg`,
+          dataUrl,
+          createdAt: new Date().toISOString(),
+        });
+        listing.updatedAt = new Date().toISOString();
+        persist();
+        renderPhotos(listing);
+        renderList();
+        updateValidation(listing);
+      });
+
+      stopCameraBtn.addEventListener("click", stopCamera);
+      filePhotoBtn.addEventListener("click", () => filePhotoInput.click());
+      filePhotoInput.addEventListener("change", async () => {
+        const files = [...filePhotoInput.files].slice(0, PHOTO_LIMIT - listing.photos.length);
+        for (const file of files) {
+          const index = listing.photos.length + 1;
+          listing.photos.push({
+            id: safeId(),
+            fileName: `${listing.itemId}_${String(index).padStart(2, "0")}.jpg`,
+            dataUrl: await fileToDataUrl(file),
+            createdAt: new Date().toISOString(),
+          });
+        }
+        filePhotoInput.value = "";
+        listing.updatedAt = new Date().toISOString();
+        persist();
+        renderPhotos(listing);
+        renderList();
+        updateValidation(listing);
+      });
+
+      document.getElementById("buildDescriptionBtn").addEventListener("click", () => {
+        applyFormValues(form, listing);
+        listing.description = buildDescription(listing);
+        setFormValues(form, listing);
+        persist();
+      });
+
+      document.getElementById("duplicateBtn").addEventListener("click", () => {
+        applyFormValues(form, listing);
+        const copy = createListing({
+          ...listing,
+          id: safeId(),
+          itemId: buildItemId(),
+          photos: [],
+          title: `${listing.title} コピー`.trim(),
+          reviewStatus: "draft",
+        });
+        state.listings.unshift(copy);
+        state.selectedId = copy.id;
+        persist();
+        render();
+      });
+
+      document.getElementById("deleteListingBtn").addEventListener("click", () => {
+        if (!confirm("この商品を削除します。よろしいですか？")) return;
+        state.listings = state.listings.filter((item) => item.id !== listing.id);
+        state.selectedId = state.listings[0]?.id || null;
+        persist();
+        render();
+      });
+    }
+
+    function renderPhotos(listing) {
+      const photos = document.getElementById("photos");
+      if (!photos) return;
+      photos.innerHTML = "";
+      for (const photo of listing.photos) {
+        const wrap = document.createElement("div");
+        wrap.className = "photo";
+        wrap.innerHTML = `<img alt="" src="${photo.dataUrl}"><button type="button">削除</button>`;
+        wrap.querySelector("button").addEventListener("click", () => {
+          listing.photos = listing.photos.filter((item) => item.id !== photo.id);
+          listing.photos.forEach((item, index) => {
+            item.fileName = `${listing.itemId}_${String(index + 1).padStart(2, "0")}.jpg`;
+          });
+          persist();
+          renderPhotos(listing);
+          renderList();
+          updateValidation(listing);
+        });
+        photos.appendChild(wrap);
+      }
+    }
+
+    function setFormValues(form, listing) {
+      for (const [name, value] of Object.entries(listing)) {
+        const input = form.elements[name];
+        if (input && typeof value !== "object") input.value = value ?? "";
+      }
+    }
+
+    function applyFormValues(form, listing) {
+      const data = new FormData(form);
+      for (const [key, value] of data.entries()) {
+        if (key in listing) listing[key] = String(value);
+      }
+    }
+
+    function updateValidation(listing = currentListing()) {
+      const box = document.getElementById("validationStatus");
+      if (!box || !listing) return;
+      const missing = [];
+      if (!listing.title) missing.push("タイトル");
+      if (!listing.conditionNote) missing.push("状態説明");
+      if (!listing.sizeWeight) missing.push("商品のサイズ");
+      if (!listing.startPrice) missing.push("開始価格");
+      if (!listing.shippingMethod) missing.push("発送方法");
+      if (!listing.shippingOrigin) missing.push("発送元");
+      if (!listing.legalCheck) missing.push("確認メモ");
+      if (listing.photos.length === 0) missing.push("写真");
+
+      box.innerHTML = missing.length
+        ? `<strong>未完了:</strong> <span class="missing">${missing.map(escapeHtml).join("、")}</span>`
+        : "<strong>CSV出力OK:</strong> 必須項目が入力されています。";
+    }
+
+    function captureVideo(video) {
+      const canvas = document.createElement("canvas");
+      canvas.width = video.videoWidth || 1280;
+      canvas.height = video.videoHeight || 960;
+      const ctx = canvas.getContext("2d");
+      ctx.drawImage(video, 0, 0, canvas.width, canvas.height);
+      return canvas.toDataURL("image/jpeg", 0.88);
+    }
+
+    function fileToDataUrl(file) {
+      return new Promise((resolve, reject) => {
+        const reader = new FileReader();
+        reader.onload = () => resolve(reader.result);
+        reader.onerror = () => reject(reader.error);
+        reader.readAsDataURL(file);
+      });
+    }
+
+    function buildDescription(listing) {
+      return [
+        "【商品について】",
+        listing.title || "商品名未入力",
+        "",
+        "【状態】",
+        listing.conditionNote || "写真と説明をあわせて状態を確認してください。",
+        "",
+        "【付属品】",
+        listing.accessories || "写真に写っているものがすべてです。",
+        "",
+        "【サイズ・発送】",
+        listing.sizeWeight || "発送サイズは梱包後に確認します。",
+        `発送方法: ${listing.shippingMethod || "未定"}`,
+        `発送元: ${listing.shippingOrigin || "未設定"}`,
+        "",
+        "【確認事項】",
+        "中古品の場合、通常使用に伴う小傷や保管跡があります。",
+        "状態は写真と説明をあわせて確認してください。",
+        "",
+        "【返品について】",
+        listing.returnsPolicy || "返品不可。説明と異なる重大な不備がある場合は取引メッセージで相談。",
+      ].join("\n");
+    }
+
+    function exportCsv() {
+      if (state.listings.length === 0) {
+        alert("出力する商品がありません。");
+        return;
+      }
+
+      const rows = [columns];
+      for (const listing of state.listings) {
+        rows.push(toCsvRow(listing));
+      }
+      const csv = rows.map((row) => row.map(escapeCsv).join(",")).join("\r\n") + "\r\n";
+      downloadBlob(new Blob(["\ufeff", csv], { type: "text/csv;charset=utf-8" }), `yahoo-auction-listings-${today()}.csv`);
+    }
+
+    function toCsvRow(listing) {
+      const photos = [...Array(PHOTO_LIMIT)].map((_, index) => listing.photos[index]?.fileName || "");
+      return [
+        listing.itemId,
+        ...photos,
+        listing.title,
+        listing.categoryName,
+        listing.categoryId,
+        listing.condition,
+        listing.conditionNote,
+        listing.brand,
+        listing.modelNumber,
+        listing.janOrIsbn,
+        listing.accessories,
+        listing.sizeWeight,
+        listing.startPrice,
+        listing.buyoutPrice,
+        listing.quantity,
+        listing.listingDays,
+        listing.endTimeSlot,
+        listing.shippingPayer,
+        listing.shippingMethod,
+        listing.shippingOrigin,
+        listing.returnsPolicy,
+        listing.description,
+        listing.legalCheck,
+        listing.reviewStatus,
+      ];
+    }
+
+    async function exportImages() {
+      const photos = state.listings.flatMap((listing) => listing.photos);
+      if (photos.length === 0) {
+        alert("出力する画像がありません。");
+        return;
+      }
+      for (const photo of photos) {
+        const blob = await fetch(photo.dataUrl).then((res) => res.blob());
+        downloadBlob(blob, photo.fileName);
+        await new Promise((resolve) => setTimeout(resolve, 160));
+      }
+    }
+
+    function stopCamera() {
+      if (!state.stream) return;
+      for (const track of state.stream.getTracks()) track.stop();
+      state.stream = null;
+    }
+
+    function currentListing() {
+      return state.listings.find((listing) => listing.id === state.selectedId) || null;
+    }
+
+    async function load() {
+      try {
+        const raw = await readStoredState();
+        if (!raw) return;
+        const parsed = typeof raw === "string" ? JSON.parse(raw) : raw;
+        state.listings = Array.isArray(parsed.listings) ? parsed.listings : [];
+        state.selectedId = parsed.selectedId || state.listings[0]?.id || null;
+      } catch {
+        state.listings = [];
+        state.selectedId = null;
+      }
+    }
+
+    function schedulePersist(callback) {
+      clearTimeout(state.saveTimer);
+      state.saveTimer = setTimeout(() => {
+        persist();
+        callback?.();
+      }, 250);
+    }
+
+    function persist() {
+      writeStoredState({
+        listings: state.listings,
+        selectedId: state.selectedId,
+      });
+    }
+
+    function openDb() {
+      return new Promise((resolve, reject) => {
+        const request = indexedDB.open(DB_NAME, DB_VERSION);
+        request.onupgradeneeded = () => {
+          request.result.createObjectStore(DB_STORE);
+        };
+        request.onsuccess = () => resolve(request.result);
+        request.onerror = () => reject(request.error);
+      });
+    }
+
+    function safeId() {
+      if (window.crypto?.randomUUID) return window.crypto.randomUUID();
+      if (window.crypto?.getRandomValues) {
+        const bytes = new Uint32Array(4);
+        window.crypto.getRandomValues(bytes);
+        return [...bytes].map((value) => value.toString(16).padStart(8, "0")).join("-");
+      }
+      return `${Date.now()}-${Math.random().toString(16).slice(2)}`;
+    }
+
+    async function readStoredState() {
+      if (!("indexedDB" in window)) {
+        return localStorage.getItem(STORAGE_KEY);
+      }
+
+      const db = await openDb();
+      return new Promise((resolve, reject) => {
+        const tx = db.transaction(DB_STORE, "readonly");
+        const request = tx.objectStore(DB_STORE).get(STORAGE_KEY);
+        request.onsuccess = () => resolve(request.result);
+        request.onerror = () => reject(request.error);
+      });
+    }
+
+    async function writeStoredState(value) {
+      if (!("indexedDB" in window)) {
+        localStorage.setItem(STORAGE_KEY, JSON.stringify(value));
+        return;
+      }
+
+      try {
+        const db = await openDb();
+        await new Promise((resolve, reject) => {
+          const tx = db.transaction(DB_STORE, "readwrite");
+          tx.objectStore(DB_STORE).put(value, STORAGE_KEY);
+          tx.oncomplete = () => resolve();
+          tx.onerror = () => reject(tx.error);
+        });
+      } catch {
+        try {
+          localStorage.setItem(STORAGE_KEY, JSON.stringify(value));
+        } catch {
+          alert("保存容量が不足しています。不要な商品や写真を削除してください。");
+        }
+      }
+    }
+
+    function downloadBlob(blob, fileName) {
+      const url = URL.createObjectURL(blob);
+      const a = document.createElement("a");
+      a.href = url;
+      a.download = fileName;
+      document.body.appendChild(a);
+      a.click();
+      a.remove();
+      setTimeout(() => URL.revokeObjectURL(url), 1000);
+    }
+
+    function escapeCsv(value) {
+      const text = String(value ?? "");
+      return /[",\r\n]/.test(text) ? `"${text.replaceAll('"', '""')}"` : text;
+    }
+
+    function escapeHtml(value) {
+      return String(value ?? "").replace(/[&<>"']/g, (char) => ({
+        "&": "&amp;",
+        "<": "&lt;",
+        ">": "&gt;",
+        '"': "&quot;",
+        "'": "&#39;",
+      })[char]);
+    }
+
+    function statusLabel(status) {
+      return {
+        draft: "下書き",
+        needs_review: "確認待ち",
+        ready: "CSV出力OK",
+        blocked: "出品停止",
+      }[status] || status;
+    }
+
+    function today() {
+      const d = new Date();
+      return `${d.getFullYear()}-${String(d.getMonth() + 1).padStart(2, "0")}-${String(d.getDate()).padStart(2, "0")}`;
+    }
+  </script>
+</body>
+</html>
