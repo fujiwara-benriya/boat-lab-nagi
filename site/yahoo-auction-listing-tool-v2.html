@@ -411,12 +411,13 @@
         <div class="section-body camera-box">
           <video id="cameraPreview" playsinline muted></video>
           <div class="camera-actions">
-            <button id="startCameraBtn" class="primary" type="button">カメラ/写真を開く</button>
+            <button id="startCameraBtn" class="primary" type="button">カメラで撮影</button>
             <button id="captureBtn" type="button" disabled>ライブ撮影</button>
-            <button id="filePhotoBtn" type="button">写真を追加</button>
+            <button id="filePhotoBtn" type="button">画像フォルダから追加</button>
             <button id="stopCameraBtn" type="button" disabled>ライブ停止</button>
           </div>
-          <input id="filePhotoInput" type="file" accept="image/*" capture="environment" multiple hidden>
+          <input id="cameraPhotoInput" type="file" accept="image/*" capture="environment" multiple hidden>
+          <input id="galleryPhotoInput" type="file" accept="image/*" multiple hidden>
           <div id="photos" class="photos"></div>
         </div>
       </section>
@@ -910,7 +911,8 @@
       const startCameraBtn = document.getElementById("startCameraBtn");
       const captureBtn = document.getElementById("captureBtn");
       const filePhotoBtn = document.getElementById("filePhotoBtn");
-      const filePhotoInput = document.getElementById("filePhotoInput");
+      const cameraPhotoInput = document.getElementById("cameraPhotoInput");
+      const galleryPhotoInput = document.getElementById("galleryPhotoInput");
       const stopCameraBtn = document.getElementById("stopCameraBtn");
 
       setFormValues(form, listing);
@@ -937,13 +939,13 @@
       });
 
       startCameraBtn.addEventListener("click", async () => {
-        filePhotoInput.click();
+        cameraPhotoInput.click();
       });
 
       video.addEventListener("dblclick", async () => {
         try {
           if (!navigator.mediaDevices?.getUserMedia) {
-            filePhotoInput.click();
+            cameraPhotoInput.click();
             return;
           }
           state.stream = await navigator.mediaDevices.getUserMedia({
@@ -956,7 +958,7 @@
           captureBtn.disabled = false;
           stopCameraBtn.disabled = false;
         } catch (error) {
-          filePhotoInput.click();
+          cameraPhotoInput.click();
         }
       });
 
@@ -978,25 +980,9 @@
       });
 
       stopCameraBtn.addEventListener("click", stopCamera);
-      filePhotoBtn.addEventListener("click", () => filePhotoInput.click());
-      filePhotoInput.addEventListener("change", async () => {
-        const files = [...filePhotoInput.files].slice(0, PHOTO_LIMIT - listing.photos.length);
-        for (const file of files) {
-          const index = listing.photos.length + 1;
-          listing.photos.push({
-            id: safeId(),
-            fileName: `${listing.itemId}_${String(index).padStart(2, "0")}.jpg`,
-            dataUrl: await fileToDataUrl(file),
-            createdAt: new Date().toISOString(),
-          });
-        }
-        filePhotoInput.value = "";
-        listing.updatedAt = new Date().toISOString();
-        persist();
-        renderPhotos(listing);
-        renderList();
-        updateValidation(listing);
-      });
+      filePhotoBtn.addEventListener("click", () => galleryPhotoInput.click());
+      cameraPhotoInput.addEventListener("change", () => addFilesToListing(cameraPhotoInput, listing));
+      galleryPhotoInput.addEventListener("change", () => addFilesToListing(galleryPhotoInput, listing));
 
       document.getElementById("buildDescriptionBtn").addEventListener("click", () => {
         applyFormValues(form, listing);
@@ -1060,6 +1046,25 @@
         });
         photos.appendChild(wrap);
       }
+    }
+
+    async function addFilesToListing(input, listing) {
+      const files = [...input.files].slice(0, PHOTO_LIMIT - listing.photos.length);
+      for (const file of files) {
+        const index = listing.photos.length + 1;
+        listing.photos.push({
+          id: safeId(),
+          fileName: `${listing.itemId}_${String(index).padStart(2, "0")}.jpg`,
+          dataUrl: await fileToDataUrl(file),
+          createdAt: new Date().toISOString(),
+        });
+      }
+      input.value = "";
+      listing.updatedAt = new Date().toISOString();
+      persist();
+      renderPhotos(listing);
+      renderList();
+      updateValidation(listing);
     }
 
     function setFormValues(form, listing) {
