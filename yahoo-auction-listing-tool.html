@@ -376,7 +376,8 @@
       <h1>ヤフオク出品CSV作成</h1>
       <div class="header-actions">
         <button id="newListingBtn" class="primary" type="button">次の商品を追加</button>
-        <button id="exportCsvBtn" type="button">CSV出力</button>
+        <button id="exportCsvBtn" type="button">オークタウンCSV</button>
+        <button id="exportZipBtn" type="button">オークタウンZIP</button>
         <button id="exportImagesBtn" type="button">画像出力</button>
         <button id="clearAllBtn" class="danger" type="button">全削除</button>
       </div>
@@ -527,7 +528,6 @@
               <div class="field">
                 <label for="listingDays">開催日数</label>
                 <select id="listingDays" name="listingDays">
-                  <option>1</option>
                   <option>2</option>
                   <option>3</option>
                   <option>4</option>
@@ -727,9 +727,67 @@
       "review_status",
     ];
 
+    const auctownColumns = [
+      "カテゴリ",
+      "タイトル",
+      "説明",
+      "開始価格",
+      "即決価格",
+      "個数",
+      "開催期間",
+      "終了時間",
+      "JANコード",
+      "画像1",
+      "画像2",
+      "画像3",
+      "画像4",
+      "画像5",
+      "画像6",
+      "画像7",
+      "画像8",
+      "画像9",
+      "画像10",
+      "商品発送元の都道府県",
+      "商品発送元の市区町村",
+      "送料負担",
+      "代金支払い",
+      "yahoo!簡単決済",
+      "商品代引",
+      "商品の状態",
+      "商品の状態備考",
+      "返品の可否",
+      "返品の可否備考",
+      "入札者評価制限",
+      "悪い評価の割合で制限",
+      "入札者認証制限",
+      "自動延長",
+      "早期終了",
+      "値下げ交渉",
+      "自動再出品",
+      "自動値下げ",
+      "自動値下げ価格変更率",
+      "送料固定",
+      "荷物の大きさ",
+      "荷物の重量",
+      "ネコポス",
+      "ネコ宅急便コンパクト",
+      "ネコ宅急便",
+      "ゆうパケット",
+      "ゆうパック",
+      "発送までの日数",
+      "配送方法1",
+      "配送方法1全国一律価格",
+      "北海道料金1",
+      "沖縄料金1",
+      "離島料金1",
+      "海外発送",
+      "出品者情報開示前チェック",
+    ];
+
     const els = {
       newListingBtn: document.getElementById("newListingBtn"),
       exportCsvBtn: document.getElementById("exportCsvBtn"),
+      exportZipBtn: document.getElementById("exportZipBtn"),
       exportImagesBtn: document.getElementById("exportImagesBtn"),
       clearAllBtn: document.getElementById("clearAllBtn"),
       summary: document.getElementById("summary"),
@@ -756,6 +814,7 @@
       });
 
       els.exportCsvBtn.addEventListener("click", exportCsv);
+      els.exportZipBtn.addEventListener("click", exportAuctownZip);
       els.exportImagesBtn.addEventListener("click", exportImages);
 
       els.clearAllBtn.addEventListener("click", () => {
@@ -1028,6 +1087,7 @@
       if (!box || !listing) return;
       const missing = [];
       if (!listing.title) missing.push("タイトル");
+      if (!listing.categoryId) missing.push("カテゴリID");
       if (!listing.conditionNote) missing.push("状態説明");
       if (!listing.sizeWeight) missing.push("商品のサイズ");
       if (!listing.startPrice) missing.push("開始価格");
@@ -1103,42 +1163,93 @@
         return;
       }
 
-      const rows = [columns];
-      for (const listing of state.listings) {
-        rows.push(toCsvRow(listing));
-      }
-      const csv = rows.map((row) => row.map(escapeCsv).join(",")).join("\r\n") + "\r\n";
-      downloadBlob(new Blob(["\ufeff", csv], { type: "text/csv;charset=utf-8" }), `yahoo-auction-listings-${today()}.csv`);
+      const csv = buildAuctownCsv();
+      downloadBlob(new Blob(["\ufeff", csv], { type: "text/csv;charset=utf-8" }), `auctown-listings-${today()}.csv`);
     }
 
-    function toCsvRow(listing) {
+    async function exportAuctownZip() {
+      if (state.listings.length === 0) {
+        alert("出力する商品がありません。");
+        return;
+      }
+
+      const encoder = new TextEncoder();
+      const csvBytes = encoder.encode(`\ufeff${buildAuctownCsv()}`);
+      const files = [{ name: "auctown-listings.csv", bytes: csvBytes }];
+
+      for (const listing of state.listings) {
+        for (const photo of listing.photos) {
+          const blob = await fetch(photo.dataUrl).then((res) => res.blob());
+          files.push({
+            name: photo.fileName,
+            bytes: new Uint8Array(await blob.arrayBuffer()),
+          });
+        }
+      }
+
+      const zipBlob = new Blob([createZip(files)], { type: "application/zip" });
+      downloadBlob(zipBlob, `auctown-upload-${today()}.zip`);
+    }
+
+    function buildAuctownCsv() {
+      const rows = [auctownColumns];
+      for (const listing of state.listings) {
+        rows.push(toAuctownCsvRow(listing));
+      }
+      return rows.map((row) => row.map(escapeCsv).join(",")).join("\r\n") + "\r\n";
+    }
+
+    function toAuctownCsvRow(listing) {
       const photos = [...Array(PHOTO_LIMIT)].map((_, index) => listing.photos[index]?.fileName || "");
+      const endHour = normalizeEndHour(listing.endTimeSlot);
+      const conditionNote = listing.conditionNote || "中古品 現状品";
+      const deliveryFlags = deliveryMethodFlags(listing.shippingMethod);
       return [
-        listing.itemId,
-        ...photos,
-        listing.title,
-        listing.categoryName,
         listing.categoryId,
-        listing.condition,
-        listing.conditionNote,
-        listing.brand,
-        listing.modelNumber,
-        listing.janOrIsbn,
-        listing.accessories,
-        listing.sizeWeight,
+        cleanCsvText(listing.title),
+        formatDescriptionForAuctown(listing.description || defaultDescription()),
         listing.startPrice,
         listing.buyoutPrice,
         listing.quantity,
         listing.listingDays,
-        listing.endDay,
-        listing.endTimeSlot,
-        listing.shippingPayer,
-        listing.shippingMethod,
+        endHour,
+        cleanCsvText(listing.janOrIsbn),
+        ...photos,
         listing.shippingOrigin,
-        listing.returnsPolicy,
-        listing.description,
-        listing.legalCheck,
-        listing.reviewStatus,
+        "",
+        listing.shippingPayer,
+        "先払い",
+        "はい",
+        "いいえ",
+        listing.condition,
+        cleanCsvText(conditionNote).slice(0, 15),
+        returnsAllowed(listing.returnsPolicy),
+        cleanCsvText(listing.returnsPolicy).slice(0, 30),
+        "はい",
+        "いいえ",
+        "はい",
+        "はい",
+        "はい",
+        "いいえ",
+        "0",
+        "いいえ",
+        "",
+        "はい",
+        packageSizeForAuctown(listing.sizeWeight),
+        "",
+        deliveryFlags.nekoposu,
+        deliveryFlags.compact,
+        deliveryFlags.takkyubin,
+        deliveryFlags.yuPacket,
+        deliveryFlags.yuPack,
+        "1日～2日",
+        deliveryFlags.customMethod,
+        "",
+        "",
+        "",
+        "",
+        "いいえ",
+        "いいえ",
       ];
     }
 
@@ -1154,6 +1265,82 @@
         await new Promise((resolve) => setTimeout(resolve, 160));
       }
     }
+
+    function createZip(files) {
+      const chunks = [];
+      const centralDirectory = [];
+      let offset = 0;
+
+      for (const file of files) {
+        const nameBytes = new TextEncoder().encode(file.name);
+        const bytes = file.bytes instanceof Uint8Array ? file.bytes : new Uint8Array(file.bytes);
+        const crc = crc32(bytes);
+        const localHeader = new Uint8Array(30 + nameBytes.length);
+        const localView = new DataView(localHeader.buffer);
+        localView.setUint32(0, 0x04034b50, true);
+        localView.setUint16(4, 20, true);
+        localView.setUint16(6, 0, true);
+        localView.setUint16(8, 0, true);
+        localView.setUint16(10, 0, true);
+        localView.setUint16(12, 0, true);
+        localView.setUint32(14, crc, true);
+        localView.setUint32(18, bytes.length, true);
+        localView.setUint32(22, bytes.length, true);
+        localView.setUint16(26, nameBytes.length, true);
+        localHeader.set(nameBytes, 30);
+        chunks.push(localHeader, bytes);
+
+        const centralHeader = new Uint8Array(46 + nameBytes.length);
+        const centralView = new DataView(centralHeader.buffer);
+        centralView.setUint32(0, 0x02014b50, true);
+        centralView.setUint16(4, 20, true);
+        centralView.setUint16(6, 20, true);
+        centralView.setUint16(8, 0, true);
+        centralView.setUint16(10, 0, true);
+        centralView.setUint16(12, 0, true);
+        centralView.setUint16(14, 0, true);
+        centralView.setUint32(16, crc, true);
+        centralView.setUint32(20, bytes.length, true);
+        centralView.setUint32(24, bytes.length, true);
+        centralView.setUint16(28, nameBytes.length, true);
+        centralView.setUint32(42, offset, true);
+        centralHeader.set(nameBytes, 46);
+        centralDirectory.push(centralHeader);
+        offset += localHeader.length + bytes.length;
+      }
+
+      const centralOffset = offset;
+      const centralSize = centralDirectory.reduce((sum, item) => sum + item.length, 0);
+      const endRecord = new Uint8Array(22);
+      const endView = new DataView(endRecord.buffer);
+      endView.setUint32(0, 0x06054b50, true);
+      endView.setUint16(8, files.length, true);
+      endView.setUint16(10, files.length, true);
+      endView.setUint32(12, centralSize, true);
+      endView.setUint32(16, centralOffset, true);
+
+      return new Blob([...chunks, ...centralDirectory, endRecord]);
+    }
+
+    function crc32(bytes) {
+      let crc = -1;
+      for (const byte of bytes) {
+        crc = (crc >>> 8) ^ crcTable[(crc ^ byte) & 0xff];
+      }
+      return (crc ^ -1) >>> 0;
+    }
+
+    const crcTable = (() => {
+      const table = new Uint32Array(256);
+      for (let i = 0; i < 256; i += 1) {
+        let c = i;
+        for (let k = 0; k < 8; k += 1) {
+          c = c & 1 ? 0xedb88320 ^ (c >>> 1) : c >>> 1;
+        }
+        table[i] = c >>> 0;
+      }
+      return table;
+    })();
 
     function stopCamera() {
       if (!state.stream) return;
@@ -1265,6 +1452,73 @@
     function escapeCsv(value) {
       const text = String(value ?? "");
       return /[",\r\n]/.test(text) ? `"${text.replaceAll('"', '""')}"` : text;
+    }
+
+    function cleanCsvText(value) {
+      return String(value ?? "")
+        .replaceAll(",", "、")
+        .replaceAll('"', "")
+        .replaceAll("'", "")
+        .replace(/\r?\n/g, " ")
+        .trim();
+    }
+
+    function formatDescriptionForAuctown(value) {
+      return String(value ?? "")
+        .replaceAll(",", "、")
+        .replaceAll('"', "")
+        .replaceAll("'", "")
+        .replace(/\r?\n/g, "<br>")
+        .trim();
+    }
+
+    function normalizeEndHour(value) {
+      const match = String(value ?? "").match(/\d+/);
+      if (!match) return "21";
+      const hour = Math.max(0, Math.min(23, Number(match[0])));
+      return String(hour);
+    }
+
+    function returnsAllowed(value) {
+      return String(value ?? "").includes("返品可") && !String(value ?? "").includes("返品不可")
+        ? "返品可"
+        : "返品不可";
+    }
+
+    function packageSizeForAuctown(value) {
+      const text = String(value ?? "");
+      if (text.includes("60")) return "～60cm";
+      if (text.includes("70")) return "～70cm";
+      if (text.includes("80")) return "～80cm";
+      if (text.includes("100")) return "～100cm";
+      if (text.includes("120")) return "～120cm";
+      if (text.includes("130")) return "～130cm";
+      if (text.includes("140")) return "～140cm";
+      if (text.includes("160")) return "～160cm";
+      if (text.includes("170")) return "～170cm";
+      if (text.includes("大型")) return "170cm～";
+      return "";
+    }
+
+    function deliveryMethodFlags(value) {
+      const text = String(value ?? "");
+      const flags = {
+        nekoposu: "いいえ",
+        compact: "いいえ",
+        takkyubin: "いいえ",
+        yuPacket: "いいえ",
+        yuPack: "いいえ",
+        customMethod: "",
+      };
+
+      if (text.includes("ネコポス")) flags.nekoposu = "はい";
+      else if (text.includes("コンパクト")) flags.compact = "はい";
+      else if (text.includes("ヤマト") || text.includes("宅急便")) flags.takkyubin = "はい";
+      else if (text.includes("ゆうパケット")) flags.yuPacket = "はい";
+      else if (text.includes("ゆうパック") || text.includes("日本郵便")) flags.yuPack = "はい";
+      else flags.customMethod = cleanCsvText(text).slice(0, 15);
+
+      return flags;
     }
 
     function escapeHtml(value) {
