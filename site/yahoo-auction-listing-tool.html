@@ -375,7 +375,7 @@
     <header>
       <h1>ヤフオク出品CSV作成</h1>
       <div class="header-actions">
-        <button id="newListingBtn" class="primary" type="button">新規商品</button>
+        <button id="newListingBtn" class="primary" type="button">次の商品を追加</button>
         <button id="exportCsvBtn" type="button">CSV出力</button>
         <button id="exportImagesBtn" type="button">画像出力</button>
         <button id="clearAllBtn" class="danger" type="button">全削除</button>
@@ -394,7 +394,7 @@
       <div id="workspace" class="workspace">
         <div class="empty">
           <div>
-            <p><strong>新規商品</strong>を押して、撮影と入力を始めます。</p>
+            <p><strong>次の商品を追加</strong>を押して、撮影と入力を始めます。</p>
             <p>入力内容と写真はこのブラウザ内に保存されます。</p>
           </div>
         </div>
@@ -538,13 +538,47 @@
               </div>
 
               <div class="field">
-                <label for="endTimeSlot">終了時間帯</label>
+                <label for="endDay">終了曜日</label>
+                <select id="endDay" name="endDay">
+                  <option value="">指定なし</option>
+                  <option>月曜日</option>
+                  <option>火曜日</option>
+                  <option>水曜日</option>
+                  <option>木曜日</option>
+                  <option>金曜日</option>
+                  <option>土曜日</option>
+                  <option>日曜日</option>
+                </select>
+              </div>
+
+              <div class="field">
+                <label for="endTimeSlot">終了時間</label>
                 <select id="endTimeSlot" name="endTimeSlot">
-                  <option>午前</option>
-                  <option>昼</option>
-                  <option>夕方</option>
-                  <option selected>夜</option>
-                  <option>深夜</option>
+                  <option value="">指定なし</option>
+                  <option>0時</option>
+                  <option>1時</option>
+                  <option>2時</option>
+                  <option>3時</option>
+                  <option>4時</option>
+                  <option>5時</option>
+                  <option>6時</option>
+                  <option>7時</option>
+                  <option>8時</option>
+                  <option>9時</option>
+                  <option>10時</option>
+                  <option>11時</option>
+                  <option>12時</option>
+                  <option>13時</option>
+                  <option>14時</option>
+                  <option>15時</option>
+                  <option>16時</option>
+                  <option>17時</option>
+                  <option>18時</option>
+                  <option>19時</option>
+                  <option>20時</option>
+                  <option selected>21時</option>
+                  <option>22時</option>
+                  <option>23時</option>
                 </select>
               </div>
 
@@ -631,6 +665,7 @@
             <div id="validationStatus" class="status"></div>
 
             <div class="row-actions">
+              <button id="saveListingBtn" class="primary" type="button">保存</button>
               <button id="buildDescriptionBtn" type="button">説明文を整える</button>
               <button id="duplicateBtn" type="button">複製</button>
               <button id="deleteListingBtn" class="danger" type="button">この商品を削除</button>
@@ -681,6 +716,7 @@
       "buyout_price",
       "quantity",
       "listing_days",
+      "end_day",
       "end_time_slot",
       "shipping_payer",
       "shipping_method",
@@ -753,7 +789,8 @@
         buyoutPrice: seed.buyoutPrice || "",
         quantity: seed.quantity || "1",
         listingDays: seed.listingDays || "7",
-        endTimeSlot: seed.endTimeSlot || "夜",
+        endDay: seed.endDay || "",
+        endTimeSlot: seed.endTimeSlot || "21時",
         shippingPayer: seed.shippingPayer || "落札者",
         shippingMethod: seed.shippingMethod || "",
         shippingOrigin: seed.shippingOrigin || "",
@@ -778,7 +815,7 @@
       const listing = currentListing();
       if (!listing) {
         stopCamera();
-        els.workspace.innerHTML = '<div class="empty"><div><p><strong>新規商品</strong>を押して、撮影と入力を始めます。</p><p>入力内容と写真はこのブラウザ内に保存されます。</p><p>スマホでは「カメラ/写真を開く」から撮影できます。</p></div></div>';
+        els.workspace.innerHTML = '<div class="empty"><div><p><strong>次の商品を追加</strong>を押して、撮影と入力を始めます。</p><p>入力内容と写真はこのブラウザ内に保存されます。</p><p>スマホでは「カメラ/写真を開く」から撮影できます。</p></div></div>';
         return;
       }
       renderEditor(listing);
@@ -913,6 +950,16 @@
         listing.description = buildDescription(listing);
         setFormValues(form, listing);
         persist();
+        saveState.textContent = "保存済み";
+      });
+
+      document.getElementById("saveListingBtn").addEventListener("click", () => {
+        applyFormValues(form, listing);
+        listing.updatedAt = new Date().toISOString();
+        persist();
+        renderList();
+        updateValidation(listing);
+        saveState.textContent = "保存済み";
       });
 
       document.getElementById("duplicateBtn").addEventListener("click", () => {
@@ -1083,6 +1130,7 @@
         listing.buyoutPrice,
         listing.quantity,
         listing.listingDays,
+        listing.endDay,
         listing.endTimeSlot,
         listing.shippingPayer,
         listing.shippingMethod,
