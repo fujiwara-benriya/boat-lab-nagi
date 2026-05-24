@@ -376,9 +376,7 @@
       <h1>ヤフオク出品CSV作成</h1>
       <div class="header-actions">
         <button id="newListingBtn" class="primary" type="button">次の商品を追加</button>
-        <button id="exportCsvBtn" type="button">オークタウンCSV</button>
-        <button id="exportZipBtn" type="button">オークタウンZIP</button>
-        <button id="exportImagesBtn" type="button">画像出力</button>
+        <button id="exportPackageBtn" type="button">出品データ保存</button>
         <button id="clearAllBtn" class="danger" type="button">全削除</button>
       </div>
     </header>
@@ -786,9 +784,7 @@
 
     const els = {
       newListingBtn: document.getElementById("newListingBtn"),
-      exportCsvBtn: document.getElementById("exportCsvBtn"),
-      exportZipBtn: document.getElementById("exportZipBtn"),
-      exportImagesBtn: document.getElementById("exportImagesBtn"),
+      exportPackageBtn: document.getElementById("exportPackageBtn"),
       clearAllBtn: document.getElementById("clearAllBtn"),
       summary: document.getElementById("summary"),
       listingList: document.getElementById("listingList"),
@@ -813,9 +809,7 @@
         render();
       });
 
-      els.exportCsvBtn.addEventListener("click", exportCsv);
-      els.exportZipBtn.addEventListener("click", exportAuctownZip);
-      els.exportImagesBtn.addEventListener("click", exportImages);
+      els.exportPackageBtn.addEventListener("click", exportListingPackage);
 
       els.clearAllBtn.addEventListener("click", () => {
         if (!confirm("保存済みの商品データをすべて削除します。よろしいですか？")) return;
@@ -1157,17 +1151,7 @@
       ].join("\n");
     }
 
-    function exportCsv() {
-      if (state.listings.length === 0) {
-        alert("出力する商品がありません。");
-        return;
-      }
-
-      const csv = buildAuctownCsv();
-      downloadBlob(new Blob(["\ufeff", csv], { type: "text/csv;charset=utf-8" }), `auctown-listings-${today()}.csv`);
-    }
-
-    async function exportAuctownZip() {
+    async function exportListingPackage() {
       if (state.listings.length === 0) {
         alert("出力する商品がありません。");
         return;
@@ -1251,19 +1235,6 @@
         "いいえ",
         "いいえ",
       ];
-    }
-
-    async function exportImages() {
-      const photos = state.listings.flatMap((listing) => listing.photos);
-      if (photos.length === 0) {
-        alert("出力する画像がありません。");
-        return;
-      }
-      for (const photo of photos) {
-        const blob = await fetch(photo.dataUrl).then((res) => res.blob());
-        downloadBlob(blob, photo.fileName);
-        await new Promise((resolve) => setTimeout(resolve, 160));
-      }
     }
 
     function createZip(files) {
