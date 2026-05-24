@@ -437,7 +437,25 @@
 
               <div class="field">
                 <label for="categoryName">カテゴリ名</label>
-                <input id="categoryName" name="categoryName" placeholder="例: 家電、AV、カメラ">
+                <select id="categoryName" name="categoryName">
+                  <option value="">選択してください</option>
+                  <option>家電、AV、カメラ</option>
+                  <option>コンピュータ</option>
+                  <option>音楽</option>
+                  <option>本、雑誌</option>
+                  <option>映画、ビデオ</option>
+                  <option>おもちゃ、ゲーム</option>
+                  <option>ホビー、カルチャー</option>
+                  <option>アンティーク、コレクション</option>
+                  <option>スポーツ、レジャー</option>
+                  <option>自動車、オートバイ</option>
+                  <option>ファッション</option>
+                  <option>アクセサリー、時計</option>
+                  <option>ビューティー、ヘルスケア</option>
+                  <option>住まい、インテリア</option>
+                  <option>事務、店舗用品</option>
+                  <option>その他</option>
+                </select>
               </div>
 
               <div class="field">
@@ -479,7 +497,21 @@
 
               <div class="field">
                 <label for="sizeWeight">商品のサイズ</label>
-                <input id="sizeWeight" name="sizeWeight" placeholder="例: 60サイズ / 約1.2kg">
+                <select id="sizeWeight" name="sizeWeight">
+                  <option value="">選択してください</option>
+                  <option>写真にて確認</option>
+                  <option>60サイズ</option>
+                  <option>80サイズ</option>
+                  <option>100サイズ</option>
+                  <option>120サイズ</option>
+                  <option>140サイズ</option>
+                  <option>160サイズ</option>
+                  <option>170サイズ</option>
+                  <option>ネコポス相当</option>
+                  <option>宅急便コンパクト相当</option>
+                  <option>大型商品</option>
+                  <option>その他</option>
+                </select>
               </div>
 
               <div class="field">
@@ -526,12 +558,34 @@
 
               <div class="field">
                 <label for="shippingMethod">発送方法</label>
-                <input id="shippingMethod" name="shippingMethod" placeholder="例: ゆうパック、宅急便">
+                <select id="shippingMethod" name="shippingMethod">
+                  <option value="">選択してください</option>
+                  <option>おてがる配送（ヤマト運輸）</option>
+                  <option>おてがる配送（日本郵便）</option>
+                  <option>宅急便（ヤマト運輸）</option>
+                  <option>ゆうパック</option>
+                  <option>佐川急便</option>
+                  <option>定形外郵便</option>
+                  <option>レターパックプラス</option>
+                  <option>レターパックライト</option>
+                  <option>クリックポスト</option>
+                  <option>ネコポス</option>
+                  <option>直接引き取り</option>
+                  <option>出品ページ記載の通り</option>
+                </select>
               </div>
 
               <div class="field">
                 <label for="shippingOrigin">発送元</label>
-                <input id="shippingOrigin" name="shippingOrigin" placeholder="例: 東京都">
+                <select id="shippingOrigin" name="shippingOrigin">
+                  <option value="">選択してください</option>
+                  <option>北海道</option><option>青森県</option><option>岩手県</option><option>宮城県</option><option>秋田県</option><option>山形県</option><option>福島県</option>
+                  <option>茨城県</option><option>栃木県</option><option>群馬県</option><option>埼玉県</option><option>千葉県</option><option>東京都</option><option>神奈川県</option>
+                  <option>新潟県</option><option>富山県</option><option>石川県</option><option>福井県</option><option>山梨県</option><option>長野県</option><option>岐阜県</option><option>静岡県</option><option>愛知県</option>
+                  <option>三重県</option><option>滋賀県</option><option>京都府</option><option>大阪府</option><option>兵庫県</option><option>奈良県</option><option>和歌山県</option>
+                  <option>鳥取県</option><option>島根県</option><option>岡山県</option><option>広島県</option><option>山口県</option><option>徳島県</option><option>香川県</option><option>愛媛県</option><option>高知県</option>
+                  <option>福岡県</option><option>佐賀県</option><option>長崎県</option><option>熊本県</option><option>大分県</option><option>宮崎県</option><option>鹿児島県</option><option>沖縄県</option>
+                </select>
               </div>
 
               <div class="field">
@@ -561,7 +615,11 @@
 
               <div class="field full">
                 <label for="returnsPolicy">返品について</label>
-                <textarea id="returnsPolicy" name="returnsPolicy"></textarea>
+                <select id="returnsPolicy" name="returnsPolicy">
+                  <option>ノークレーム、ノーリターンでお願いいたします。</option>
+                  <option>返品不可。説明と異なる重大な不備がある場合は取引メッセージで相談。</option>
+                  <option>初期不良のみ到着後3日以内にご連絡ください。</option>
+                </select>
               </div>
 
               <div class="field full">
@@ -699,8 +757,8 @@
         shippingPayer: seed.shippingPayer || "落札者",
         shippingMethod: seed.shippingMethod || "",
         shippingOrigin: seed.shippingOrigin || "",
-        returnsPolicy: seed.returnsPolicy || "返品不可。説明と異なる重大な不備がある場合は取引メッセージで相談。",
-        description: seed.description || "",
+        returnsPolicy: seed.returnsPolicy || "ノークレーム、ノーリターンでお願いいたします。",
+        description: seed.description || defaultDescription(),
         legalCheck: seed.legalCheck || "",
         reviewStatus: seed.reviewStatus || "draft",
         createdAt: seed.createdAt || new Date().toISOString(),
@@ -955,27 +1013,40 @@
     }
 
     function buildDescription(listing) {
+      return defaultDescription();
+    }
+
+    function defaultDescription() {
       return [
-        "【商品について】",
-        listing.title || "商品名未入力",
+        "【商品説明】",
+        "",
+        "ご覧いただきありがとうございます。",
+        "",
+        "中古品のため、使用に伴うキズ・スレ・汚れ等がある場合があります。状態は写真にてご確認ください。",
+        "",
+        "動作確認は可能な範囲で行っておりますが、専門的な細かい確認までは行っておりません。現状品としての出品となります。",
+        "",
+        "付属品は写真に写っているものが全てです。",
+        "",
+        "【サイズについて】",
+        "サイズは写真にてご確認ください。",
+        "メジャーを当てた写真を掲載しております。",
+        "※素人採寸のため多少の誤差はご了承ください。",
         "",
         "【状態】",
-        listing.conditionNote || "写真と説明をあわせて状態を確認してください。",
+        "中古品（現状品）",
         "",
-        "【付属品】",
-        listing.accessories || "写真に写っているものがすべてです。",
+        "【注意事項】",
+        "・ノークレーム、ノーリターンでお願いいたします。",
+        "・落札後24時間以内のお支払いをお願いいたします。",
+        "・お支払い確認後、迅速に発送いたします。",
+        "・神経質な方は入札をご遠慮ください。",
         "",
-        "【サイズ・発送】",
-        listing.sizeWeight || "発送サイズは梱包後に確認します。",
-        `発送方法: ${listing.shippingMethod || "未定"}`,
-        `発送元: ${listing.shippingOrigin || "未設定"}`,
+        "【発送について】",
+        "・丁寧に梱包して発送いたします。",
+        "・発送方法は出品ページ記載の通りとなります。",
         "",
-        "【確認事項】",
-        "中古品の場合、通常使用に伴う小傷や保管跡があります。",
-        "状態は写真と説明をあわせて確認してください。",
-        "",
-        "【返品について】",
-        listing.returnsPolicy || "返品不可。説明と異なる重大な不備がある場合は取引メッセージで相談。",
+        "ご不明点がございましたらお気軽にご質問ください。",
       ].join("\n");
     }
 
