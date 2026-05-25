@@ -105,6 +105,22 @@
       min-height: 0;
     }
 
+    .app:not(.saved-view) main {
+      grid-template-columns: 1fr;
+    }
+
+    .app:not(.saved-view) aside {
+      display: none;
+    }
+
+    .app.saved-view .workspace {
+      display: none;
+    }
+
+    .app.saved-view main {
+      grid-template-columns: 1fr;
+    }
+
     aside {
       border-right: 1px solid var(--line);
       background: #fff;
@@ -376,7 +392,8 @@
       <h1>ヤフオク出品CSV作成</h1>
       <div class="header-actions">
         <button id="newListingBtn" class="primary" type="button">次の商品を追加</button>
-        <button id="exportPackageBtn" type="button">出品データ保存</button>
+        <button id="showSavedBtn" type="button">保存済み商品</button>
+        <button id="exportPackageBtn" type="button">CSVを保存</button>
         <button id="clearAllBtn" class="danger" type="button">全削除</button>
       </div>
     </header>
@@ -459,11 +476,6 @@
               </div>
 
               <div class="field">
-                <label for="categoryId">カテゴリID</label>
-                <input id="categoryId" name="categoryId" inputmode="numeric">
-              </div>
-
-              <div class="field">
                 <label for="condition">状態</label>
                 <select id="condition" name="condition">
                   <option>新品、未使用</option>
@@ -478,21 +490,6 @@
               <div class="field">
                 <label for="quantity">数量</label>
                 <input id="quantity" name="quantity" type="number" min="1" value="1">
-              </div>
-
-              <div class="field">
-                <label for="brand">ブランド</label>
-                <input id="brand" name="brand">
-              </div>
-
-              <div class="field">
-                <label for="modelNumber">型番</label>
-                <input id="modelNumber" name="modelNumber">
-              </div>
-
-              <div class="field">
-                <label for="janOrIsbn">JAN / ISBN</label>
-                <input id="janOrIsbn" name="janOrIsbn">
               </div>
 
               <div class="field">
@@ -517,11 +514,6 @@
               <div class="field">
                 <label for="startPrice">開始価格</label>
                 <input id="startPrice" name="startPrice" type="number" min="1" inputmode="numeric">
-              </div>
-
-              <div class="field">
-                <label for="buyoutPrice">即決価格</label>
-                <input id="buyoutPrice" name="buyoutPrice" type="number" min="1" inputmode="numeric">
               </div>
 
               <div class="field">
@@ -621,26 +613,6 @@
                 </select>
               </div>
 
-              <div class="field">
-                <label for="reviewStatus">状態</label>
-                <select id="reviewStatus" name="reviewStatus">
-                  <option value="draft">下書き</option>
-                  <option value="needs_review">確認待ち</option>
-                  <option value="ready">CSV出力OK</option>
-                  <option value="blocked">出品停止</option>
-                </select>
-              </div>
-
-              <div class="field full">
-                <label for="accessories">付属品</label>
-                <textarea id="accessories" name="accessories"></textarea>
-              </div>
-
-              <div class="field full">
-                <label for="conditionNote">状態説明</label>
-                <textarea id="conditionNote" name="conditionNote"></textarea>
-              </div>
-
               <div class="field full">
                 <label for="description">商品説明</label>
                 <textarea id="description" name="description"></textarea>
@@ -655,13 +627,10 @@
                 </select>
               </div>
 
-              <div class="field full">
-                <label for="legalCheck">確認メモ</label>
-                <textarea id="legalCheck" name="legalCheck" placeholder="禁止出品物、真贋、権利侵害、危険物、医薬品等を確認"></textarea>
-              </div>
             </div>
 
             <div id="validationStatus" class="status"></div>
+            <div id="downloadStatus" class="status" hidden></div>
 
             <div class="row-actions">
               <button id="saveListingBtn" class="primary" type="button">保存</button>
@@ -784,7 +753,9 @@
     ];
 
     const els = {
+      app: document.querySelector(".app"),
       newListingBtn: document.getElementById("newListingBtn"),
+      showSavedBtn: document.getElementById("showSavedBtn"),
       exportPackageBtn: document.getElementById("exportPackageBtn"),
       clearAllBtn: document.getElementById("clearAllBtn"),
       summary: document.getElementById("summary"),
@@ -806,8 +777,14 @@
         const listing = createListing();
         state.listings.unshift(listing);
         state.selectedId = listing.id;
+        els.app.classList.remove("saved-view");
         persist();
         render();
+      });
+
+      els.showSavedBtn.addEventListener("click", () => {
+        els.app.classList.add("saved-view");
+        renderList();
       });
 
       els.exportPackageBtn.addEventListener("click", exportListingPackage);
@@ -851,7 +828,7 @@
         returnsPolicy: seed.returnsPolicy || "ノークレーム、ノーリターンでお願いいたします。",
         description: seed.description || defaultDescription(),
         legalCheck: seed.legalCheck || "",
-        reviewStatus: seed.reviewStatus || "draft",
+        reviewStatus: "ready",
         createdAt: seed.createdAt || new Date().toISOString(),
         updatedAt: new Date().toISOString(),
       };
@@ -876,7 +853,7 @@
     }
 
     function renderList() {
-      els.summary.textContent = `${state.listings.length}件 / CSV出力OK ${state.listings.filter((item) => item.reviewStatus === "ready").length}件`;
+      els.summary.textContent = `${state.listings.length}件`;
       els.listingList.innerHTML = "";
 
       for (const listing of state.listings) {
@@ -887,12 +864,13 @@
           <img class="thumb" alt="" src="${listing.photos[0]?.dataUrl || ""}">
           <div>
             <div class="item-title">${escapeHtml(listing.title || "タイトル未入力")}</div>
-            <div class="item-meta">${escapeHtml(listing.itemId)} / ${escapeHtml(statusLabel(listing.reviewStatus))} / 写真${listing.photos.length}枚</div>
+            <div class="item-meta">${escapeHtml(listing.itemId)} / CSV出力OK / 写真${listing.photos.length}枚</div>
           </div>
         `;
         button.addEventListener("click", () => {
           stopCamera();
           state.selectedId = listing.id;
+          els.app.classList.remove("saved-view");
           persist();
           render();
         });
@@ -1013,7 +991,7 @@
           itemId: buildItemId(),
           photos: [],
           title: `${listing.title} コピー`.trim(),
-          reviewStatus: "draft",
+          reviewStatus: "ready",
         });
         state.listings.unshift(copy);
         state.selectedId = copy.id;
@@ -1174,8 +1152,10 @@
         }
       }
 
-      const zipBlob = new Blob([createZip(files)], { type: "application/zip" });
-      downloadBlob(zipBlob, `auctown-upload-${today()}.zip`);
+      const zipBlob = createZip(files);
+      const fileName = `auctown-upload-${today()}.zip`;
+      downloadBlob(zipBlob, fileName);
+      showDownloadLink(zipBlob, fileName);
     }
 
     function buildAuctownCsv() {
@@ -1189,18 +1169,17 @@
     function toAuctownCsvRow(listing) {
       const photos = [...Array(PHOTO_LIMIT)].map((_, index) => listing.photos[index]?.fileName || "");
       const endHour = normalizeEndHour(listing.endTimeSlot);
-      const conditionNote = listing.conditionNote || "中古品 現状品";
       const deliveryFlags = deliveryMethodFlags(listing.shippingMethod);
       return [
-        listing.categoryId,
+        "",
         cleanCsvText(listing.title),
         formatDescriptionForAuctown(listing.description || defaultDescription()),
         listing.startPrice,
-        listing.buyoutPrice,
+        "",
         listing.quantity,
         listing.listingDays,
         endHour,
-        cleanCsvText(listing.janOrIsbn),
+        "",
         ...photos,
         listing.shippingOrigin,
         "",
@@ -1209,7 +1188,7 @@
         "はい",
         "いいえ",
         listing.condition,
-        cleanCsvText(conditionNote).slice(0, 15),
+        "",
         returnsAllowed(listing.returnsPolicy),
         cleanCsvText(listing.returnsPolicy).slice(0, 30),
         "はい",
@@ -1444,6 +1423,17 @@
       a.click();
       a.remove();
       setTimeout(() => URL.revokeObjectURL(url), 1000);
+    }
+
+    function showDownloadLink(blob, fileName) {
+      const box = document.getElementById("downloadStatus");
+      if (!box) {
+        alert(`${fileName} を保存しました。見つからない場合はブラウザのダウンロード一覧を確認してください。`);
+        return;
+      }
+      const url = URL.createObjectURL(blob);
+      box.hidden = false;
+      box.innerHTML = `<strong>保存しました:</strong> <a href="${url}" download="${escapeHtml(fileName)}">${escapeHtml(fileName)}</a>`;
     }
 
     function escapeCsv(value) {
