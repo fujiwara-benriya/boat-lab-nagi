@@ -1084,20 +1084,14 @@
     function updateValidation(listing = currentListing()) {
       const box = document.getElementById("validationStatus");
       if (!box || !listing) return;
-      const missing = [];
-      if (!listing.title) missing.push("タイトル");
-      if (!listing.categoryId) missing.push("カテゴリID");
-      if (!listing.conditionNote) missing.push("状態説明");
-      if (!listing.sizeWeight) missing.push("商品のサイズ");
-      if (!listing.startPrice) missing.push("開始価格");
-      if (!listing.shippingMethod) missing.push("発送方法");
-      if (!listing.shippingOrigin) missing.push("発送元");
-      if (!listing.legalCheck) missing.push("確認メモ");
-      if (listing.photos.length === 0) missing.push("写真");
+      const notes = [];
+      if (!listing.title) notes.push("タイトル未入力");
+      if (!listing.startPrice) notes.push("開始価格未入力");
+      if (listing.photos.length === 0) notes.push("写真なし");
 
-      box.innerHTML = missing.length
-        ? `<strong>未完了:</strong> <span class="missing">${missing.map(escapeHtml).join("、")}</span>`
-        : "<strong>CSV出力OK:</strong> 必須項目が入力されています。";
+      box.innerHTML = notes.length
+        ? `<strong>保存可能:</strong> <span class="missing">${notes.map(escapeHtml).join("、")}</span>。必要なら後で入力できます。`
+        : "<strong>保存可能:</strong> 入力内容を出品データに含められます。";
     }
 
     function captureVideo(video) {
