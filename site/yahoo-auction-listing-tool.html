@@ -393,7 +393,7 @@
       <div class="header-actions">
         <button id="newListingBtn" class="primary" type="button">次の商品を追加</button>
         <button id="showSavedBtn" type="button">保存済み商品</button>
-        <button id="exportPackageBtn" type="button">CSVを保存</button>
+        <button id="exportPackageBtn" type="button">納品ファイル保存</button>
         <button id="shareDataBtn" type="button">共有データ保存</button>
         <button id="importDataBtn" type="button">共有データ読込</button>
         <button id="clearAllBtn" class="danger" type="button">全削除</button>
@@ -1165,11 +1165,16 @@
       const fileName = `auctown-upload-${today()}.zip`;
       await saveOrShareBlob(zipBlob, fileName, "オークタウン出品データ");
       showDownloadLink(zipBlob, fileName);
+      alert("納品ファイルを保存しました。保存されたZIPファイルをそのまま送ってください。");
     }
 
     async function exportShareData() {
       if (state.listings.length === 0) {
         alert("共有する商品がありません。");
+        return;
+      }
+
+      if (!confirm("これは編集を引き継ぐための控えデータです。納品する場合は「納品ファイル保存」を使ってください。共有データを保存しますか？")) {
         return;
       }
 
