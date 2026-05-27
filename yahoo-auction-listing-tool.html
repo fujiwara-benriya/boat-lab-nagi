@@ -394,10 +394,7 @@
         <button id="newListingBtn" class="primary" type="button">次の商品を追加</button>
         <button id="showSavedBtn" type="button">保存済み商品</button>
         <button id="exportPackageBtn" type="button">納品ファイル保存</button>
-        <button id="shareDataBtn" type="button">共有データ保存</button>
-        <button id="importDataBtn" type="button">共有データ読込</button>
         <button id="clearAllBtn" class="danger" type="button">全削除</button>
-        <input id="importDataInput" type="file" accept="application/json,.json" hidden>
       </div>
     </header>
 
@@ -760,9 +757,6 @@
       newListingBtn: document.getElementById("newListingBtn"),
       showSavedBtn: document.getElementById("showSavedBtn"),
       exportPackageBtn: document.getElementById("exportPackageBtn"),
-      shareDataBtn: document.getElementById("shareDataBtn"),
-      importDataBtn: document.getElementById("importDataBtn"),
-      importDataInput: document.getElementById("importDataInput"),
       clearAllBtn: document.getElementById("clearAllBtn"),
       summary: document.getElementById("summary"),
       listingList: document.getElementById("listingList"),
@@ -794,9 +788,6 @@
       });
 
       els.exportPackageBtn.addEventListener("click", exportListingPackage);
-      els.shareDataBtn.addEventListener("click", exportShareData);
-      els.importDataBtn.addEventListener("click", () => els.importDataInput.click());
-      els.importDataInput.addEventListener("change", importShareData);
 
       els.clearAllBtn.addEventListener("click", () => {
         if (!confirm("保存済みの商品データをすべて削除します。よろしいですか？")) return;
@@ -1166,76 +1157,6 @@
       await saveOrShareBlob(zipBlob, fileName, "オークタウン出品データ");
       showDownloadLink(zipBlob, fileName);
       alert("納品ファイルを保存しました。保存されたZIPファイルをそのまま送ってください。");
-    }
-
-    async function exportShareData() {
-      if (state.listings.length === 0) {
-        alert("共有する商品がありません。");
-        return;
-      }
-
-      if (!confirm("これは編集を引き継ぐための控えデータです。納品する場合は「納品ファイル保存」を使ってください。共有データを保存しますか？")) {
-        return;
-      }
-
-      const payload = {
-        app: "yahooAuctionListingTool",
-        version: 2,
-        exportedAt: new Date().toISOString(),
-        listings: state.listings,
-        selectedId: state.selectedId,
-      };
-      const fileName = `auction-listing-share-${today()}.json`;
-      const blob = new Blob([JSON.stringify(payload)], { type: "application/json;charset=utf-8" });
-      await saveOrShareBlob(blob, fileName, "ヤフオク出品共有データ");
-      showDownloadLink(blob, fileName);
-    }
-
-    async function importShareData() {
-      const file = els.importDataInput.files?.[0];
-      els.importDataInput.value = "";
-      if (!file) return;
-
-      try {
-        const payload = JSON.parse(await file.text());
-        const incoming = Array.isArray(payload.listings) ? payload.listings : [];
-        if (incoming.length === 0) {
-          alert("読み込める商品データがありません。");
-          return;
-        }
-
-        const existingKeys = new Set(state.listings.map((listing) => listing.id || listing.itemId));
-        let added = 0;
-        let skipped = 0;
-
-        for (const rawListing of incoming) {
-          const key = rawListing.id || rawListing.itemId;
-          if (key && existingKeys.has(key)) {
-            skipped += 1;
-            continue;
-          }
-
-          const listing = createListing({
-            ...rawListing,
-            id: rawListing.id || safeId(),
-            itemId: rawListing.itemId || buildItemId(),
-            photos: Array.isArray(rawListing.photos) ? rawListing.photos : [],
-          });
-          state.listings.push(listing);
-          existingKeys.add(listing.id || listing.itemId);
-          added += 1;
-        }
-
-        if (!state.selectedId && state.listings[0]) state.selectedId = state.listings[0].id;
-        const saved = await persist();
-        renderList();
-        render();
-        alert(saved
-          ? `共有データを読み込みました。追加 ${added}件 / 重複スキップ ${skipped}件`
-          : "読み込みましたが、保存に失敗しました。端末の保存容量を確認してください。");
-      } catch {
-        alert("共有データを読み込めませんでした。JSONファイルを選択してください。");
-      }
     }
 
     function buildAuctownCsv() {
