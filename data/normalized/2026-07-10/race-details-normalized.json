@@ -1,7 +1,7 @@
 {
   "date": "2026-07-10",
-  "generated_at": "2026-07-10T04:13:40.046Z",
-  "race_count": 59,
+  "generated_at": "2026-07-10T09:56:53.635Z",
+  "race_count": 120,
   "races": [
     {
       "race_id": "2026-07-10-02-1",
@@ -11,7 +11,7 @@
       "race_no": 1,
       "source_url": "https://www.boatrace.jp/owpc/pc/race/raceresult?rno=1&jcd=02&hd=20260710",
       "title": "結果｜BOAT RACE オフィシャルウェブサイト",
-      "html_bytes": 59540,
+      "html_bytes": 59581,
       "has_race_detail_content": true,
       "decision_technique": "まくり",
       "weather": {
@@ -44,7 +44,7 @@
       "race_no": 2,
       "source_url": "https://www.boatrace.jp/owpc/pc/race/raceresult?rno=2&jcd=02&hd=20260710",
       "title": "結果｜BOAT RACE オフィシャルウェブサイト",
-      "html_bytes": 59527,
+      "html_bytes": 59568,
       "has_race_detail_content": true,
       "decision_technique": "差し",
       "weather": {
@@ -77,7 +77,7 @@
       "race_no": 3,
       "source_url": "https://www.boatrace.jp/owpc/pc/race/raceresult?rno=3&jcd=02&hd=20260710",
       "title": "結果｜BOAT RACE オフィシャルウェブサイト",
-      "html_bytes": 59537,
+      "html_bytes": 59578,
       "has_race_detail_content": true,
       "decision_technique": "まくり",
       "weather": {
@@ -110,7 +110,7 @@
       "race_no": 4,
       "source_url": "https://www.boatrace.jp/owpc/pc/race/raceresult?rno=4&jcd=02&hd=20260710",
       "title": "結果｜BOAT RACE オフィシャルウェブサイト",
-      "html_bytes": 59548,
+      "html_bytes": 59589,
       "has_race_detail_content": true,
       "decision_technique": "まくり差し",
       "weather": {
@@ -143,7 +143,7 @@
       "race_no": 5,
       "source_url": "https://www.boatrace.jp/owpc/pc/race/raceresult?rno=5&jcd=02&hd=20260710",
       "title": "結果｜BOAT RACE オフィシャルウェブサイト",
-      "html_bytes": 59554,
+      "html_bytes": 59595,
       "has_race_detail_content": true,
       "decision_technique": "まくり差し",
       "weather": {
@@ -176,14 +176,14 @@
       "race_no": 6,
       "source_url": "https://www.boatrace.jp/owpc/pc/race/raceresult?rno=6&jcd=02&hd=20260710",
       "title": "結果｜BOAT RACE オフィシャルウェブサイト",
-      "html_bytes": 46662,
+      "html_bytes": 59571,
       "has_race_detail_content": true,
-      "decision_technique": "備考",
+      "decision_technique": "逃げ",
       "weather": {
-        "wind_speed_m": null,
-        "wave_height_cm": null,
-        "water_temperature_c": null,
-        "air_temperature_c": null
+        "wind_speed_m": 3,
+        "wave_height_cm": 1,
+        "water_temperature_c": 28,
+        "air_temperature_c": 31
       },
       "sections": {
         "has_payout_section": true,
@@ -202,6 +202,204 @@
       }
     },
     {
+      "race_id": "2026-07-10-02-7",
+      "date": "2026-07-10",
+      "venue_code": "02",
+      "venue_name": "戸田",
+      "race_no": 7,
+      "source_url": "https://www.boatrace.jp/owpc/pc/race/raceresult?rno=7&jcd=02&hd=20260710",
+      "title": "結果｜BOAT RACE オフィシャルウェブサイト",
+      "html_bytes": 59568,
+      "has_race_detail_content": true,
+      "decision_technique": "差し",
+      "weather": {
+        "wind_speed_m": 2,
+        "wave_height_cm": 1,
+        "water_temperature_c": 28,
+        "air_temperature_c": 31
+      },
+      "sections": {
+        "has_payout_section": true,
+        "has_finish_section": false
+      },
+      "raw_files": [
+        "data/raw/official/2026-07-10/02/races/07.html",
+        "data/raw/official/2026-07-10/02/races/07.metadata.json"
+      ],
+      "parser_status": "initial_text_extraction",
+      "analysis_note": {
+        "decision": "未分析",
+        "skip_decision_required": true,
+        "budget_note": "生活費とは分けた予算内で楽しむ",
+        "disclaimer": "的中や利益を保証するものではありません"
+      }
+    },
+    {
+      "race_id": "2026-07-10-02-8",
+      "date": "2026-07-10",
+      "venue_code": "02",
+      "venue_name": "戸田",
+      "race_no": 8,
+      "source_url": "https://www.boatrace.jp/owpc/pc/race/raceresult?rno=8&jcd=02&hd=20260710",
+      "title": "結果｜BOAT RACE オフィシャルウェブサイト",
+      "html_bytes": 59586,
+      "has_race_detail_content": true,
+      "decision_technique": "まくり差し",
+      "weather": {
+        "wind_speed_m": 2,
+        "wave_height_cm": 1,
+        "water_temperature_c": 28,
+        "air_temperature_c": 31
+      },
+      "sections": {
+        "has_payout_section": true,
+        "has_finish_section": false
+      },
+      "raw_files": [
+        "data/raw/official/2026-07-10/02/races/08.html",
+        "data/raw/official/2026-07-10/02/races/08.metadata.json"
+      ],
+      "parser_status": "initial_text_extraction",
+      "analysis_note": {
+        "decision": "未分析",
+        "skip_decision_required": true,
+        "budget_note": "生活費とは分けた予算内で楽しむ",
+        "disclaimer": "的中や利益を保証するものではありません"
+      }
+    },
+    {
+      "race_id": "2026-07-10-02-9",
+      "date": "2026-07-10",
+      "venue_code": "02",
+      "venue_name": "戸田",
+      "race_no": 9,
+      "source_url": "https://www.boatrace.jp/owpc/pc/race/raceresult?rno=9&jcd=02&hd=20260710",
+      "title": "結果｜BOAT RACE オフィシャルウェブサイト",
+      "html_bytes": 59568,
+      "has_race_detail_content": true,
+      "decision_technique": "逃げ",
+      "weather": {
+        "wind_speed_m": 2,
+        "wave_height_cm": 1,
+        "water_temperature_c": 28,
+        "air_temperature_c": 31
+      },
+      "sections": {
+        "has_payout_section": true,
+        "has_finish_section": false
+      },
+      "raw_files": [
+        "data/raw/official/2026-07-10/02/races/09.html",
+        "data/raw/official/2026-07-10/02/races/09.metadata.json"
+      ],
+      "parser_status": "initial_text_extraction",
+      "analysis_note": {
+        "decision": "未分析",
+        "skip_decision_required": true,
+        "budget_note": "生活費とは分けた予算内で楽しむ",
+        "disclaimer": "的中や利益を保証するものではありません"
+      }
+    },
+    {
+      "race_id": "2026-07-10-02-10",
+      "date": "2026-07-10",
+      "venue_code": "02",
+      "venue_name": "戸田",
+      "race_no": 10,
+      "source_url": "https://www.boatrace.jp/owpc/pc/race/raceresult?rno=10&jcd=02&hd=20260710",
+      "title": "結果｜BOAT RACE オフィシャルウェブサイト",
+      "html_bytes": 59586,
+      "has_race_detail_content": true,
+      "decision_technique": "まくり",
+      "weather": {
+        "wind_speed_m": 3,
+        "wave_height_cm": 2,
+        "water_temperature_c": 28,
+        "air_temperature_c": 31
+      },
+      "sections": {
+        "has_payout_section": true,
+        "has_finish_section": false
+      },
+      "raw_files": [
+        "data/raw/official/2026-07-10/02/races/10.html",
+        "data/raw/official/2026-07-10/02/races/10.metadata.json"
+      ],
+      "parser_status": "initial_text_extraction",
+      "analysis_note": {
+        "decision": "未分析",
+        "skip_decision_required": true,
+        "budget_note": "生活費とは分けた予算内で楽しむ",
+        "disclaimer": "的中や利益を保証するものではありません"
+      }
+    },
+    {
+      "race_id": "2026-07-10-02-11",
+      "date": "2026-07-10",
+      "venue_code": "02",
+      "venue_name": "戸田",
+      "race_no": 11,
+      "source_url": "https://www.boatrace.jp/owpc/pc/race/raceresult?rno=11&jcd=02&hd=20260710",
+      "title": "結果｜BOAT RACE オフィシャルウェブサイト",
+      "html_bytes": 59589,
+      "has_race_detail_content": true,
+      "decision_technique": "逃げ",
+      "weather": {
+        "wind_speed_m": 3,
+        "wave_height_cm": 2,
+        "water_temperature_c": 28,
+        "air_temperature_c": 31
+      },
+      "sections": {
+        "has_payout_section": true,
+        "has_finish_section": false
+      },
+      "raw_files": [
+        "data/raw/official/2026-07-10/02/races/11.html",
+        "data/raw/official/2026-07-10/02/races/11.metadata.json"
+      ],
+      "parser_status": "initial_text_extraction",
+      "analysis_note": {
+        "decision": "未分析",
+        "skip_decision_required": true,
+        "budget_note": "生活費とは分けた予算内で楽しむ",
+        "disclaimer": "的中や利益を保証するものではありません"
+      }
+    },
+    {
+      "race_id": "2026-07-10-02-12",
+      "date": "2026-07-10",
+      "venue_code": "02",
+      "venue_name": "戸田",
+      "race_no": 12,
+      "source_url": "https://www.boatrace.jp/owpc/pc/race/raceresult?rno=12&jcd=02&hd=20260710",
+      "title": "結果｜BOAT RACE オフィシャルウェブサイト",
+      "html_bytes": 59575,
+      "has_race_detail_content": true,
+      "decision_technique": "逃げ",
+      "weather": {
+        "wind_speed_m": 2,
+        "wave_height_cm": 1,
+        "water_temperature_c": 28,
+        "air_temperature_c": 30
+      },
+      "sections": {
+        "has_payout_section": true,
+        "has_finish_section": false
+      },
+      "raw_files": [
+        "data/raw/official/2026-07-10/02/races/12.html",
+        "data/raw/official/2026-07-10/02/races/12.metadata.json"
+      ],
+      "parser_status": "initial_text_extraction",
+      "analysis_note": {
+        "decision": "未分析",
+        "skip_decision_required": true,
+        "budget_note": "生活費とは分けた予算内で楽しむ",
+        "disclaimer": "的中や利益を保証するものではありません"
+      }
+    },
+    {
       "race_id": "2026-07-10-06-1",
       "date": "2026-07-10",
       "venue_code": "06",
@@ -209,7 +407,7 @@
       "race_no": 1,
       "source_url": "https://www.boatrace.jp/owpc/pc/race/raceresult?rno=1&jcd=06&hd=20260710",
       "title": "結果｜BOAT RACE オフィシャルウェブサイト",
-      "html_bytes": 59052,
+      "html_bytes": 59093,
       "has_race_detail_content": true,
       "decision_technique": "差し",
       "weather": {
@@ -242,7 +440,7 @@
       "race_no": 2,
       "source_url": "https://www.boatrace.jp/owpc/pc/race/raceresult?rno=2&jcd=06&hd=20260710",
       "title": "結果｜BOAT RACE オフィシャルウェブサイト",
-      "html_bytes": 59044,
+      "html_bytes": 59085,
       "has_race_detail_content": true,
       "decision_technique": "抜き",
       "weather": {
@@ -275,7 +473,7 @@
       "race_no": 3,
       "source_url": "https://www.boatrace.jp/owpc/pc/race/raceresult?rno=3&jcd=06&hd=20260710",
       "title": "結果｜BOAT RACE オフィシャルウェブサイト",
-      "html_bytes": 59038,
+      "html_bytes": 59079,
       "has_race_detail_content": true,
       "decision_technique": "逃げ",
       "weather": {
@@ -308,7 +506,7 @@
       "race_no": 4,
       "source_url": "https://www.boatrace.jp/owpc/pc/race/raceresult?rno=4&jcd=06&hd=20260710",
       "title": "結果｜BOAT RACE オフィシャルウェブサイト",
-      "html_bytes": 59040,
+      "html_bytes": 59081,
       "has_race_detail_content": true,
       "decision_technique": "逃げ",
       "weather": {
@@ -334,6 +532,270 @@
       }
     },
     {
+      "race_id": "2026-07-10-06-5",
+      "date": "2026-07-10",
+      "venue_code": "06",
+      "venue_name": "浜名湖",
+      "race_no": 5,
+      "source_url": "https://www.boatrace.jp/owpc/pc/race/raceresult?rno=5&jcd=06&hd=20260710",
+      "title": "結果｜BOAT RACE オフィシャルウェブサイト",
+      "html_bytes": 59088,
+      "has_race_detail_content": true,
+      "decision_technique": "逃げ",
+      "weather": {
+        "wind_speed_m": 4,
+        "wave_height_cm": 2,
+        "water_temperature_c": 26,
+        "air_temperature_c": 26
+      },
+      "sections": {
+        "has_payout_section": true,
+        "has_finish_section": false
+      },
+      "raw_files": [
+        "data/raw/official/2026-07-10/06/races/05.html",
+        "data/raw/official/2026-07-10/06/races/05.metadata.json"
+      ],
+      "parser_status": "initial_text_extraction",
+      "analysis_note": {
+        "decision": "未分析",
+        "skip_decision_required": true,
+        "budget_note": "生活費とは分けた予算内で楽しむ",
+        "disclaimer": "的中や利益を保証するものではありません"
+      }
+    },
+    {
+      "race_id": "2026-07-10-06-6",
+      "date": "2026-07-10",
+      "venue_code": "06",
+      "venue_name": "浜名湖",
+      "race_no": 6,
+      "source_url": "https://www.boatrace.jp/owpc/pc/race/raceresult?rno=6&jcd=06&hd=20260710",
+      "title": "結果｜BOAT RACE オフィシャルウェブサイト",
+      "html_bytes": 59088,
+      "has_race_detail_content": true,
+      "decision_technique": "逃げ",
+      "weather": {
+        "wind_speed_m": 3,
+        "wave_height_cm": 2,
+        "water_temperature_c": 26,
+        "air_temperature_c": 26
+      },
+      "sections": {
+        "has_payout_section": true,
+        "has_finish_section": false
+      },
+      "raw_files": [
+        "data/raw/official/2026-07-10/06/races/06.html",
+        "data/raw/official/2026-07-10/06/races/06.metadata.json"
+      ],
+      "parser_status": "initial_text_extraction",
+      "analysis_note": {
+        "decision": "未分析",
+        "skip_decision_required": true,
+        "budget_note": "生活費とは分けた予算内で楽しむ",
+        "disclaimer": "的中や利益を保証するものではありません"
+      }
+    },
+    {
+      "race_id": "2026-07-10-06-7",
+      "date": "2026-07-10",
+      "venue_code": "06",
+      "venue_name": "浜名湖",
+      "race_no": 7,
+      "source_url": "https://www.boatrace.jp/owpc/pc/race/raceresult?rno=7&jcd=06&hd=20260710",
+      "title": "結果｜BOAT RACE オフィシャルウェブサイト",
+      "html_bytes": 59081,
+      "has_race_detail_content": true,
+      "decision_technique": "抜き",
+      "weather": {
+        "wind_speed_m": 3,
+        "wave_height_cm": 2,
+        "water_temperature_c": 26,
+        "air_temperature_c": 25
+      },
+      "sections": {
+        "has_payout_section": true,
+        "has_finish_section": false
+      },
+      "raw_files": [
+        "data/raw/official/2026-07-10/06/races/07.html",
+        "data/raw/official/2026-07-10/06/races/07.metadata.json"
+      ],
+      "parser_status": "initial_text_extraction",
+      "analysis_note": {
+        "decision": "未分析",
+        "skip_decision_required": true,
+        "budget_note": "生活費とは分けた予算内で楽しむ",
+        "disclaimer": "的中や利益を保証するものではありません"
+      }
+    },
+    {
+      "race_id": "2026-07-10-06-8",
+      "date": "2026-07-10",
+      "venue_code": "06",
+      "venue_name": "浜名湖",
+      "race_no": 8,
+      "source_url": "https://www.boatrace.jp/owpc/pc/race/raceresult?rno=8&jcd=06&hd=20260710",
+      "title": "結果｜BOAT RACE オフィシャルウェブサイト",
+      "html_bytes": 59097,
+      "has_race_detail_content": true,
+      "decision_technique": "まくり",
+      "weather": {
+        "wind_speed_m": 3,
+        "wave_height_cm": 2,
+        "water_temperature_c": 26,
+        "air_temperature_c": 26
+      },
+      "sections": {
+        "has_payout_section": true,
+        "has_finish_section": false
+      },
+      "raw_files": [
+        "data/raw/official/2026-07-10/06/races/08.html",
+        "data/raw/official/2026-07-10/06/races/08.metadata.json"
+      ],
+      "parser_status": "initial_text_extraction",
+      "analysis_note": {
+        "decision": "未分析",
+        "skip_decision_required": true,
+        "budget_note": "生活費とは分けた予算内で楽しむ",
+        "disclaimer": "的中や利益を保証するものではありません"
+      }
+    },
+    {
+      "race_id": "2026-07-10-06-9",
+      "date": "2026-07-10",
+      "venue_code": "06",
+      "venue_name": "浜名湖",
+      "race_no": 9,
+      "source_url": "https://www.boatrace.jp/owpc/pc/race/raceresult?rno=9&jcd=06&hd=20260710",
+      "title": "結果｜BOAT RACE オフィシャルウェブサイト",
+      "html_bytes": 59102,
+      "has_race_detail_content": true,
+      "decision_technique": "まくり差し",
+      "weather": {
+        "wind_speed_m": 4,
+        "wave_height_cm": 2,
+        "water_temperature_c": 26,
+        "air_temperature_c": 26
+      },
+      "sections": {
+        "has_payout_section": true,
+        "has_finish_section": false
+      },
+      "raw_files": [
+        "data/raw/official/2026-07-10/06/races/09.html",
+        "data/raw/official/2026-07-10/06/races/09.metadata.json"
+      ],
+      "parser_status": "initial_text_extraction",
+      "analysis_note": {
+        "decision": "未分析",
+        "skip_decision_required": true,
+        "budget_note": "生活費とは分けた予算内で楽しむ",
+        "disclaimer": "的中や利益を保証するものではありません"
+      }
+    },
+    {
+      "race_id": "2026-07-10-06-10",
+      "date": "2026-07-10",
+      "venue_code": "06",
+      "venue_name": "浜名湖",
+      "race_no": 10,
+      "source_url": "https://www.boatrace.jp/owpc/pc/race/raceresult?rno=10&jcd=06&hd=20260710",
+      "title": "結果｜BOAT RACE オフィシャルウェブサイト",
+      "html_bytes": 59115,
+      "has_race_detail_content": true,
+      "decision_technique": "まくり差し",
+      "weather": {
+        "wind_speed_m": 3,
+        "wave_height_cm": 2,
+        "water_temperature_c": 26,
+        "air_temperature_c": 26
+      },
+      "sections": {
+        "has_payout_section": true,
+        "has_finish_section": false
+      },
+      "raw_files": [
+        "data/raw/official/2026-07-10/06/races/10.html",
+        "data/raw/official/2026-07-10/06/races/10.metadata.json"
+      ],
+      "parser_status": "initial_text_extraction",
+      "analysis_note": {
+        "decision": "未分析",
+        "skip_decision_required": true,
+        "budget_note": "生活費とは分けた予算内で楽しむ",
+        "disclaimer": "的中や利益を保証するものではありません"
+      }
+    },
+    {
+      "race_id": "2026-07-10-06-11",
+      "date": "2026-07-10",
+      "venue_code": "06",
+      "venue_name": "浜名湖",
+      "race_no": 11,
+      "source_url": "https://www.boatrace.jp/owpc/pc/race/raceresult?rno=11&jcd=06&hd=20260710",
+      "title": "結果｜BOAT RACE オフィシャルウェブサイト",
+      "html_bytes": 59086,
+      "has_race_detail_content": true,
+      "decision_technique": "逃げ",
+      "weather": {
+        "wind_speed_m": 3,
+        "wave_height_cm": 2,
+        "water_temperature_c": 26,
+        "air_temperature_c": 26
+      },
+      "sections": {
+        "has_payout_section": true,
+        "has_finish_section": false
+      },
+      "raw_files": [
+        "data/raw/official/2026-07-10/06/races/11.html",
+        "data/raw/official/2026-07-10/06/races/11.metadata.json"
+      ],
+      "parser_status": "initial_text_extraction",
+      "analysis_note": {
+        "decision": "未分析",
+        "skip_decision_required": true,
+        "budget_note": "生活費とは分けた予算内で楽しむ",
+        "disclaimer": "的中や利益を保証するものではありません"
+      }
+    },
+    {
+      "race_id": "2026-07-10-06-12",
+      "date": "2026-07-10",
+      "venue_code": "06",
+      "venue_name": "浜名湖",
+      "race_no": 12,
+      "source_url": "https://www.boatrace.jp/owpc/pc/race/raceresult?rno=12&jcd=06&hd=20260710",
+      "title": "結果｜BOAT RACE オフィシャルウェブサイト",
+      "html_bytes": 59105,
+      "has_race_detail_content": true,
+      "decision_technique": "まくり",
+      "weather": {
+        "wind_speed_m": 3,
+        "wave_height_cm": 2,
+        "water_temperature_c": 26,
+        "air_temperature_c": 26
+      },
+      "sections": {
+        "has_payout_section": true,
+        "has_finish_section": false
+      },
+      "raw_files": [
+        "data/raw/official/2026-07-10/06/races/12.html",
+        "data/raw/official/2026-07-10/06/races/12.metadata.json"
+      ],
+      "parser_status": "initial_text_extraction",
+      "analysis_note": {
+        "decision": "未分析",
+        "skip_decision_required": true,
+        "budget_note": "生活費とは分けた予算内で楽しむ",
+        "disclaimer": "的中や利益を保証するものではありません"
+      }
+    },
+    {
       "race_id": "2026-07-10-08-1",
       "date": "2026-07-10",
       "venue_code": "08",
@@ -341,7 +803,7 @@
       "race_no": 1,
       "source_url": "https://www.boatrace.jp/owpc/pc/race/raceresult?rno=1&jcd=08&hd=20260710",
       "title": "結果｜BOAT RACE オフィシャルウェブサイト",
-      "html_bytes": 59351,
+      "html_bytes": 59190,
       "has_race_detail_content": true,
       "decision_technique": "まくり",
       "weather": {
@@ -374,7 +836,7 @@
       "race_no": 2,
       "source_url": "https://www.boatrace.jp/owpc/pc/race/raceresult?rno=2&jcd=08&hd=20260710",
       "title": "結果｜BOAT RACE オフィシャルウェブサイト",
-      "html_bytes": 59342,
+      "html_bytes": 59181,
       "has_race_detail_content": true,
       "decision_technique": "差し",
       "weather": {
@@ -407,7 +869,7 @@
       "race_no": 3,
       "source_url": "https://www.boatrace.jp/owpc/pc/race/raceresult?rno=3&jcd=08&hd=20260710",
       "title": "結果｜BOAT RACE オフィシャルウェブサイト",
-      "html_bytes": 59342,
+      "html_bytes": 59181,
       "has_race_detail_content": true,
       "decision_technique": "逃げ",
       "weather": {
@@ -440,7 +902,7 @@
       "race_no": 4,
       "source_url": "https://www.boatrace.jp/owpc/pc/race/raceresult?rno=4&jcd=08&hd=20260710",
       "title": "結果｜BOAT RACE オフィシャルウェブサイト",
-      "html_bytes": 59349,
+      "html_bytes": 59188,
       "has_race_detail_content": true,
       "decision_technique": "まくり",
       "weather": {
@@ -473,7 +935,7 @@
       "race_no": 5,
       "source_url": "https://www.boatrace.jp/owpc/pc/race/raceresult?rno=5&jcd=08&hd=20260710",
       "title": "結果｜BOAT RACE オフィシャルウェブサイト",
-      "html_bytes": 59341,
+      "html_bytes": 59180,
       "has_race_detail_content": true,
       "decision_technique": "逃げ",
       "weather": {
@@ -499,6 +961,237 @@
       }
     },
     {
+      "race_id": "2026-07-10-08-6",
+      "date": "2026-07-10",
+      "venue_code": "08",
+      "venue_name": "常滑",
+      "race_no": 6,
+      "source_url": "https://www.boatrace.jp/owpc/pc/race/raceresult?rno=6&jcd=08&hd=20260710",
+      "title": "結果｜BOAT RACE オフィシャルウェブサイト",
+      "html_bytes": 59179,
+      "has_race_detail_content": true,
+      "decision_technique": "逃げ",
+      "weather": {
+        "wind_speed_m": 4,
+        "wave_height_cm": 2,
+        "water_temperature_c": 29,
+        "air_temperature_c": 28
+      },
+      "sections": {
+        "has_payout_section": true,
+        "has_finish_section": false
+      },
+      "raw_files": [
+        "data/raw/official/2026-07-10/08/races/06.html",
+        "data/raw/official/2026-07-10/08/races/06.metadata.json"
+      ],
+      "parser_status": "initial_text_extraction",
+      "analysis_note": {
+        "decision": "未分析",
+        "skip_decision_required": true,
+        "budget_note": "生活費とは分けた予算内で楽しむ",
+        "disclaimer": "的中や利益を保証するものではありません"
+      }
+    },
+    {
+      "race_id": "2026-07-10-08-7",
+      "date": "2026-07-10",
+      "venue_code": "08",
+      "venue_name": "常滑",
+      "race_no": 7,
+      "source_url": "https://www.boatrace.jp/owpc/pc/race/raceresult?rno=7&jcd=08&hd=20260710",
+      "title": "結果｜BOAT RACE オフィシャルウェブサイト",
+      "html_bytes": 59205,
+      "has_race_detail_content": true,
+      "decision_technique": "まくり差し",
+      "weather": {
+        "wind_speed_m": 4,
+        "wave_height_cm": 2,
+        "water_temperature_c": 29,
+        "air_temperature_c": 28
+      },
+      "sections": {
+        "has_payout_section": true,
+        "has_finish_section": false
+      },
+      "raw_files": [
+        "data/raw/official/2026-07-10/08/races/07.html",
+        "data/raw/official/2026-07-10/08/races/07.metadata.json"
+      ],
+      "parser_status": "initial_text_extraction",
+      "analysis_note": {
+        "decision": "未分析",
+        "skip_decision_required": true,
+        "budget_note": "生活費とは分けた予算内で楽しむ",
+        "disclaimer": "的中や利益を保証するものではありません"
+      }
+    },
+    {
+      "race_id": "2026-07-10-08-8",
+      "date": "2026-07-10",
+      "venue_code": "08",
+      "venue_name": "常滑",
+      "race_no": 8,
+      "source_url": "https://www.boatrace.jp/owpc/pc/race/raceresult?rno=8&jcd=08&hd=20260710",
+      "title": "結果｜BOAT RACE オフィシャルウェブサイト",
+      "html_bytes": 59181,
+      "has_race_detail_content": true,
+      "decision_technique": "逃げ",
+      "weather": {
+        "wind_speed_m": 2,
+        "wave_height_cm": 1,
+        "water_temperature_c": 30,
+        "air_temperature_c": 29
+      },
+      "sections": {
+        "has_payout_section": true,
+        "has_finish_section": false
+      },
+      "raw_files": [
+        "data/raw/official/2026-07-10/08/races/08.html",
+        "data/raw/official/2026-07-10/08/races/08.metadata.json"
+      ],
+      "parser_status": "initial_text_extraction",
+      "analysis_note": {
+        "decision": "未分析",
+        "skip_decision_required": true,
+        "budget_note": "生活費とは分けた予算内で楽しむ",
+        "disclaimer": "的中や利益を保証するものではありません"
+      }
+    },
+    {
+      "race_id": "2026-07-10-08-9",
+      "date": "2026-07-10",
+      "venue_code": "08",
+      "venue_name": "常滑",
+      "race_no": 9,
+      "source_url": "https://www.boatrace.jp/owpc/pc/race/raceresult?rno=9&jcd=08&hd=20260710",
+      "title": "結果｜BOAT RACE オフィシャルウェブサイト",
+      "html_bytes": 58029,
+      "has_race_detail_content": true,
+      "decision_technique": "逃げ",
+      "weather": {
+        "wind_speed_m": 2,
+        "wave_height_cm": 1,
+        "water_temperature_c": 30,
+        "air_temperature_c": 29
+      },
+      "sections": {
+        "has_payout_section": true,
+        "has_finish_section": false
+      },
+      "raw_files": [
+        "data/raw/official/2026-07-10/08/races/09.html",
+        "data/raw/official/2026-07-10/08/races/09.metadata.json"
+      ],
+      "parser_status": "initial_text_extraction",
+      "analysis_note": {
+        "decision": "未分析",
+        "skip_decision_required": true,
+        "budget_note": "生活費とは分けた予算内で楽しむ",
+        "disclaimer": "的中や利益を保証するものではありません"
+      }
+    },
+    {
+      "race_id": "2026-07-10-08-10",
+      "date": "2026-07-10",
+      "venue_code": "08",
+      "venue_name": "常滑",
+      "race_no": 10,
+      "source_url": "https://www.boatrace.jp/owpc/pc/race/raceresult?rno=10&jcd=08&hd=20260710",
+      "title": "結果｜BOAT RACE オフィシャルウェブサイト",
+      "html_bytes": 59188,
+      "has_race_detail_content": true,
+      "decision_technique": "逃げ",
+      "weather": {
+        "wind_speed_m": 2,
+        "wave_height_cm": 1,
+        "water_temperature_c": 30,
+        "air_temperature_c": 29
+      },
+      "sections": {
+        "has_payout_section": true,
+        "has_finish_section": false
+      },
+      "raw_files": [
+        "data/raw/official/2026-07-10/08/races/10.html",
+        "data/raw/official/2026-07-10/08/races/10.metadata.json"
+      ],
+      "parser_status": "initial_text_extraction",
+      "analysis_note": {
+        "decision": "未分析",
+        "skip_decision_required": true,
+        "budget_note": "生活費とは分けた予算内で楽しむ",
+        "disclaimer": "的中や利益を保証するものではありません"
+      }
+    },
+    {
+      "race_id": "2026-07-10-08-11",
+      "date": "2026-07-10",
+      "venue_code": "08",
+      "venue_name": "常滑",
+      "race_no": 11,
+      "source_url": "https://www.boatrace.jp/owpc/pc/race/raceresult?rno=11&jcd=08&hd=20260710",
+      "title": "結果｜BOAT RACE オフィシャルウェブサイト",
+      "html_bytes": 59186,
+      "has_race_detail_content": true,
+      "decision_technique": "逃げ",
+      "weather": {
+        "wind_speed_m": 2,
+        "wave_height_cm": 1,
+        "water_temperature_c": 30,
+        "air_temperature_c": 29
+      },
+      "sections": {
+        "has_payout_section": true,
+        "has_finish_section": false
+      },
+      "raw_files": [
+        "data/raw/official/2026-07-10/08/races/11.html",
+        "data/raw/official/2026-07-10/08/races/11.metadata.json"
+      ],
+      "parser_status": "initial_text_extraction",
+      "analysis_note": {
+        "decision": "未分析",
+        "skip_decision_required": true,
+        "budget_note": "生活費とは分けた予算内で楽しむ",
+        "disclaimer": "的中や利益を保証するものではありません"
+      }
+    },
+    {
+      "race_id": "2026-07-10-08-12",
+      "date": "2026-07-10",
+      "venue_code": "08",
+      "venue_name": "常滑",
+      "race_no": 12,
+      "source_url": "https://www.boatrace.jp/owpc/pc/race/raceresult?rno=12&jcd=08&hd=20260710",
+      "title": "結果｜BOAT RACE オフィシャルウェブサイト",
+      "html_bytes": 59184,
+      "has_race_detail_content": true,
+      "decision_technique": "逃げ",
+      "weather": {
+        "wind_speed_m": 2,
+        "wave_height_cm": 1,
+        "water_temperature_c": 30,
+        "air_temperature_c": 28
+      },
+      "sections": {
+        "has_payout_section": true,
+        "has_finish_section": false
+      },
+      "raw_files": [
+        "data/raw/official/2026-07-10/08/races/12.html",
+        "data/raw/official/2026-07-10/08/races/12.metadata.json"
+      ],
+      "parser_status": "initial_text_extraction",
+      "analysis_note": {
+        "decision": "未分析",
+        "skip_decision_required": true,
+        "budget_note": "生活費とは分けた予算内で楽しむ",
+        "disclaimer": "的中や利益を保証するものではありません"
+      }
+    },
+    {
       "race_id": "2026-07-10-09-1",
       "date": "2026-07-10",
       "venue_code": "09",
@@ -506,7 +1199,7 @@
       "race_no": 1,
       "source_url": "https://www.boatrace.jp/owpc/pc/race/raceresult?rno=1&jcd=09&hd=20260710",
       "title": "結果｜BOAT RACE オフィシャルウェブサイト",
-      "html_bytes": 58898,
+      "html_bytes": 58939,
       "has_race_detail_content": true,
       "decision_technique": "逃げ",
       "weather": {
@@ -539,7 +1232,7 @@
       "race_no": 2,
       "source_url": "https://www.boatrace.jp/owpc/pc/race/raceresult?rno=2&jcd=09&hd=20260710",
       "title": "結果｜BOAT RACE オフィシャルウェブサイト",
-      "html_bytes": 58903,
+      "html_bytes": 58944,
       "has_race_detail_content": true,
       "decision_technique": "差し",
       "weather": {
@@ -572,7 +1265,7 @@
       "race_no": 3,
       "source_url": "https://www.boatrace.jp/owpc/pc/race/raceresult?rno=3&jcd=09&hd=20260710",
       "title": "結果｜BOAT RACE オフィシャルウェブサイト",
-      "html_bytes": 58898,
+      "html_bytes": 58939,
       "has_race_detail_content": true,
       "decision_technique": "逃げ",
       "weather": {
@@ -605,7 +1298,7 @@
       "race_no": 4,
       "source_url": "https://www.boatrace.jp/owpc/pc/race/raceresult?rno=4&jcd=09&hd=20260710",
       "title": "結果｜BOAT RACE オフィシャルウェブサイト",
-      "html_bytes": 58912,
+      "html_bytes": 58953,
       "has_race_detail_content": true,
       "decision_technique": "差し",
       "weather": {
@@ -638,7 +1331,7 @@
       "race_no": 5,
       "source_url": "https://www.boatrace.jp/owpc/pc/race/raceresult?rno=5&jcd=09&hd=20260710",
       "title": "結果｜BOAT RACE オフィシャルウェブサイト",
-      "html_bytes": 58898,
+      "html_bytes": 58939,
       "has_race_detail_content": true,
       "decision_technique": "逃げ",
       "weather": {
@@ -664,6 +1357,237 @@
       }
     },
     {
+      "race_id": "2026-07-10-09-6",
+      "date": "2026-07-10",
+      "venue_code": "09",
+      "venue_name": "津",
+      "race_no": 6,
+      "source_url": "https://www.boatrace.jp/owpc/pc/race/raceresult?rno=6&jcd=09&hd=20260710",
+      "title": "結果｜BOAT RACE オフィシャルウェブサイト",
+      "html_bytes": 58943,
+      "has_race_detail_content": true,
+      "decision_technique": "抜き",
+      "weather": {
+        "wind_speed_m": 4,
+        "wave_height_cm": 2,
+        "water_temperature_c": 28,
+        "air_temperature_c": 28
+      },
+      "sections": {
+        "has_payout_section": true,
+        "has_finish_section": false
+      },
+      "raw_files": [
+        "data/raw/official/2026-07-10/09/races/06.html",
+        "data/raw/official/2026-07-10/09/races/06.metadata.json"
+      ],
+      "parser_status": "initial_text_extraction",
+      "analysis_note": {
+        "decision": "未分析",
+        "skip_decision_required": true,
+        "budget_note": "生活費とは分けた予算内で楽しむ",
+        "disclaimer": "的中や利益を保証するものではありません"
+      }
+    },
+    {
+      "race_id": "2026-07-10-09-7",
+      "date": "2026-07-10",
+      "venue_code": "09",
+      "venue_name": "津",
+      "race_no": 7,
+      "source_url": "https://www.boatrace.jp/owpc/pc/race/raceresult?rno=7&jcd=09&hd=20260710",
+      "title": "結果｜BOAT RACE オフィシャルウェブサイト",
+      "html_bytes": 58963,
+      "has_race_detail_content": true,
+      "decision_technique": "まくり差し",
+      "weather": {
+        "wind_speed_m": 4,
+        "wave_height_cm": 2,
+        "water_temperature_c": 28,
+        "air_temperature_c": 28
+      },
+      "sections": {
+        "has_payout_section": true,
+        "has_finish_section": false
+      },
+      "raw_files": [
+        "data/raw/official/2026-07-10/09/races/07.html",
+        "data/raw/official/2026-07-10/09/races/07.metadata.json"
+      ],
+      "parser_status": "initial_text_extraction",
+      "analysis_note": {
+        "decision": "未分析",
+        "skip_decision_required": true,
+        "budget_note": "生活費とは分けた予算内で楽しむ",
+        "disclaimer": "的中や利益を保証するものではありません"
+      }
+    },
+    {
+      "race_id": "2026-07-10-09-8",
+      "date": "2026-07-10",
+      "venue_code": "09",
+      "venue_name": "津",
+      "race_no": 8,
+      "source_url": "https://www.boatrace.jp/owpc/pc/race/raceresult?rno=8&jcd=09&hd=20260710",
+      "title": "結果｜BOAT RACE オフィシャルウェブサイト",
+      "html_bytes": 58973,
+      "has_race_detail_content": true,
+      "decision_technique": "まくり差し",
+      "weather": {
+        "wind_speed_m": 4,
+        "wave_height_cm": 2,
+        "water_temperature_c": 28,
+        "air_temperature_c": 28
+      },
+      "sections": {
+        "has_payout_section": true,
+        "has_finish_section": false
+      },
+      "raw_files": [
+        "data/raw/official/2026-07-10/09/races/08.html",
+        "data/raw/official/2026-07-10/09/races/08.metadata.json"
+      ],
+      "parser_status": "initial_text_extraction",
+      "analysis_note": {
+        "decision": "未分析",
+        "skip_decision_required": true,
+        "budget_note": "生活費とは分けた予算内で楽しむ",
+        "disclaimer": "的中や利益を保証するものではありません"
+      }
+    },
+    {
+      "race_id": "2026-07-10-09-9",
+      "date": "2026-07-10",
+      "venue_code": "09",
+      "venue_name": "津",
+      "race_no": 9,
+      "source_url": "https://www.boatrace.jp/owpc/pc/race/raceresult?rno=9&jcd=09&hd=20260710",
+      "title": "結果｜BOAT RACE オフィシャルウェブサイト",
+      "html_bytes": 58948,
+      "has_race_detail_content": true,
+      "decision_technique": "逃げ",
+      "weather": {
+        "wind_speed_m": 4,
+        "wave_height_cm": 2,
+        "water_temperature_c": 28,
+        "air_temperature_c": 29
+      },
+      "sections": {
+        "has_payout_section": true,
+        "has_finish_section": false
+      },
+      "raw_files": [
+        "data/raw/official/2026-07-10/09/races/09.html",
+        "data/raw/official/2026-07-10/09/races/09.metadata.json"
+      ],
+      "parser_status": "initial_text_extraction",
+      "analysis_note": {
+        "decision": "未分析",
+        "skip_decision_required": true,
+        "budget_note": "生活費とは分けた予算内で楽しむ",
+        "disclaimer": "的中や利益を保証するものではありません"
+      }
+    },
+    {
+      "race_id": "2026-07-10-09-10",
+      "date": "2026-07-10",
+      "venue_code": "09",
+      "venue_name": "津",
+      "race_no": 10,
+      "source_url": "https://www.boatrace.jp/owpc/pc/race/raceresult?rno=10&jcd=09&hd=20260710",
+      "title": "結果｜BOAT RACE オフィシャルウェブサイト",
+      "html_bytes": 58978,
+      "has_race_detail_content": true,
+      "decision_technique": "まくり差し",
+      "weather": {
+        "wind_speed_m": 4,
+        "wave_height_cm": 2,
+        "water_temperature_c": 28,
+        "air_temperature_c": 29
+      },
+      "sections": {
+        "has_payout_section": true,
+        "has_finish_section": false
+      },
+      "raw_files": [
+        "data/raw/official/2026-07-10/09/races/10.html",
+        "data/raw/official/2026-07-10/09/races/10.metadata.json"
+      ],
+      "parser_status": "initial_text_extraction",
+      "analysis_note": {
+        "decision": "未分析",
+        "skip_decision_required": true,
+        "budget_note": "生活費とは分けた予算内で楽しむ",
+        "disclaimer": "的中や利益を保証するものではありません"
+      }
+    },
+    {
+      "race_id": "2026-07-10-09-11",
+      "date": "2026-07-10",
+      "venue_code": "09",
+      "venue_name": "津",
+      "race_no": 11,
+      "source_url": "https://www.boatrace.jp/owpc/pc/race/raceresult?rno=11&jcd=09&hd=20260710",
+      "title": "結果｜BOAT RACE オフィシャルウェブサイト",
+      "html_bytes": 58954,
+      "has_race_detail_content": true,
+      "decision_technique": "逃げ",
+      "weather": {
+        "wind_speed_m": 4,
+        "wave_height_cm": 2,
+        "water_temperature_c": 28,
+        "air_temperature_c": 29
+      },
+      "sections": {
+        "has_payout_section": true,
+        "has_finish_section": false
+      },
+      "raw_files": [
+        "data/raw/official/2026-07-10/09/races/11.html",
+        "data/raw/official/2026-07-10/09/races/11.metadata.json"
+      ],
+      "parser_status": "initial_text_extraction",
+      "analysis_note": {
+        "decision": "未分析",
+        "skip_decision_required": true,
+        "budget_note": "生活費とは分けた予算内で楽しむ",
+        "disclaimer": "的中や利益を保証するものではありません"
+      }
+    },
+    {
+      "race_id": "2026-07-10-09-12",
+      "date": "2026-07-10",
+      "venue_code": "09",
+      "venue_name": "津",
+      "race_no": 12,
+      "source_url": "https://www.boatrace.jp/owpc/pc/race/raceresult?rno=12&jcd=09&hd=20260710",
+      "title": "結果｜BOAT RACE オフィシャルウェブサイト",
+      "html_bytes": 58944,
+      "has_race_detail_content": true,
+      "decision_technique": "逃げ",
+      "weather": {
+        "wind_speed_m": 4,
+        "wave_height_cm": 2,
+        "water_temperature_c": 28,
+        "air_temperature_c": 29
+      },
+      "sections": {
+        "has_payout_section": true,
+        "has_finish_section": false
+      },
+      "raw_files": [
+        "data/raw/official/2026-07-10/09/races/12.html",
+        "data/raw/official/2026-07-10/09/races/12.metadata.json"
+      ],
+      "parser_status": "initial_text_extraction",
+      "analysis_note": {
+        "decision": "未分析",
+        "skip_decision_required": true,
+        "budget_note": "生活費とは分けた予算内で楽しむ",
+        "disclaimer": "的中や利益を保証するものではありません"
+      }
+    },
+    {
       "race_id": "2026-07-10-10-1",
       "date": "2026-07-10",
       "venue_code": "10",
@@ -671,7 +1595,7 @@
       "race_no": 1,
       "source_url": "https://www.boatrace.jp/owpc/pc/race/raceresult?rno=1&jcd=10&hd=20260710",
       "title": "結果｜BOAT RACE オフィシャルウェブサイト",
-      "html_bytes": 59201,
+      "html_bytes": 59242,
       "has_race_detail_content": true,
       "decision_technique": "逃げ",
       "weather": {
@@ -704,7 +1628,7 @@
       "race_no": 2,
       "source_url": "https://www.boatrace.jp/owpc/pc/race/raceresult?rno=2&jcd=10&hd=20260710",
       "title": "結果｜BOAT RACE オフィシャルウェブサイト",
-      "html_bytes": 59205,
+      "html_bytes": 59246,
       "has_race_detail_content": true,
       "decision_technique": "逃げ",
       "weather": {
@@ -737,7 +1661,7 @@
       "race_no": 3,
       "source_url": "https://www.boatrace.jp/owpc/pc/race/raceresult?rno=3&jcd=10&hd=20260710",
       "title": "結果｜BOAT RACE オフィシャルウェブサイト",
-      "html_bytes": 59206,
+      "html_bytes": 59247,
       "has_race_detail_content": true,
       "decision_technique": "逃げ",
       "weather": {
@@ -770,7 +1694,7 @@
       "race_no": 4,
       "source_url": "https://www.boatrace.jp/owpc/pc/race/raceresult?rno=4&jcd=10&hd=20260710",
       "title": "結果｜BOAT RACE オフィシャルウェブサイト",
-      "html_bytes": 59200,
+      "html_bytes": 59241,
       "has_race_detail_content": true,
       "decision_technique": "逃げ",
       "weather": {
@@ -803,7 +1727,7 @@
       "race_no": 5,
       "source_url": "https://www.boatrace.jp/owpc/pc/race/raceresult?rno=5&jcd=10&hd=20260710",
       "title": "結果｜BOAT RACE オフィシャルウェブサイト",
-      "html_bytes": 59226,
+      "html_bytes": 59267,
       "has_race_detail_content": true,
       "decision_technique": "まくり差し",
       "weather": {
@@ -836,7 +1760,7 @@
       "race_no": 6,
       "source_url": "https://www.boatrace.jp/owpc/pc/race/raceresult?rno=6&jcd=10&hd=20260710",
       "title": "結果｜BOAT RACE オフィシャルウェブサイト",
-      "html_bytes": 59222,
+      "html_bytes": 59263,
       "has_race_detail_content": true,
       "decision_technique": "まくり差し",
       "weather": {
@@ -869,7 +1793,7 @@
       "race_no": 7,
       "source_url": "https://www.boatrace.jp/owpc/pc/race/raceresult?rno=7&jcd=10&hd=20260710",
       "title": "結果｜BOAT RACE オフィシャルウェブサイト",
-      "html_bytes": 59208,
+      "html_bytes": 59249,
       "has_race_detail_content": true,
       "decision_technique": "差し",
       "weather": {
@@ -902,7 +1826,7 @@
       "race_no": 8,
       "source_url": "https://www.boatrace.jp/owpc/pc/race/raceresult?rno=8&jcd=10&hd=20260710",
       "title": "結果｜BOAT RACE オフィシャルウェブサイト",
-      "html_bytes": 59208,
+      "html_bytes": 59249,
       "has_race_detail_content": true,
       "decision_technique": "まくり",
       "weather": {
@@ -935,7 +1859,7 @@
       "race_no": 9,
       "source_url": "https://www.boatrace.jp/owpc/pc/race/raceresult?rno=9&jcd=10&hd=20260710",
       "title": "結果｜BOAT RACE オフィシャルウェブサイト",
-      "html_bytes": 59199,
+      "html_bytes": 59240,
       "has_race_detail_content": true,
       "decision_technique": "差し",
       "weather": {
@@ -968,7 +1892,7 @@
       "race_no": 10,
       "source_url": "https://www.boatrace.jp/owpc/pc/race/raceresult?rno=10&jcd=10&hd=20260710",
       "title": "結果｜BOAT RACE オフィシャルウェブサイト",
-      "html_bytes": 59213,
+      "html_bytes": 59254,
       "has_race_detail_content": true,
       "decision_technique": "差し",
       "weather": {
@@ -994,6 +1918,72 @@
       }
     },
     {
+      "race_id": "2026-07-10-10-11",
+      "date": "2026-07-10",
+      "venue_code": "10",
+      "venue_name": "三国",
+      "race_no": 11,
+      "source_url": "https://www.boatrace.jp/owpc/pc/race/raceresult?rno=11&jcd=10&hd=20260710",
+      "title": "結果｜BOAT RACE オフィシャルウェブサイト",
+      "html_bytes": 59254,
+      "has_race_detail_content": true,
+      "decision_technique": "差し",
+      "weather": {
+        "wind_speed_m": 5,
+        "wave_height_cm": 5,
+        "water_temperature_c": 28,
+        "air_temperature_c": 28
+      },
+      "sections": {
+        "has_payout_section": true,
+        "has_finish_section": false
+      },
+      "raw_files": [
+        "data/raw/official/2026-07-10/10/races/11.html",
+        "data/raw/official/2026-07-10/10/races/11.metadata.json"
+      ],
+      "parser_status": "initial_text_extraction",
+      "analysis_note": {
+        "decision": "未分析",
+        "skip_decision_required": true,
+        "budget_note": "生活費とは分けた予算内で楽しむ",
+        "disclaimer": "的中や利益を保証するものではありません"
+      }
+    },
+    {
+      "race_id": "2026-07-10-10-12",
+      "date": "2026-07-10",
+      "venue_code": "10",
+      "venue_name": "三国",
+      "race_no": 12,
+      "source_url": "https://www.boatrace.jp/owpc/pc/race/raceresult?rno=12&jcd=10&hd=20260710",
+      "title": "結果｜BOAT RACE オフィシャルウェブサイト",
+      "html_bytes": 59243,
+      "has_race_detail_content": true,
+      "decision_technique": "逃げ",
+      "weather": {
+        "wind_speed_m": 2,
+        "wave_height_cm": 2,
+        "water_temperature_c": 29,
+        "air_temperature_c": 29
+      },
+      "sections": {
+        "has_payout_section": true,
+        "has_finish_section": false
+      },
+      "raw_files": [
+        "data/raw/official/2026-07-10/10/races/12.html",
+        "data/raw/official/2026-07-10/10/races/12.metadata.json"
+      ],
+      "parser_status": "initial_text_extraction",
+      "analysis_note": {
+        "decision": "未分析",
+        "skip_decision_required": true,
+        "budget_note": "生活費とは分けた予算内で楽しむ",
+        "disclaimer": "的中や利益を保証するものではありません"
+      }
+    },
+    {
       "race_id": "2026-07-10-11-1",
       "date": "2026-07-10",
       "venue_code": "11",
@@ -1001,7 +1991,7 @@
       "race_no": 1,
       "source_url": "https://www.boatrace.jp/owpc/pc/race/raceresult?rno=1&jcd=11&hd=20260710",
       "title": "結果｜BOAT RACE オフィシャルウェブサイト",
-      "html_bytes": 59217,
+      "html_bytes": 59258,
       "has_race_detail_content": true,
       "decision_technique": "差し",
       "weather": {
@@ -1034,7 +2024,7 @@
       "race_no": 2,
       "source_url": "https://www.boatrace.jp/owpc/pc/race/raceresult?rno=2&jcd=11&hd=20260710",
       "title": "結果｜BOAT RACE オフィシャルウェブサイト",
-      "html_bytes": 59217,
+      "html_bytes": 59258,
       "has_race_detail_content": true,
       "decision_technique": "逃げ",
       "weather": {
@@ -1067,7 +2057,7 @@
       "race_no": 3,
       "source_url": "https://www.boatrace.jp/owpc/pc/race/raceresult?rno=3&jcd=11&hd=20260710",
       "title": "結果｜BOAT RACE オフィシャルウェブサイト",
-      "html_bytes": 59221,
+      "html_bytes": 59262,
       "has_race_detail_content": true,
       "decision_technique": "差し",
       "weather": {
@@ -1100,7 +2090,7 @@
       "race_no": 4,
       "source_url": "https://www.boatrace.jp/owpc/pc/race/raceresult?rno=4&jcd=11&hd=20260710",
       "title": "結果｜BOAT RACE オフィシャルウェブサイト",
-      "html_bytes": 59217,
+      "html_bytes": 59258,
       "has_race_detail_content": true,
       "decision_technique": "差し",
       "weather": {
@@ -1133,7 +2123,7 @@
       "race_no": 5,
       "source_url": "https://www.boatrace.jp/owpc/pc/race/raceresult?rno=5&jcd=11&hd=20260710",
       "title": "結果｜BOAT RACE オフィシャルウェブサイト",
-      "html_bytes": 59235,
+      "html_bytes": 59276,
       "has_race_detail_content": true,
       "decision_technique": "まくり差し",
       "weather": {
@@ -1159,6 +2149,237 @@
       }
     },
     {
+      "race_id": "2026-07-10-11-6",
+      "date": "2026-07-10",
+      "venue_code": "11",
+      "venue_name": "びわこ",
+      "race_no": 6,
+      "source_url": "https://www.boatrace.jp/owpc/pc/race/raceresult?rno=6&jcd=11&hd=20260710",
+      "title": "結果｜BOAT RACE オフィシャルウェブサイト",
+      "html_bytes": 59262,
+      "has_race_detail_content": true,
+      "decision_technique": "まくり",
+      "weather": {
+        "wind_speed_m": 2,
+        "wave_height_cm": 2,
+        "water_temperature_c": 27,
+        "air_temperature_c": 32
+      },
+      "sections": {
+        "has_payout_section": true,
+        "has_finish_section": false
+      },
+      "raw_files": [
+        "data/raw/official/2026-07-10/11/races/06.html",
+        "data/raw/official/2026-07-10/11/races/06.metadata.json"
+      ],
+      "parser_status": "initial_text_extraction",
+      "analysis_note": {
+        "decision": "未分析",
+        "skip_decision_required": true,
+        "budget_note": "生活費とは分けた予算内で楽しむ",
+        "disclaimer": "的中や利益を保証するものではありません"
+      }
+    },
+    {
+      "race_id": "2026-07-10-11-7",
+      "date": "2026-07-10",
+      "venue_code": "11",
+      "venue_name": "びわこ",
+      "race_no": 7,
+      "source_url": "https://www.boatrace.jp/owpc/pc/race/raceresult?rno=7&jcd=11&hd=20260710",
+      "title": "結果｜BOAT RACE オフィシャルウェブサイト",
+      "html_bytes": 59274,
+      "has_race_detail_content": true,
+      "decision_technique": "まくり差し",
+      "weather": {
+        "wind_speed_m": 3,
+        "wave_height_cm": 3,
+        "water_temperature_c": 27,
+        "air_temperature_c": 31
+      },
+      "sections": {
+        "has_payout_section": true,
+        "has_finish_section": false
+      },
+      "raw_files": [
+        "data/raw/official/2026-07-10/11/races/07.html",
+        "data/raw/official/2026-07-10/11/races/07.metadata.json"
+      ],
+      "parser_status": "initial_text_extraction",
+      "analysis_note": {
+        "decision": "未分析",
+        "skip_decision_required": true,
+        "budget_note": "生活費とは分けた予算内で楽しむ",
+        "disclaimer": "的中や利益を保証するものではありません"
+      }
+    },
+    {
+      "race_id": "2026-07-10-11-8",
+      "date": "2026-07-10",
+      "venue_code": "11",
+      "venue_name": "びわこ",
+      "race_no": 8,
+      "source_url": "https://www.boatrace.jp/owpc/pc/race/raceresult?rno=8&jcd=11&hd=20260710",
+      "title": "結果｜BOAT RACE オフィシャルウェブサイト",
+      "html_bytes": 58104,
+      "has_race_detail_content": true,
+      "decision_technique": "逃げ",
+      "weather": {
+        "wind_speed_m": 1,
+        "wave_height_cm": 1,
+        "water_temperature_c": 27,
+        "air_temperature_c": 32
+      },
+      "sections": {
+        "has_payout_section": true,
+        "has_finish_section": false
+      },
+      "raw_files": [
+        "data/raw/official/2026-07-10/11/races/08.html",
+        "data/raw/official/2026-07-10/11/races/08.metadata.json"
+      ],
+      "parser_status": "initial_text_extraction",
+      "analysis_note": {
+        "decision": "未分析",
+        "skip_decision_required": true,
+        "budget_note": "生活費とは分けた予算内で楽しむ",
+        "disclaimer": "的中や利益を保証するものではありません"
+      }
+    },
+    {
+      "race_id": "2026-07-10-11-9",
+      "date": "2026-07-10",
+      "venue_code": "11",
+      "venue_name": "びわこ",
+      "race_no": 9,
+      "source_url": "https://www.boatrace.jp/owpc/pc/race/raceresult?rno=9&jcd=11&hd=20260710",
+      "title": "結果｜BOAT RACE オフィシャルウェブサイト",
+      "html_bytes": 59258,
+      "has_race_detail_content": true,
+      "decision_technique": "逃げ",
+      "weather": {
+        "wind_speed_m": 3,
+        "wave_height_cm": 3,
+        "water_temperature_c": 27,
+        "air_temperature_c": 31
+      },
+      "sections": {
+        "has_payout_section": true,
+        "has_finish_section": false
+      },
+      "raw_files": [
+        "data/raw/official/2026-07-10/11/races/09.html",
+        "data/raw/official/2026-07-10/11/races/09.metadata.json"
+      ],
+      "parser_status": "initial_text_extraction",
+      "analysis_note": {
+        "decision": "未分析",
+        "skip_decision_required": true,
+        "budget_note": "生活費とは分けた予算内で楽しむ",
+        "disclaimer": "的中や利益を保証するものではありません"
+      }
+    },
+    {
+      "race_id": "2026-07-10-11-10",
+      "date": "2026-07-10",
+      "venue_code": "11",
+      "venue_name": "びわこ",
+      "race_no": 10,
+      "source_url": "https://www.boatrace.jp/owpc/pc/race/raceresult?rno=10&jcd=11&hd=20260710",
+      "title": "結果｜BOAT RACE オフィシャルウェブサイト",
+      "html_bytes": 59266,
+      "has_race_detail_content": true,
+      "decision_technique": "差し",
+      "weather": {
+        "wind_speed_m": 4,
+        "wave_height_cm": 4,
+        "water_temperature_c": 27,
+        "air_temperature_c": 31
+      },
+      "sections": {
+        "has_payout_section": true,
+        "has_finish_section": false
+      },
+      "raw_files": [
+        "data/raw/official/2026-07-10/11/races/10.html",
+        "data/raw/official/2026-07-10/11/races/10.metadata.json"
+      ],
+      "parser_status": "initial_text_extraction",
+      "analysis_note": {
+        "decision": "未分析",
+        "skip_decision_required": true,
+        "budget_note": "生活費とは分けた予算内で楽しむ",
+        "disclaimer": "的中や利益を保証するものではありません"
+      }
+    },
+    {
+      "race_id": "2026-07-10-11-11",
+      "date": "2026-07-10",
+      "venue_code": "11",
+      "venue_name": "びわこ",
+      "race_no": 11,
+      "source_url": "https://www.boatrace.jp/owpc/pc/race/raceresult?rno=11&jcd=11&hd=20260710",
+      "title": "結果｜BOAT RACE オフィシャルウェブサイト",
+      "html_bytes": 59268,
+      "has_race_detail_content": true,
+      "decision_technique": "逃げ",
+      "weather": {
+        "wind_speed_m": 5,
+        "wave_height_cm": 4,
+        "water_temperature_c": 27,
+        "air_temperature_c": 30
+      },
+      "sections": {
+        "has_payout_section": true,
+        "has_finish_section": false
+      },
+      "raw_files": [
+        "data/raw/official/2026-07-10/11/races/11.html",
+        "data/raw/official/2026-07-10/11/races/11.metadata.json"
+      ],
+      "parser_status": "initial_text_extraction",
+      "analysis_note": {
+        "decision": "未分析",
+        "skip_decision_required": true,
+        "budget_note": "生活費とは分けた予算内で楽しむ",
+        "disclaimer": "的中や利益を保証するものではありません"
+      }
+    },
+    {
+      "race_id": "2026-07-10-11-12",
+      "date": "2026-07-10",
+      "venue_code": "11",
+      "venue_name": "びわこ",
+      "race_no": 12,
+      "source_url": "https://www.boatrace.jp/owpc/pc/race/raceresult?rno=12&jcd=11&hd=20260710",
+      "title": "結果｜BOAT RACE オフィシャルウェブサイト",
+      "html_bytes": 59290,
+      "has_race_detail_content": true,
+      "decision_technique": "差し",
+      "weather": {
+        "wind_speed_m": 6,
+        "wave_height_cm": 5,
+        "water_temperature_c": 27,
+        "air_temperature_c": 30
+      },
+      "sections": {
+        "has_payout_section": true,
+        "has_finish_section": false
+      },
+      "raw_files": [
+        "data/raw/official/2026-07-10/11/races/12.html",
+        "data/raw/official/2026-07-10/11/races/12.metadata.json"
+      ],
+      "parser_status": "initial_text_extraction",
+      "analysis_note": {
+        "decision": "未分析",
+        "skip_decision_required": true,
+        "budget_note": "生活費とは分けた予算内で楽しむ",
+        "disclaimer": "的中や利益を保証するものではありません"
+      }
+    },
+    {
       "race_id": "2026-07-10-14-1",
       "date": "2026-07-10",
       "venue_code": "14",
@@ -1166,7 +2387,7 @@
       "race_no": 1,
       "source_url": "https://www.boatrace.jp/owpc/pc/race/raceresult?rno=1&jcd=14&hd=20260710",
       "title": "結果｜BOAT RACE オフィシャルウェブサイト",
-      "html_bytes": 58979,
+      "html_bytes": 59020,
       "has_race_detail_content": true,
       "decision_technique": "逃げ",
       "weather": {
@@ -1199,7 +2420,7 @@
       "race_no": 2,
       "source_url": "https://www.boatrace.jp/owpc/pc/race/raceresult?rno=2&jcd=14&hd=20260710",
       "title": "結果｜BOAT RACE オフィシャルウェブサイト",
-      "html_bytes": 59002,
+      "html_bytes": 59043,
       "has_race_detail_content": true,
       "decision_technique": "まくり差し",
       "weather": {
@@ -1232,7 +2453,7 @@
       "race_no": 3,
       "source_url": "https://www.boatrace.jp/owpc/pc/race/raceresult?rno=3&jcd=14&hd=20260710",
       "title": "結果｜BOAT RACE オフィシャルウェブサイト",
-      "html_bytes": 58974,
+      "html_bytes": 59015,
       "has_race_detail_content": true,
       "decision_technique": "逃げ",
       "weather": {
@@ -1265,7 +2486,7 @@
       "race_no": 4,
       "source_url": "https://www.boatrace.jp/owpc/pc/race/raceresult?rno=4&jcd=14&hd=20260710",
       "title": "結果｜BOAT RACE オフィシャルウェブサイト",
-      "html_bytes": 58976,
+      "html_bytes": 59017,
       "has_race_detail_content": true,
       "decision_technique": "逃げ",
       "weather": {
@@ -1298,7 +2519,7 @@
       "race_no": 5,
       "source_url": "https://www.boatrace.jp/owpc/pc/race/raceresult?rno=5&jcd=14&hd=20260710",
       "title": "結果｜BOAT RACE オフィシャルウェブサイト",
-      "html_bytes": 58974,
+      "html_bytes": 59015,
       "has_race_detail_content": true,
       "decision_technique": "逃げ",
       "weather": {
@@ -1331,7 +2552,7 @@
       "race_no": 6,
       "source_url": "https://www.boatrace.jp/owpc/pc/race/raceresult?rno=6&jcd=14&hd=20260710",
       "title": "結果｜BOAT RACE オフィシャルウェブサイト",
-      "html_bytes": 58986,
+      "html_bytes": 59027,
       "has_race_detail_content": true,
       "decision_technique": "差し",
       "weather": {
@@ -1364,7 +2585,7 @@
       "race_no": 7,
       "source_url": "https://www.boatrace.jp/owpc/pc/race/raceresult?rno=7&jcd=14&hd=20260710",
       "title": "結果｜BOAT RACE オフィシャルウェブサイト",
-      "html_bytes": 58982,
+      "html_bytes": 59023,
       "has_race_detail_content": true,
       "decision_technique": "まくり",
       "weather": {
@@ -1397,7 +2618,7 @@
       "race_no": 8,
       "source_url": "https://www.boatrace.jp/owpc/pc/race/raceresult?rno=8&jcd=14&hd=20260710",
       "title": "結果｜BOAT RACE オフィシャルウェブサイト",
-      "html_bytes": 58981,
+      "html_bytes": 59022,
       "has_race_detail_content": true,
       "decision_technique": "逃げ",
       "weather": {
@@ -1430,7 +2651,7 @@
       "race_no": 9,
       "source_url": "https://www.boatrace.jp/owpc/pc/race/raceresult?rno=9&jcd=14&hd=20260710",
       "title": "結果｜BOAT RACE オフィシャルウェブサイト",
-      "html_bytes": 58981,
+      "html_bytes": 59022,
       "has_race_detail_content": true,
       "decision_technique": "逃げ",
       "weather": {
@@ -1456,6 +2677,369 @@
       }
     },
     {
+      "race_id": "2026-07-10-14-10",
+      "date": "2026-07-10",
+      "venue_code": "14",
+      "venue_name": "鳴門",
+      "race_no": 10,
+      "source_url": "https://www.boatrace.jp/owpc/pc/race/raceresult?rno=10&jcd=14&hd=20260710",
+      "title": "結果｜BOAT RACE オフィシャルウェブサイト",
+      "html_bytes": 59028,
+      "has_race_detail_content": true,
+      "decision_technique": "まくり",
+      "weather": {
+        "wind_speed_m": 4,
+        "wave_height_cm": 4,
+        "water_temperature_c": 24,
+        "air_temperature_c": 29
+      },
+      "sections": {
+        "has_payout_section": true,
+        "has_finish_section": false
+      },
+      "raw_files": [
+        "data/raw/official/2026-07-10/14/races/10.html",
+        "data/raw/official/2026-07-10/14/races/10.metadata.json"
+      ],
+      "parser_status": "initial_text_extraction",
+      "analysis_note": {
+        "decision": "未分析",
+        "skip_decision_required": true,
+        "budget_note": "生活費とは分けた予算内で楽しむ",
+        "disclaimer": "的中や利益を保証するものではありません"
+      }
+    },
+    {
+      "race_id": "2026-07-10-14-11",
+      "date": "2026-07-10",
+      "venue_code": "14",
+      "venue_name": "鳴門",
+      "race_no": 11,
+      "source_url": "https://www.boatrace.jp/owpc/pc/race/raceresult?rno=11&jcd=14&hd=20260710",
+      "title": "結果｜BOAT RACE オフィシャルウェブサイト",
+      "html_bytes": 59020,
+      "has_race_detail_content": true,
+      "decision_technique": "逃げ",
+      "weather": {
+        "wind_speed_m": 3,
+        "wave_height_cm": 3,
+        "water_temperature_c": 24,
+        "air_temperature_c": 29
+      },
+      "sections": {
+        "has_payout_section": true,
+        "has_finish_section": false
+      },
+      "raw_files": [
+        "data/raw/official/2026-07-10/14/races/11.html",
+        "data/raw/official/2026-07-10/14/races/11.metadata.json"
+      ],
+      "parser_status": "initial_text_extraction",
+      "analysis_note": {
+        "decision": "未分析",
+        "skip_decision_required": true,
+        "budget_note": "生活費とは分けた予算内で楽しむ",
+        "disclaimer": "的中や利益を保証するものではありません"
+      }
+    },
+    {
+      "race_id": "2026-07-10-14-12",
+      "date": "2026-07-10",
+      "venue_code": "14",
+      "venue_name": "鳴門",
+      "race_no": 12,
+      "source_url": "https://www.boatrace.jp/owpc/pc/race/raceresult?rno=12&jcd=14&hd=20260710",
+      "title": "結果｜BOAT RACE オフィシャルウェブサイト",
+      "html_bytes": 59022,
+      "has_race_detail_content": true,
+      "decision_technique": "逃げ",
+      "weather": {
+        "wind_speed_m": 3,
+        "wave_height_cm": 3,
+        "water_temperature_c": 24,
+        "air_temperature_c": 29
+      },
+      "sections": {
+        "has_payout_section": true,
+        "has_finish_section": false
+      },
+      "raw_files": [
+        "data/raw/official/2026-07-10/14/races/12.html",
+        "data/raw/official/2026-07-10/14/races/12.metadata.json"
+      ],
+      "parser_status": "initial_text_extraction",
+      "analysis_note": {
+        "decision": "未分析",
+        "skip_decision_required": true,
+        "budget_note": "生活費とは分けた予算内で楽しむ",
+        "disclaimer": "的中や利益を保証するものではありません"
+      }
+    },
+    {
+      "race_id": "2026-07-10-15-1",
+      "date": "2026-07-10",
+      "venue_code": "15",
+      "venue_name": "丸亀",
+      "race_no": 1,
+      "source_url": "https://www.boatrace.jp/owpc/pc/race/raceresult?rno=1&jcd=15&hd=20260710",
+      "title": "結果｜BOAT RACE オフィシャルウェブサイト",
+      "html_bytes": 59005,
+      "has_race_detail_content": true,
+      "decision_technique": "まくり",
+      "weather": {
+        "wind_speed_m": 2,
+        "wave_height_cm": 2,
+        "water_temperature_c": 25,
+        "air_temperature_c": 31
+      },
+      "sections": {
+        "has_payout_section": true,
+        "has_finish_section": false
+      },
+      "raw_files": [
+        "data/raw/official/2026-07-10/15/races/01.html",
+        "data/raw/official/2026-07-10/15/races/01.metadata.json"
+      ],
+      "parser_status": "initial_text_extraction",
+      "analysis_note": {
+        "decision": "未分析",
+        "skip_decision_required": true,
+        "budget_note": "生活費とは分けた予算内で楽しむ",
+        "disclaimer": "的中や利益を保証するものではありません"
+      }
+    },
+    {
+      "race_id": "2026-07-10-15-2",
+      "date": "2026-07-10",
+      "venue_code": "15",
+      "venue_name": "丸亀",
+      "race_no": 2,
+      "source_url": "https://www.boatrace.jp/owpc/pc/race/raceresult?rno=2&jcd=15&hd=20260710",
+      "title": "結果｜BOAT RACE オフィシャルウェブサイト",
+      "html_bytes": 58993,
+      "has_race_detail_content": true,
+      "decision_technique": "差し",
+      "weather": {
+        "wind_speed_m": 1,
+        "wave_height_cm": 1,
+        "water_temperature_c": 25,
+        "air_temperature_c": 31
+      },
+      "sections": {
+        "has_payout_section": true,
+        "has_finish_section": false
+      },
+      "raw_files": [
+        "data/raw/official/2026-07-10/15/races/02.html",
+        "data/raw/official/2026-07-10/15/races/02.metadata.json"
+      ],
+      "parser_status": "initial_text_extraction",
+      "analysis_note": {
+        "decision": "未分析",
+        "skip_decision_required": true,
+        "budget_note": "生活費とは分けた予算内で楽しむ",
+        "disclaimer": "的中や利益を保証するものではありません"
+      }
+    },
+    {
+      "race_id": "2026-07-10-15-3",
+      "date": "2026-07-10",
+      "venue_code": "15",
+      "venue_name": "丸亀",
+      "race_no": 3,
+      "source_url": "https://www.boatrace.jp/owpc/pc/race/raceresult?rno=3&jcd=15&hd=20260710",
+      "title": "結果｜BOAT RACE オフィシャルウェブサイト",
+      "html_bytes": 59028,
+      "has_race_detail_content": true,
+      "decision_technique": "まくり差し",
+      "weather": {
+        "wind_speed_m": 2,
+        "wave_height_cm": 2,
+        "water_temperature_c": 25,
+        "air_temperature_c": 31
+      },
+      "sections": {
+        "has_payout_section": true,
+        "has_finish_section": false
+      },
+      "raw_files": [
+        "data/raw/official/2026-07-10/15/races/03.html",
+        "data/raw/official/2026-07-10/15/races/03.metadata.json"
+      ],
+      "parser_status": "initial_text_extraction",
+      "analysis_note": {
+        "decision": "未分析",
+        "skip_decision_required": true,
+        "budget_note": "生活費とは分けた予算内で楽しむ",
+        "disclaimer": "的中や利益を保証するものではありません"
+      }
+    },
+    {
+      "race_id": "2026-07-10-15-4",
+      "date": "2026-07-10",
+      "venue_code": "15",
+      "venue_name": "丸亀",
+      "race_no": 4,
+      "source_url": "https://www.boatrace.jp/owpc/pc/race/raceresult?rno=4&jcd=15&hd=20260710",
+      "title": "結果｜BOAT RACE オフィシャルウェブサイト",
+      "html_bytes": 59015,
+      "has_race_detail_content": true,
+      "decision_technique": "まくり差し",
+      "weather": {
+        "wind_speed_m": 2,
+        "wave_height_cm": 2,
+        "water_temperature_c": 25,
+        "air_temperature_c": 31
+      },
+      "sections": {
+        "has_payout_section": true,
+        "has_finish_section": false
+      },
+      "raw_files": [
+        "data/raw/official/2026-07-10/15/races/04.html",
+        "data/raw/official/2026-07-10/15/races/04.metadata.json"
+      ],
+      "parser_status": "initial_text_extraction",
+      "analysis_note": {
+        "decision": "未分析",
+        "skip_decision_required": true,
+        "budget_note": "生活費とは分けた予算内で楽しむ",
+        "disclaimer": "的中や利益を保証するものではありません"
+      }
+    },
+    {
+      "race_id": "2026-07-10-15-5",
+      "date": "2026-07-10",
+      "venue_code": "15",
+      "venue_name": "丸亀",
+      "race_no": 5,
+      "source_url": "https://www.boatrace.jp/owpc/pc/race/raceresult?rno=5&jcd=15&hd=20260710",
+      "title": "結果｜BOAT RACE オフィシャルウェブサイト",
+      "html_bytes": 58990,
+      "has_race_detail_content": true,
+      "decision_technique": "逃げ",
+      "weather": {
+        "wind_speed_m": 2,
+        "wave_height_cm": 2,
+        "water_temperature_c": 25,
+        "air_temperature_c": 31
+      },
+      "sections": {
+        "has_payout_section": true,
+        "has_finish_section": false
+      },
+      "raw_files": [
+        "data/raw/official/2026-07-10/15/races/05.html",
+        "data/raw/official/2026-07-10/15/races/05.metadata.json"
+      ],
+      "parser_status": "initial_text_extraction",
+      "analysis_note": {
+        "decision": "未分析",
+        "skip_decision_required": true,
+        "budget_note": "生活費とは分けた予算内で楽しむ",
+        "disclaimer": "的中や利益を保証するものではありません"
+      }
+    },
+    {
+      "race_id": "2026-07-10-15-6",
+      "date": "2026-07-10",
+      "venue_code": "15",
+      "venue_name": "丸亀",
+      "race_no": 6,
+      "source_url": "https://www.boatrace.jp/owpc/pc/race/raceresult?rno=6&jcd=15&hd=20260710",
+      "title": "結果｜BOAT RACE オフィシャルウェブサイト",
+      "html_bytes": 58996,
+      "has_race_detail_content": true,
+      "decision_technique": "抜き",
+      "weather": {
+        "wind_speed_m": 2,
+        "wave_height_cm": 2,
+        "water_temperature_c": 25,
+        "air_temperature_c": 31
+      },
+      "sections": {
+        "has_payout_section": true,
+        "has_finish_section": false
+      },
+      "raw_files": [
+        "data/raw/official/2026-07-10/15/races/06.html",
+        "data/raw/official/2026-07-10/15/races/06.metadata.json"
+      ],
+      "parser_status": "initial_text_extraction",
+      "analysis_note": {
+        "decision": "未分析",
+        "skip_decision_required": true,
+        "budget_note": "生活費とは分けた予算内で楽しむ",
+        "disclaimer": "的中や利益を保証するものではありません"
+      }
+    },
+    {
+      "race_id": "2026-07-10-15-7",
+      "date": "2026-07-10",
+      "venue_code": "15",
+      "venue_name": "丸亀",
+      "race_no": 7,
+      "source_url": "https://www.boatrace.jp/owpc/pc/race/raceresult?rno=7&jcd=15&hd=20260710",
+      "title": "結果｜BOAT RACE オフィシャルウェブサイト",
+      "html_bytes": 59014,
+      "has_race_detail_content": true,
+      "decision_technique": "まくり差し",
+      "weather": {
+        "wind_speed_m": 1,
+        "wave_height_cm": 1,
+        "water_temperature_c": 25,
+        "air_temperature_c": 31
+      },
+      "sections": {
+        "has_payout_section": true,
+        "has_finish_section": false
+      },
+      "raw_files": [
+        "data/raw/official/2026-07-10/15/races/07.html",
+        "data/raw/official/2026-07-10/15/races/07.metadata.json"
+      ],
+      "parser_status": "initial_text_extraction",
+      "analysis_note": {
+        "decision": "未分析",
+        "skip_decision_required": true,
+        "budget_note": "生活費とは分けた予算内で楽しむ",
+        "disclaimer": "的中や利益を保証するものではありません"
+      }
+    },
+    {
+      "race_id": "2026-07-10-15-8",
+      "date": "2026-07-10",
+      "venue_code": "15",
+      "venue_name": "丸亀",
+      "race_no": 8,
+      "source_url": "https://www.boatrace.jp/owpc/pc/race/raceresult?rno=8&jcd=15&hd=20260710",
+      "title": "結果｜BOAT RACE オフィシャルウェブサイト",
+      "html_bytes": 46190,
+      "has_race_detail_content": true,
+      "decision_technique": "備考",
+      "weather": {
+        "wind_speed_m": null,
+        "wave_height_cm": null,
+        "water_temperature_c": null,
+        "air_temperature_c": null
+      },
+      "sections": {
+        "has_payout_section": true,
+        "has_finish_section": false
+      },
+      "raw_files": [
+        "data/raw/official/2026-07-10/15/races/08.html",
+        "data/raw/official/2026-07-10/15/races/08.metadata.json"
+      ],
+      "parser_status": "initial_text_extraction",
+      "analysis_note": {
+        "decision": "未分析",
+        "skip_decision_required": true,
+        "budget_note": "生活費とは分けた予算内で楽しむ",
+        "disclaimer": "的中や利益を保証するものではありません"
+      }
+    },
+    {
       "race_id": "2026-07-10-16-1",
       "date": "2026-07-10",
       "venue_code": "16",
@@ -1463,7 +3047,7 @@
       "race_no": 1,
       "source_url": "https://www.boatrace.jp/owpc/pc/race/raceresult?rno=1&jcd=16&hd=20260710",
       "title": "結果｜BOAT RACE オフィシャルウェブサイト",
-      "html_bytes": 58997,
+      "html_bytes": 59038,
       "has_race_detail_content": true,
       "decision_technique": "まくり",
       "weather": {
@@ -1496,7 +3080,7 @@
       "race_no": 2,
       "source_url": "https://www.boatrace.jp/owpc/pc/race/raceresult?rno=2&jcd=16&hd=20260710",
       "title": "結果｜BOAT RACE オフィシャルウェブサイト",
-      "html_bytes": 58988,
+      "html_bytes": 59029,
       "has_race_detail_content": true,
       "decision_technique": "まくり",
       "weather": {
@@ -1529,7 +3113,7 @@
       "race_no": 3,
       "source_url": "https://www.boatrace.jp/owpc/pc/race/raceresult?rno=3&jcd=16&hd=20260710",
       "title": "結果｜BOAT RACE オフィシャルウェブサイト",
-      "html_bytes": 58976,
+      "html_bytes": 59017,
       "has_race_detail_content": true,
       "decision_technique": "逃げ",
       "weather": {
@@ -1555,6 +3139,633 @@
       }
     },
     {
+      "race_id": "2026-07-10-16-4",
+      "date": "2026-07-10",
+      "venue_code": "16",
+      "venue_name": "児島",
+      "race_no": 4,
+      "source_url": "https://www.boatrace.jp/owpc/pc/race/raceresult?rno=4&jcd=16&hd=20260710",
+      "title": "結果｜BOAT RACE オフィシャルウェブサイト",
+      "html_bytes": 59020,
+      "has_race_detail_content": true,
+      "decision_technique": "逃げ",
+      "weather": {
+        "wind_speed_m": 3,
+        "wave_height_cm": 3,
+        "water_temperature_c": 26,
+        "air_temperature_c": 28
+      },
+      "sections": {
+        "has_payout_section": true,
+        "has_finish_section": false
+      },
+      "raw_files": [
+        "data/raw/official/2026-07-10/16/races/04.html",
+        "data/raw/official/2026-07-10/16/races/04.metadata.json"
+      ],
+      "parser_status": "initial_text_extraction",
+      "analysis_note": {
+        "decision": "未分析",
+        "skip_decision_required": true,
+        "budget_note": "生活費とは分けた予算内で楽しむ",
+        "disclaimer": "的中や利益を保証するものではありません"
+      }
+    },
+    {
+      "race_id": "2026-07-10-16-5",
+      "date": "2026-07-10",
+      "venue_code": "16",
+      "venue_name": "児島",
+      "race_no": 5,
+      "source_url": "https://www.boatrace.jp/owpc/pc/race/raceresult?rno=5&jcd=16&hd=20260710",
+      "title": "結果｜BOAT RACE オフィシャルウェブサイト",
+      "html_bytes": 59020,
+      "has_race_detail_content": true,
+      "decision_technique": "抜き",
+      "weather": {
+        "wind_speed_m": 3,
+        "wave_height_cm": 3,
+        "water_temperature_c": 26,
+        "air_temperature_c": 28
+      },
+      "sections": {
+        "has_payout_section": true,
+        "has_finish_section": false
+      },
+      "raw_files": [
+        "data/raw/official/2026-07-10/16/races/05.html",
+        "data/raw/official/2026-07-10/16/races/05.metadata.json"
+      ],
+      "parser_status": "initial_text_extraction",
+      "analysis_note": {
+        "decision": "未分析",
+        "skip_decision_required": true,
+        "budget_note": "生活費とは分けた予算内で楽しむ",
+        "disclaimer": "的中や利益を保証するものではありません"
+      }
+    },
+    {
+      "race_id": "2026-07-10-16-6",
+      "date": "2026-07-10",
+      "venue_code": "16",
+      "venue_name": "児島",
+      "race_no": 6,
+      "source_url": "https://www.boatrace.jp/owpc/pc/race/raceresult?rno=6&jcd=16&hd=20260710",
+      "title": "結果｜BOAT RACE オフィシャルウェブサイト",
+      "html_bytes": 59015,
+      "has_race_detail_content": true,
+      "decision_technique": "逃げ",
+      "weather": {
+        "wind_speed_m": 2,
+        "wave_height_cm": 3,
+        "water_temperature_c": 26,
+        "air_temperature_c": 28
+      },
+      "sections": {
+        "has_payout_section": true,
+        "has_finish_section": false
+      },
+      "raw_files": [
+        "data/raw/official/2026-07-10/16/races/06.html",
+        "data/raw/official/2026-07-10/16/races/06.metadata.json"
+      ],
+      "parser_status": "initial_text_extraction",
+      "analysis_note": {
+        "decision": "未分析",
+        "skip_decision_required": true,
+        "budget_note": "生活費とは分けた予算内で楽しむ",
+        "disclaimer": "的中や利益を保証するものではありません"
+      }
+    },
+    {
+      "race_id": "2026-07-10-16-7",
+      "date": "2026-07-10",
+      "venue_code": "16",
+      "venue_name": "児島",
+      "race_no": 7,
+      "source_url": "https://www.boatrace.jp/owpc/pc/race/raceresult?rno=7&jcd=16&hd=20260710",
+      "title": "結果｜BOAT RACE オフィシャルウェブサイト",
+      "html_bytes": 59017,
+      "has_race_detail_content": true,
+      "decision_technique": "抜き",
+      "weather": {
+        "wind_speed_m": 2,
+        "wave_height_cm": 3,
+        "water_temperature_c": 26,
+        "air_temperature_c": 29
+      },
+      "sections": {
+        "has_payout_section": true,
+        "has_finish_section": false
+      },
+      "raw_files": [
+        "data/raw/official/2026-07-10/16/races/07.html",
+        "data/raw/official/2026-07-10/16/races/07.metadata.json"
+      ],
+      "parser_status": "initial_text_extraction",
+      "analysis_note": {
+        "decision": "未分析",
+        "skip_decision_required": true,
+        "budget_note": "生活費とは分けた予算内で楽しむ",
+        "disclaimer": "的中や利益を保証するものではありません"
+      }
+    },
+    {
+      "race_id": "2026-07-10-16-8",
+      "date": "2026-07-10",
+      "venue_code": "16",
+      "venue_name": "児島",
+      "race_no": 8,
+      "source_url": "https://www.boatrace.jp/owpc/pc/race/raceresult?rno=8&jcd=16&hd=20260710",
+      "title": "結果｜BOAT RACE オフィシャルウェブサイト",
+      "html_bytes": 59015,
+      "has_race_detail_content": true,
+      "decision_technique": "逃げ",
+      "weather": {
+        "wind_speed_m": 4,
+        "wave_height_cm": 3,
+        "water_temperature_c": 26,
+        "air_temperature_c": 29
+      },
+      "sections": {
+        "has_payout_section": true,
+        "has_finish_section": false
+      },
+      "raw_files": [
+        "data/raw/official/2026-07-10/16/races/08.html",
+        "data/raw/official/2026-07-10/16/races/08.metadata.json"
+      ],
+      "parser_status": "initial_text_extraction",
+      "analysis_note": {
+        "decision": "未分析",
+        "skip_decision_required": true,
+        "budget_note": "生活費とは分けた予算内で楽しむ",
+        "disclaimer": "的中や利益を保証するものではありません"
+      }
+    },
+    {
+      "race_id": "2026-07-10-16-9",
+      "date": "2026-07-10",
+      "venue_code": "16",
+      "venue_name": "児島",
+      "race_no": 9,
+      "source_url": "https://www.boatrace.jp/owpc/pc/race/raceresult?rno=9&jcd=16&hd=20260710",
+      "title": "結果｜BOAT RACE オフィシャルウェブサイト",
+      "html_bytes": 59017,
+      "has_race_detail_content": true,
+      "decision_technique": "逃げ",
+      "weather": {
+        "wind_speed_m": 4,
+        "wave_height_cm": 3,
+        "water_temperature_c": 26,
+        "air_temperature_c": 29
+      },
+      "sections": {
+        "has_payout_section": true,
+        "has_finish_section": false
+      },
+      "raw_files": [
+        "data/raw/official/2026-07-10/16/races/09.html",
+        "data/raw/official/2026-07-10/16/races/09.metadata.json"
+      ],
+      "parser_status": "initial_text_extraction",
+      "analysis_note": {
+        "decision": "未分析",
+        "skip_decision_required": true,
+        "budget_note": "生活費とは分けた予算内で楽しむ",
+        "disclaimer": "的中や利益を保証するものではありません"
+      }
+    },
+    {
+      "race_id": "2026-07-10-16-10",
+      "date": "2026-07-10",
+      "venue_code": "16",
+      "venue_name": "児島",
+      "race_no": 10,
+      "source_url": "https://www.boatrace.jp/owpc/pc/race/raceresult?rno=10&jcd=16&hd=20260710",
+      "title": "結果｜BOAT RACE オフィシャルウェブサイト",
+      "html_bytes": 59022,
+      "has_race_detail_content": true,
+      "decision_technique": "逃げ",
+      "weather": {
+        "wind_speed_m": 3,
+        "wave_height_cm": 3,
+        "water_temperature_c": 26,
+        "air_temperature_c": 29
+      },
+      "sections": {
+        "has_payout_section": true,
+        "has_finish_section": false
+      },
+      "raw_files": [
+        "data/raw/official/2026-07-10/16/races/10.html",
+        "data/raw/official/2026-07-10/16/races/10.metadata.json"
+      ],
+      "parser_status": "initial_text_extraction",
+      "analysis_note": {
+        "decision": "未分析",
+        "skip_decision_required": true,
+        "budget_note": "生活費とは分けた予算内で楽しむ",
+        "disclaimer": "的中や利益を保証するものではありません"
+      }
+    },
+    {
+      "race_id": "2026-07-10-16-11",
+      "date": "2026-07-10",
+      "venue_code": "16",
+      "venue_name": "児島",
+      "race_no": 11,
+      "source_url": "https://www.boatrace.jp/owpc/pc/race/raceresult?rno=11&jcd=16&hd=20260710",
+      "title": "結果｜BOAT RACE オフィシャルウェブサイト",
+      "html_bytes": 59022,
+      "has_race_detail_content": true,
+      "decision_technique": "逃げ",
+      "weather": {
+        "wind_speed_m": 3,
+        "wave_height_cm": 3,
+        "water_temperature_c": 26,
+        "air_temperature_c": 28
+      },
+      "sections": {
+        "has_payout_section": true,
+        "has_finish_section": false
+      },
+      "raw_files": [
+        "data/raw/official/2026-07-10/16/races/11.html",
+        "data/raw/official/2026-07-10/16/races/11.metadata.json"
+      ],
+      "parser_status": "initial_text_extraction",
+      "analysis_note": {
+        "decision": "未分析",
+        "skip_decision_required": true,
+        "budget_note": "生活費とは分けた予算内で楽しむ",
+        "disclaimer": "的中や利益を保証するものではありません"
+      }
+    },
+    {
+      "race_id": "2026-07-10-16-12",
+      "date": "2026-07-10",
+      "venue_code": "16",
+      "venue_name": "児島",
+      "race_no": 12,
+      "source_url": "https://www.boatrace.jp/owpc/pc/race/raceresult?rno=12&jcd=16&hd=20260710",
+      "title": "結果｜BOAT RACE オフィシャルウェブサイト",
+      "html_bytes": 59028,
+      "has_race_detail_content": true,
+      "decision_technique": "抜き",
+      "weather": {
+        "wind_speed_m": 3,
+        "wave_height_cm": 3,
+        "water_temperature_c": 26,
+        "air_temperature_c": 28
+      },
+      "sections": {
+        "has_payout_section": true,
+        "has_finish_section": false
+      },
+      "raw_files": [
+        "data/raw/official/2026-07-10/16/races/12.html",
+        "data/raw/official/2026-07-10/16/races/12.metadata.json"
+      ],
+      "parser_status": "initial_text_extraction",
+      "analysis_note": {
+        "decision": "未分析",
+        "skip_decision_required": true,
+        "budget_note": "生活費とは分けた予算内で楽しむ",
+        "disclaimer": "的中や利益を保証するものではありません"
+      }
+    },
+    {
+      "race_id": "2026-07-10-19-1",
+      "date": "2026-07-10",
+      "venue_code": "19",
+      "venue_name": "下関",
+      "race_no": 1,
+      "source_url": "https://www.boatrace.jp/owpc/pc/race/raceresult?rno=1&jcd=19&hd=20260710",
+      "title": "結果｜BOAT RACE オフィシャルウェブサイト",
+      "html_bytes": 58862,
+      "has_race_detail_content": true,
+      "decision_technique": "まくり",
+      "weather": {
+        "wind_speed_m": 4,
+        "wave_height_cm": 4,
+        "water_temperature_c": 28,
+        "air_temperature_c": 28
+      },
+      "sections": {
+        "has_payout_section": true,
+        "has_finish_section": false
+      },
+      "raw_files": [
+        "data/raw/official/2026-07-10/19/races/01.html",
+        "data/raw/official/2026-07-10/19/races/01.metadata.json"
+      ],
+      "parser_status": "initial_text_extraction",
+      "analysis_note": {
+        "decision": "未分析",
+        "skip_decision_required": true,
+        "budget_note": "生活費とは分けた予算内で楽しむ",
+        "disclaimer": "的中や利益を保証するものではありません"
+      }
+    },
+    {
+      "race_id": "2026-07-10-19-2",
+      "date": "2026-07-10",
+      "venue_code": "19",
+      "venue_name": "下関",
+      "race_no": 2,
+      "source_url": "https://www.boatrace.jp/owpc/pc/race/raceresult?rno=2&jcd=19&hd=20260710",
+      "title": "結果｜BOAT RACE オフィシャルウェブサイト",
+      "html_bytes": 58850,
+      "has_race_detail_content": true,
+      "decision_technique": "抜き",
+      "weather": {
+        "wind_speed_m": 4,
+        "wave_height_cm": 4,
+        "water_temperature_c": 28,
+        "air_temperature_c": 28
+      },
+      "sections": {
+        "has_payout_section": true,
+        "has_finish_section": false
+      },
+      "raw_files": [
+        "data/raw/official/2026-07-10/19/races/02.html",
+        "data/raw/official/2026-07-10/19/races/02.metadata.json"
+      ],
+      "parser_status": "initial_text_extraction",
+      "analysis_note": {
+        "decision": "未分析",
+        "skip_decision_required": true,
+        "budget_note": "生活費とは分けた予算内で楽しむ",
+        "disclaimer": "的中や利益を保証するものではありません"
+      }
+    },
+    {
+      "race_id": "2026-07-10-19-3",
+      "date": "2026-07-10",
+      "venue_code": "19",
+      "venue_name": "下関",
+      "race_no": 3,
+      "source_url": "https://www.boatrace.jp/owpc/pc/race/raceresult?rno=3&jcd=19&hd=20260710",
+      "title": "結果｜BOAT RACE オフィシャルウェブサイト",
+      "html_bytes": 58865,
+      "has_race_detail_content": true,
+      "decision_technique": "まくり差し",
+      "weather": {
+        "wind_speed_m": 5,
+        "wave_height_cm": 5,
+        "water_temperature_c": 28,
+        "air_temperature_c": 28
+      },
+      "sections": {
+        "has_payout_section": true,
+        "has_finish_section": false
+      },
+      "raw_files": [
+        "data/raw/official/2026-07-10/19/races/03.html",
+        "data/raw/official/2026-07-10/19/races/03.metadata.json"
+      ],
+      "parser_status": "initial_text_extraction",
+      "analysis_note": {
+        "decision": "未分析",
+        "skip_decision_required": true,
+        "budget_note": "生活費とは分けた予算内で楽しむ",
+        "disclaimer": "的中や利益を保証するものではありません"
+      }
+    },
+    {
+      "race_id": "2026-07-10-20-1",
+      "date": "2026-07-10",
+      "venue_code": "20",
+      "venue_name": "若松",
+      "race_no": 1,
+      "source_url": "https://www.boatrace.jp/owpc/pc/race/raceresult?rno=1&jcd=20&hd=20260710",
+      "title": "結果｜BOAT RACE オフィシャルウェブサイト",
+      "html_bytes": 59133,
+      "has_race_detail_content": true,
+      "decision_technique": "逃げ",
+      "weather": {
+        "wind_speed_m": 5,
+        "wave_height_cm": 5,
+        "water_temperature_c": 30,
+        "air_temperature_c": 31
+      },
+      "sections": {
+        "has_payout_section": true,
+        "has_finish_section": false
+      },
+      "raw_files": [
+        "data/raw/official/2026-07-10/20/races/01.html",
+        "data/raw/official/2026-07-10/20/races/01.metadata.json"
+      ],
+      "parser_status": "initial_text_extraction",
+      "analysis_note": {
+        "decision": "未分析",
+        "skip_decision_required": true,
+        "budget_note": "生活費とは分けた予算内で楽しむ",
+        "disclaimer": "的中や利益を保証するものではありません"
+      }
+    },
+    {
+      "race_id": "2026-07-10-20-2",
+      "date": "2026-07-10",
+      "venue_code": "20",
+      "venue_name": "若松",
+      "race_no": 2,
+      "source_url": "https://www.boatrace.jp/owpc/pc/race/raceresult?rno=2&jcd=20&hd=20260710",
+      "title": "結果｜BOAT RACE オフィシャルウェブサイト",
+      "html_bytes": 59136,
+      "has_race_detail_content": true,
+      "decision_technique": "まくり",
+      "weather": {
+        "wind_speed_m": 5,
+        "wave_height_cm": 5,
+        "water_temperature_c": 30,
+        "air_temperature_c": 31
+      },
+      "sections": {
+        "has_payout_section": true,
+        "has_finish_section": false
+      },
+      "raw_files": [
+        "data/raw/official/2026-07-10/20/races/02.html",
+        "data/raw/official/2026-07-10/20/races/02.metadata.json"
+      ],
+      "parser_status": "initial_text_extraction",
+      "analysis_note": {
+        "decision": "未分析",
+        "skip_decision_required": true,
+        "budget_note": "生活費とは分けた予算内で楽しむ",
+        "disclaimer": "的中や利益を保証するものではありません"
+      }
+    },
+    {
+      "race_id": "2026-07-10-20-3",
+      "date": "2026-07-10",
+      "venue_code": "20",
+      "venue_name": "若松",
+      "race_no": 3,
+      "source_url": "https://www.boatrace.jp/owpc/pc/race/raceresult?rno=3&jcd=20&hd=20260710",
+      "title": "結果｜BOAT RACE オフィシャルウェブサイト",
+      "html_bytes": 59129,
+      "has_race_detail_content": true,
+      "decision_technique": "差し",
+      "weather": {
+        "wind_speed_m": 4,
+        "wave_height_cm": 4,
+        "water_temperature_c": 30,
+        "air_temperature_c": 31
+      },
+      "sections": {
+        "has_payout_section": true,
+        "has_finish_section": false
+      },
+      "raw_files": [
+        "data/raw/official/2026-07-10/20/races/03.html",
+        "data/raw/official/2026-07-10/20/races/03.metadata.json"
+      ],
+      "parser_status": "initial_text_extraction",
+      "analysis_note": {
+        "decision": "未分析",
+        "skip_decision_required": true,
+        "budget_note": "生活費とは分けた予算内で楽しむ",
+        "disclaimer": "的中や利益を保証するものではありません"
+      }
+    },
+    {
+      "race_id": "2026-07-10-20-4",
+      "date": "2026-07-10",
+      "venue_code": "20",
+      "venue_name": "若松",
+      "race_no": 4,
+      "source_url": "https://www.boatrace.jp/owpc/pc/race/raceresult?rno=4&jcd=20&hd=20260710",
+      "title": "結果｜BOAT RACE オフィシャルウェブサイト",
+      "html_bytes": 59134,
+      "has_race_detail_content": true,
+      "decision_technique": "まくり",
+      "weather": {
+        "wind_speed_m": 3,
+        "wave_height_cm": 3,
+        "water_temperature_c": 30,
+        "air_temperature_c": 31
+      },
+      "sections": {
+        "has_payout_section": true,
+        "has_finish_section": false
+      },
+      "raw_files": [
+        "data/raw/official/2026-07-10/20/races/04.html",
+        "data/raw/official/2026-07-10/20/races/04.metadata.json"
+      ],
+      "parser_status": "initial_text_extraction",
+      "analysis_note": {
+        "decision": "未分析",
+        "skip_decision_required": true,
+        "budget_note": "生活費とは分けた予算内で楽しむ",
+        "disclaimer": "的中や利益を保証するものではありません"
+      }
+    },
+    {
+      "race_id": "2026-07-10-20-5",
+      "date": "2026-07-10",
+      "venue_code": "20",
+      "venue_name": "若松",
+      "race_no": 5,
+      "source_url": "https://www.boatrace.jp/owpc/pc/race/raceresult?rno=5&jcd=20&hd=20260710",
+      "title": "結果｜BOAT RACE オフィシャルウェブサイト",
+      "html_bytes": 59184,
+      "has_race_detail_content": true,
+      "decision_technique": "逃げ",
+      "weather": {
+        "wind_speed_m": 3,
+        "wave_height_cm": 3,
+        "water_temperature_c": 30,
+        "air_temperature_c": 31
+      },
+      "sections": {
+        "has_payout_section": true,
+        "has_finish_section": false
+      },
+      "raw_files": [
+        "data/raw/official/2026-07-10/20/races/05.html",
+        "data/raw/official/2026-07-10/20/races/05.metadata.json"
+      ],
+      "parser_status": "initial_text_extraction",
+      "analysis_note": {
+        "decision": "未分析",
+        "skip_decision_required": true,
+        "budget_note": "生活費とは分けた予算内で楽しむ",
+        "disclaimer": "的中や利益を保証するものではありません"
+      }
+    },
+    {
+      "race_id": "2026-07-10-20-6",
+      "date": "2026-07-10",
+      "venue_code": "20",
+      "venue_name": "若松",
+      "race_no": 6,
+      "source_url": "https://www.boatrace.jp/owpc/pc/race/raceresult?rno=6&jcd=20&hd=20260710",
+      "title": "結果｜BOAT RACE オフィシャルウェブサイト",
+      "html_bytes": 59122,
+      "has_race_detail_content": true,
+      "decision_technique": "抜き",
+      "weather": {
+        "wind_speed_m": 3,
+        "wave_height_cm": 3,
+        "water_temperature_c": 30,
+        "air_temperature_c": 30
+      },
+      "sections": {
+        "has_payout_section": true,
+        "has_finish_section": false
+      },
+      "raw_files": [
+        "data/raw/official/2026-07-10/20/races/06.html",
+        "data/raw/official/2026-07-10/20/races/06.metadata.json"
+      ],
+      "parser_status": "initial_text_extraction",
+      "analysis_note": {
+        "decision": "未分析",
+        "skip_decision_required": true,
+        "budget_note": "生活費とは分けた予算内で楽しむ",
+        "disclaimer": "的中や利益を保証するものではありません"
+      }
+    },
+    {
+      "race_id": "2026-07-10-20-7",
+      "date": "2026-07-10",
+      "venue_code": "20",
+      "venue_name": "若松",
+      "race_no": 7,
+      "source_url": "https://www.boatrace.jp/owpc/pc/race/raceresult?rno=7&jcd=20&hd=20260710",
+      "title": "結果｜BOAT RACE オフィシャルウェブサイト",
+      "html_bytes": 59127,
+      "has_race_detail_content": true,
+      "decision_technique": "逃げ",
+      "weather": {
+        "wind_speed_m": 4,
+        "wave_height_cm": 4,
+        "water_temperature_c": 30,
+        "air_temperature_c": 30
+      },
+      "sections": {
+        "has_payout_section": true,
+        "has_finish_section": false
+      },
+      "raw_files": [
+        "data/raw/official/2026-07-10/20/races/07.html",
+        "data/raw/official/2026-07-10/20/races/07.metadata.json"
+      ],
+      "parser_status": "initial_text_extraction",
+      "analysis_note": {
+        "decision": "未分析",
+        "skip_decision_required": true,
+        "budget_note": "生活費とは分けた予算内で楽しむ",
+        "disclaimer": "的中や利益を保証するものではありません"
+      }
+    },
+    {
       "race_id": "2026-07-10-22-1",
       "date": "2026-07-10",
       "venue_code": "22",
@@ -1562,7 +3773,7 @@
       "race_no": 1,
       "source_url": "https://www.boatrace.jp/owpc/pc/race/raceresult?rno=1&jcd=22&hd=20260710",
       "title": "結果｜BOAT RACE オフィシャルウェブサイト",
-      "html_bytes": 59021,
+      "html_bytes": 59062,
       "has_race_detail_content": true,
       "decision_technique": "差し",
       "weather": {
@@ -1595,7 +3806,7 @@
       "race_no": 2,
       "source_url": "https://www.boatrace.jp/owpc/pc/race/raceresult?rno=2&jcd=22&hd=20260710",
       "title": "結果｜BOAT RACE オフィシャルウェブサイト",
-      "html_bytes": 59021,
+      "html_bytes": 59062,
       "has_race_detail_content": true,
       "decision_technique": "逃げ",
       "weather": {
@@ -1621,86 +3832,20 @@
       }
     },
     {
-      "race_id": "2026-07-10-23-1",
+      "race_id": "2026-07-10-22-3",
       "date": "2026-07-10",
-      "venue_code": "23",
-      "venue_name": "唐津",
-      "race_no": 1,
-      "source_url": "https://www.boatrace.jp/owpc/pc/race/raceresult?rno=1&jcd=23&hd=20260710",
-      "title": "結果｜BOAT RACE オフィシャルウェブサイト",
-      "html_bytes": 58938,
-      "has_race_detail_content": true,
-      "decision_technique": "逃げ",
-      "weather": {
-        "wind_speed_m": 1,
-        "wave_height_cm": 1,
-        "water_temperature_c": 28,
-        "air_temperature_c": 30
-      },
-      "sections": {
-        "has_payout_section": true,
-        "has_finish_section": false
-      },
-      "raw_files": [
-        "data/raw/official/2026-07-10/23/races/01.html",
-        "data/raw/official/2026-07-10/23/races/01.metadata.json"
-      ],
-      "parser_status": "initial_text_extraction",
-      "analysis_note": {
-        "decision": "未分析",
-        "skip_decision_required": true,
-        "budget_note": "生活費とは分けた予算内で楽しむ",
-        "disclaimer": "的中や利益を保証するものではありません"
-      }
-    },
-    {
-      "race_id": "2026-07-10-23-2",
-      "date": "2026-07-10",
-      "venue_code": "23",
-      "venue_name": "唐津",
-      "race_no": 2,
-      "source_url": "https://www.boatrace.jp/owpc/pc/race/raceresult?rno=2&jcd=23&hd=20260710",
-      "title": "結果｜BOAT RACE オフィシャルウェブサイト",
-      "html_bytes": 58938,
-      "has_race_detail_content": true,
-      "decision_technique": "逃げ",
-      "weather": {
-        "wind_speed_m": 2,
-        "wave_height_cm": 2,
-        "water_temperature_c": 28,
-        "air_temperature_c": 30
-      },
-      "sections": {
-        "has_payout_section": true,
-        "has_finish_section": false
-      },
-      "raw_files": [
-        "data/raw/official/2026-07-10/23/races/02.html",
-        "data/raw/official/2026-07-10/23/races/02.metadata.json"
-      ],
-      "parser_status": "initial_text_extraction",
-      "analysis_note": {
-        "decision": "未分析",
-        "skip_decision_required": true,
-        "budget_note": "生活費とは分けた予算内で楽しむ",
-        "disclaimer": "的中や利益を保証するものではありません"
-      }
-    },
-    {
-      "race_id": "2026-07-10-23-3",
-      "date": "2026-07-10",
-      "venue_code": "23",
-      "venue_name": "唐津",
+      "venue_code": "22",
+      "venue_name": "福岡",
       "race_no": 3,
-      "source_url": "https://www.boatrace.jp/owpc/pc/race/raceresult?rno=3&jcd=23&hd=20260710",
+      "source_url": "https://www.boatrace.jp/owpc/pc/race/raceresult?rno=3&jcd=22&hd=20260710",
       "title": "結果｜BOAT RACE オフィシャルウェブサイト",
-      "html_bytes": 58959,
+      "html_bytes": 59059,
       "has_race_detail_content": true,
-      "decision_technique": "まくり",
+      "decision_technique": "逃げ",
       "weather": {
-        "wind_speed_m": 2,
-        "wave_height_cm": 2,
-        "water_temperature_c": 28,
+        "wind_speed_m": 3,
+        "wave_height_cm": 3,
+        "water_temperature_c": 24,
         "air_temperature_c": 31
       },
       "sections": {
@@ -1708,8 +3853,8 @@
         "has_finish_section": false
       },
       "raw_files": [
-        "data/raw/official/2026-07-10/23/races/03.html",
-        "data/raw/official/2026-07-10/23/races/03.metadata.json"
+        "data/raw/official/2026-07-10/22/races/03.html",
+        "data/raw/official/2026-07-10/22/races/03.metadata.json"
       ],
       "parser_status": "initial_text_extraction",
       "analysis_note": {
@@ -1720,20 +3865,20 @@
       }
     },
     {
-      "race_id": "2026-07-10-23-4",
+      "race_id": "2026-07-10-22-4",
       "date": "2026-07-10",
-      "venue_code": "23",
-      "venue_name": "唐津",
+      "venue_code": "22",
+      "venue_name": "福岡",
       "race_no": 4,
-      "source_url": "https://www.boatrace.jp/owpc/pc/race/raceresult?rno=4&jcd=23&hd=20260710",
+      "source_url": "https://www.boatrace.jp/owpc/pc/race/raceresult?rno=4&jcd=22&hd=20260710",
       "title": "結果｜BOAT RACE オフィシャルウェブサイト",
-      "html_bytes": 58966,
+      "html_bytes": 59065,
       "has_race_detail_content": true,
-      "decision_technique": "まくり差し",
+      "decision_technique": "まくり",
       "weather": {
         "wind_speed_m": 3,
         "wave_height_cm": 3,
-        "water_temperature_c": 28,
+        "water_temperature_c": 24,
         "air_temperature_c": 31
       },
       "sections": {
@@ -1741,8 +3886,8 @@
         "has_finish_section": false
       },
       "raw_files": [
-        "data/raw/official/2026-07-10/23/races/04.html",
-        "data/raw/official/2026-07-10/23/races/04.metadata.json"
+        "data/raw/official/2026-07-10/22/races/04.html",
+        "data/raw/official/2026-07-10/22/races/04.metadata.json"
       ],
       "parser_status": "initial_text_extraction",
       "analysis_note": {
@@ -1753,20 +3898,20 @@
       }
     },
     {
-      "race_id": "2026-07-10-23-5",
+      "race_id": "2026-07-10-22-5",
       "date": "2026-07-10",
-      "venue_code": "23",
-      "venue_name": "唐津",
+      "venue_code": "22",
+      "venue_name": "福岡",
       "race_no": 5,
-      "source_url": "https://www.boatrace.jp/owpc/pc/race/raceresult?rno=5&jcd=23&hd=20260710",
+      "source_url": "https://www.boatrace.jp/owpc/pc/race/raceresult?rno=5&jcd=22&hd=20260710",
       "title": "結果｜BOAT RACE オフィシャルウェブサイト",
-      "html_bytes": 58940,
+      "html_bytes": 59063,
       "has_race_detail_content": true,
-      "decision_technique": "逃げ",
+      "decision_technique": "差し",
       "weather": {
-        "wind_speed_m": 4,
-        "wave_height_cm": 4,
-        "water_temperature_c": 28,
+        "wind_speed_m": 3,
+        "wave_height_cm": 3,
+        "water_temperature_c": 24,
         "air_temperature_c": 31
       },
       "sections": {
@@ -1774,8 +3919,8 @@
         "has_finish_section": false
       },
       "raw_files": [
-        "data/raw/official/2026-07-10/23/races/05.html",
-        "data/raw/official/2026-07-10/23/races/05.metadata.json"
+        "data/raw/official/2026-07-10/22/races/05.html",
+        "data/raw/official/2026-07-10/22/races/05.metadata.json"
       ],
       "parser_status": "initial_text_extraction",
       "analysis_note": {
@@ -1786,119 +3931,20 @@
       }
     },
     {
-      "race_id": "2026-07-10-23-6",
+      "race_id": "2026-07-10-22-6",
       "date": "2026-07-10",
-      "venue_code": "23",
-      "venue_name": "唐津",
+      "venue_code": "22",
+      "venue_name": "福岡",
       "race_no": 6,
-      "source_url": "https://www.boatrace.jp/owpc/pc/race/raceresult?rno=6&jcd=23&hd=20260710",
+      "source_url": "https://www.boatrace.jp/owpc/pc/race/raceresult?rno=6&jcd=22&hd=20260710",
       "title": "結果｜BOAT RACE オフィシャルウェブサイト",
-      "html_bytes": 58942,
+      "html_bytes": 59065,
       "has_race_detail_content": true,
-      "decision_technique": "逃げ",
+      "decision_technique": "抜き",
       "weather": {
         "wind_speed_m": 3,
         "wave_height_cm": 3,
-        "water_temperature_c": 28,
-        "air_temperature_c": 32
-      },
-      "sections": {
-        "has_payout_section": true,
-        "has_finish_section": false
-      },
-      "raw_files": [
-        "data/raw/official/2026-07-10/23/races/06.html",
-        "data/raw/official/2026-07-10/23/races/06.metadata.json"
-      ],
-      "parser_status": "initial_text_extraction",
-      "analysis_note": {
-        "decision": "未分析",
-        "skip_decision_required": true,
-        "budget_note": "生活費とは分けた予算内で楽しむ",
-        "disclaimer": "的中や利益を保証するものではありません"
-      }
-    },
-    {
-      "race_id": "2026-07-10-23-7",
-      "date": "2026-07-10",
-      "venue_code": "23",
-      "venue_name": "唐津",
-      "race_no": 7,
-      "source_url": "https://www.boatrace.jp/owpc/pc/race/raceresult?rno=7&jcd=23&hd=20260710",
-      "title": "結果｜BOAT RACE オフィシャルウェブサイト",
-      "html_bytes": 58956,
-      "has_race_detail_content": true,
-      "decision_technique": "まくり",
-      "weather": {
-        "wind_speed_m": 4,
-        "wave_height_cm": 4,
-        "water_temperature_c": 28,
-        "air_temperature_c": 32
-      },
-      "sections": {
-        "has_payout_section": true,
-        "has_finish_section": false
-      },
-      "raw_files": [
-        "data/raw/official/2026-07-10/23/races/07.html",
-        "data/raw/official/2026-07-10/23/races/07.metadata.json"
-      ],
-      "parser_status": "initial_text_extraction",
-      "analysis_note": {
-        "decision": "未分析",
-        "skip_decision_required": true,
-        "budget_note": "生活費とは分けた予算内で楽しむ",
-        "disclaimer": "的中や利益を保証するものではありません"
-      }
-    },
-    {
-      "race_id": "2026-07-10-23-8",
-      "date": "2026-07-10",
-      "venue_code": "23",
-      "venue_name": "唐津",
-      "race_no": 8,
-      "source_url": "https://www.boatrace.jp/owpc/pc/race/raceresult?rno=8&jcd=23&hd=20260710",
-      "title": "結果｜BOAT RACE オフィシャルウェブサイト",
-      "html_bytes": 58967,
-      "has_race_detail_content": true,
-      "decision_technique": "まくり差し",
-      "weather": {
-        "wind_speed_m": 3,
-        "wave_height_cm": 3,
-        "water_temperature_c": 28,
-        "air_temperature_c": 33
-      },
-      "sections": {
-        "has_payout_section": true,
-        "has_finish_section": false
-      },
-      "raw_files": [
-        "data/raw/official/2026-07-10/23/races/08.html",
-        "data/raw/official/2026-07-10/23/races/08.metadata.json"
-      ],
-      "parser_status": "initial_text_extraction",
-      "analysis_note": {
-        "decision": "未分析",
-        "skip_decision_required": true,
-        "budget_note": "生活費とは分けた予算内で楽しむ",
-        "disclaimer": "的中や利益を保証するものではありません"
-      }
-    },
-    {
-      "race_id": "2026-07-10-23-9",
-      "date": "2026-07-10",
-      "venue_code": "23",
-      "venue_name": "唐津",
-      "race_no": 9,
-      "source_url": "https://www.boatrace.jp/owpc/pc/race/raceresult?rno=9&jcd=23&hd=20260710",
-      "title": "結果｜BOAT RACE オフィシャルウェブサイト",
-      "html_bytes": 58941,
-      "has_race_detail_content": true,
-      "decision_technique": "逃げ",
-      "weather": {
-        "wind_speed_m": 5,
-        "wave_height_cm": 5,
-        "water_temperature_c": 28,
+        "water_temperature_c": 24,
         "air_temperature_c": 31
       },
       "sections": {
@@ -1906,41 +3952,8 @@
         "has_finish_section": false
       },
       "raw_files": [
-        "data/raw/official/2026-07-10/23/races/09.html",
-        "data/raw/official/2026-07-10/23/races/09.metadata.json"
-      ],
-      "parser_status": "initial_text_extraction",
-      "analysis_note": {
-        "decision": "未分析",
-        "skip_decision_required": true,
-        "budget_note": "生活費とは分けた予算内で楽しむ",
-        "disclaimer": "的中や利益を保証するものではありません"
-      }
-    },
-    {
-      "race_id": "2026-07-10-23-10",
-      "date": "2026-07-10",
-      "venue_code": "23",
-      "venue_name": "唐津",
-      "race_no": 10,
-      "source_url": "https://www.boatrace.jp/owpc/pc/race/raceresult?rno=10&jcd=23&hd=20260710",
-      "title": "結果｜BOAT RACE オフィシャルウェブサイト",
-      "html_bytes": 58958,
-      "has_race_detail_content": true,
-      "decision_technique": "まくり",
-      "weather": {
-        "wind_speed_m": 6,
-        "wave_height_cm": 6,
-        "water_temperature_c": 28,
-        "air_temperature_c": 31
-      },
-      "sections": {
-        "has_payout_section": true,
-        "has_finish_section": false
-      },
-      "raw_files": [
-        "data/raw/official/2026-07-10/23/races/10.html",
-        "data/raw/official/2026-07-10/23/races/10.metadata.json"
+        "data/raw/official/2026-07-10/22/races/06.html",
+        "data/raw/official/2026-07-10/22/races/06.metadata.json"
       ],
       "parser_status": "initial_text_extraction",
       "analysis_note": {
