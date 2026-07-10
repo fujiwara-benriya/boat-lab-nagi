@@ -2,7 +2,7 @@
   "date": "2026-07-10",
   "source": "BOAT RACE OFFICIAL WEB resultlist",
   "live": true,
-  "normalized_at": "2026-07-09T15:33:01.114Z",
+  "normalized_at": "2026-07-10T04:11:41.999Z",
   "records": [
     {
       "race_day_id": "2026-07-10-01",
@@ -12,7 +12,7 @@
       "source_url": "https://www.boatrace.jp/owpc/pc/race/resultlist?hd=20260710&jcd=01",
       "collection_status": "saved",
       "http_status": 200,
-      "bytes": 14311,
+      "bytes": 14322,
       "title": "BOAT RACE オフィシャルウェブサイト",
       "has_result_content": true,
       "race_count_detected": 0,
@@ -36,11 +36,42 @@
       "source_url": "https://www.boatrace.jp/owpc/pc/race/resultlist?hd=20260710&jcd=02",
       "collection_status": "saved",
       "http_status": 200,
-      "bytes": 26268,
+      "bytes": 95771,
       "title": "結果一覧｜BOAT RACE オフィシャルウェブサイト",
       "has_result_content": true,
-      "race_count_detected": 0,
-      "races": [],
+      "race_count_detected": 6,
+      "races": [
+        {
+          "race_id": "2026-07-10-02-1",
+          "race_no": 1,
+          "source_url": "https://www.boatrace.jp/owpc/pc/race/raceresult?rno=1&jcd=02&hd=20260710"
+        },
+        {
+          "race_id": "2026-07-10-02-2",
+          "race_no": 2,
+          "source_url": "https://www.boatrace.jp/owpc/pc/race/raceresult?rno=2&jcd=02&hd=20260710"
+        },
+        {
+          "race_id": "2026-07-10-02-3",
+          "race_no": 3,
+          "source_url": "https://www.boatrace.jp/owpc/pc/race/raceresult?rno=3&jcd=02&hd=20260710"
+        },
+        {
+          "race_id": "2026-07-10-02-4",
+          "race_no": 4,
+          "source_url": "https://www.boatrace.jp/owpc/pc/race/raceresult?rno=4&jcd=02&hd=20260710"
+        },
+        {
+          "race_id": "2026-07-10-02-5",
+          "race_no": 5,
+          "source_url": "https://www.boatrace.jp/owpc/pc/race/raceresult?rno=5&jcd=02&hd=20260710"
+        },
+        {
+          "race_id": "2026-07-10-02-6",
+          "race_no": 6,
+          "source_url": "https://www.boatrace.jp/owpc/pc/race/raceresult?rno=6&jcd=02&hd=20260710"
+        }
+      ],
       "raw_saved_files": [
         "data/raw/official/2026-07-10/02/resultlist.html",
         "data/raw/official/2026-07-10/02/metadata.json"
@@ -60,7 +91,7 @@
       "source_url": "https://www.boatrace.jp/owpc/pc/race/resultlist?hd=20260710&jcd=03",
       "collection_status": "saved",
       "http_status": 200,
-      "bytes": 14311,
+      "bytes": 14323,
       "title": "BOAT RACE オフィシャルウェブサイト",
       "has_result_content": true,
       "race_count_detected": 0,
@@ -84,7 +115,7 @@
       "source_url": "https://www.boatrace.jp/owpc/pc/race/resultlist?hd=20260710&jcd=04",
       "collection_status": "saved",
       "http_status": 200,
-      "bytes": 14311,
+      "bytes": 14322,
       "title": "BOAT RACE オフィシャルウェブサイト",
       "has_result_content": true,
       "race_count_detected": 0,
@@ -108,7 +139,7 @@
       "source_url": "https://www.boatrace.jp/owpc/pc/race/resultlist?hd=20260710&jcd=05",
       "collection_status": "saved",
       "http_status": 200,
-      "bytes": 14311,
+      "bytes": 14322,
       "title": "BOAT RACE オフィシャルウェブサイト",
       "has_result_content": true,
       "race_count_detected": 0,
@@ -132,11 +163,32 @@
       "source_url": "https://www.boatrace.jp/owpc/pc/race/resultlist?hd=20260710&jcd=06",
       "collection_status": "saved",
       "http_status": 200,
-      "bytes": 25859,
+      "bytes": 85849,
       "title": "結果一覧｜BOAT RACE オフィシャルウェブサイト",
       "has_result_content": true,
-      "race_count_detected": 0,
-      "races": [],
+      "race_count_detected": 4,
+      "races": [
+        {
+          "race_id": "2026-07-10-06-1",
+          "race_no": 1,
+          "source_url": "https://www.boatrace.jp/owpc/pc/race/raceresult?rno=1&jcd=06&hd=20260710"
+        },
+        {
+          "race_id": "2026-07-10-06-2",
+          "race_no": 2,
+          "source_url": "https://www.boatrace.jp/owpc/pc/race/raceresult?rno=2&jcd=06&hd=20260710"
+        },
+        {
+          "race_id": "2026-07-10-06-3",
+          "race_no": 3,
+          "source_url": "https://www.boatrace.jp/owpc/pc/race/raceresult?rno=3&jcd=06&hd=20260710"
+        },
+        {
+          "race_id": "2026-07-10-06-4",
+          "race_no": 4,
+          "source_url": "https://www.boatrace.jp/owpc/pc/race/raceresult?rno=4&jcd=06&hd=20260710"
+        }
+      ],
       "raw_saved_files": [
         "data/raw/official/2026-07-10/06/resultlist.html",
         "data/raw/official/2026-07-10/06/metadata.json"
@@ -156,7 +208,7 @@
       "source_url": "https://www.boatrace.jp/owpc/pc/race/resultlist?hd=20260710&jcd=07",
       "collection_status": "saved",
       "http_status": 200,
-      "bytes": 14311,
+      "bytes": 14322,
       "title": "BOAT RACE オフィシャルウェブサイト",
       "has_result_content": true,
       "race_count_detected": 0,
@@ -180,11 +232,37 @@
       "source_url": "https://www.boatrace.jp/owpc/pc/race/resultlist?hd=20260710&jcd=08",
       "collection_status": "saved",
       "http_status": 200,
-      "bytes": 25928,
+      "bytes": 93106,
       "title": "結果一覧｜BOAT RACE オフィシャルウェブサイト",
       "has_result_content": true,
-      "race_count_detected": 0,
-      "races": [],
+      "race_count_detected": 5,
+      "races": [
+        {
+          "race_id": "2026-07-10-08-1",
+          "race_no": 1,
+          "source_url": "https://www.boatrace.jp/owpc/pc/race/raceresult?rno=1&jcd=08&hd=20260710"
+        },
+        {
+          "race_id": "2026-07-10-08-2",
+          "race_no": 2,
+          "source_url": "https://www.boatrace.jp/owpc/pc/race/raceresult?rno=2&jcd=08&hd=20260710"
+        },
+        {
+          "race_id": "2026-07-10-08-3",
+          "race_no": 3,
+          "source_url": "https://www.boatrace.jp/owpc/pc/race/raceresult?rno=3&jcd=08&hd=20260710"
+        },
+        {
+          "race_id": "2026-07-10-08-4",
+          "race_no": 4,
+          "source_url": "https://www.boatrace.jp/owpc/pc/race/raceresult?rno=4&jcd=08&hd=20260710"
+        },
+        {
+          "race_id": "2026-07-10-08-5",
+          "race_no": 5,
+          "source_url": "https://www.boatrace.jp/owpc/pc/race/raceresult?rno=5&jcd=08&hd=20260710"
+        }
+      ],
       "raw_saved_files": [
         "data/raw/official/2026-07-10/08/resultlist.html",
         "data/raw/official/2026-07-10/08/metadata.json"
@@ -204,11 +282,37 @@
       "source_url": "https://www.boatrace.jp/owpc/pc/race/resultlist?hd=20260710&jcd=09",
       "collection_status": "saved",
       "http_status": 200,
-      "bytes": 25721,
+      "bytes": 92902,
       "title": "結果一覧｜BOAT RACE オフィシャルウェブサイト",
       "has_result_content": true,
-      "race_count_detected": 0,
-      "races": [],
+      "race_count_detected": 5,
+      "races": [
+        {
+          "race_id": "2026-07-10-09-1",
+          "race_no": 1,
+          "source_url": "https://www.boatrace.jp/owpc/pc/race/raceresult?rno=1&jcd=09&hd=20260710"
+        },
+        {
+          "race_id": "2026-07-10-09-2",
+          "race_no": 2,
+          "source_url": "https://www.boatrace.jp/owpc/pc/race/raceresult?rno=2&jcd=09&hd=20260710"
+        },
+        {
+          "race_id": "2026-07-10-09-3",
+          "race_no": 3,
+          "source_url": "https://www.boatrace.jp/owpc/pc/race/raceresult?rno=3&jcd=09&hd=20260710"
+        },
+        {
+          "race_id": "2026-07-10-09-4",
+          "race_no": 4,
+          "source_url": "https://www.boatrace.jp/owpc/pc/race/raceresult?rno=4&jcd=09&hd=20260710"
+        },
+        {
+          "race_id": "2026-07-10-09-5",
+          "race_no": 5,
+          "source_url": "https://www.boatrace.jp/owpc/pc/race/raceresult?rno=5&jcd=09&hd=20260710"
+        }
+      ],
       "raw_saved_files": [
         "data/raw/official/2026-07-10/09/resultlist.html",
         "data/raw/official/2026-07-10/09/metadata.json"
@@ -228,11 +332,62 @@
       "source_url": "https://www.boatrace.jp/owpc/pc/race/resultlist?hd=20260710&jcd=10",
       "collection_status": "saved",
       "http_status": 200,
-      "bytes": 25986,
+      "bytes": 129009,
       "title": "結果一覧｜BOAT RACE オフィシャルウェブサイト",
       "has_result_content": true,
-      "race_count_detected": 0,
-      "races": [],
+      "race_count_detected": 10,
+      "races": [
+        {
+          "race_id": "2026-07-10-10-1",
+          "race_no": 1,
+          "source_url": "https://www.boatrace.jp/owpc/pc/race/raceresult?rno=1&jcd=10&hd=20260710"
+        },
+        {
+          "race_id": "2026-07-10-10-2",
+          "race_no": 2,
+          "source_url": "https://www.boatrace.jp/owpc/pc/race/raceresult?rno=2&jcd=10&hd=20260710"
+        },
+        {
+          "race_id": "2026-07-10-10-3",
+          "race_no": 3,
+          "source_url": "https://www.boatrace.jp/owpc/pc/race/raceresult?rno=3&jcd=10&hd=20260710"
+        },
+        {
+          "race_id": "2026-07-10-10-4",
+          "race_no": 4,
+          "source_url": "https://www.boatrace.jp/owpc/pc/race/raceresult?rno=4&jcd=10&hd=20260710"
+        },
+        {
+          "race_id": "2026-07-10-10-5",
+          "race_no": 5,
+          "source_url": "https://www.boatrace.jp/owpc/pc/race/raceresult?rno=5&jcd=10&hd=20260710"
+        },
+        {
+          "race_id": "2026-07-10-10-6",
+          "race_no": 6,
+          "source_url": "https://www.boatrace.jp/owpc/pc/race/raceresult?rno=6&jcd=10&hd=20260710"
+        },
+        {
+          "race_id": "2026-07-10-10-7",
+          "race_no": 7,
+          "source_url": "https://www.boatrace.jp/owpc/pc/race/raceresult?rno=7&jcd=10&hd=20260710"
+        },
+        {
+          "race_id": "2026-07-10-10-8",
+          "race_no": 8,
+          "source_url": "https://www.boatrace.jp/owpc/pc/race/raceresult?rno=8&jcd=10&hd=20260710"
+        },
+        {
+          "race_id": "2026-07-10-10-9",
+          "race_no": 9,
+          "source_url": "https://www.boatrace.jp/owpc/pc/race/raceresult?rno=9&jcd=10&hd=20260710"
+        },
+        {
+          "race_id": "2026-07-10-10-10",
+          "race_no": 10,
+          "source_url": "https://www.boatrace.jp/owpc/pc/race/raceresult?rno=10&jcd=10&hd=20260710"
+        }
+      ],
       "raw_saved_files": [
         "data/raw/official/2026-07-10/10/resultlist.html",
         "data/raw/official/2026-07-10/10/metadata.json"
@@ -252,11 +407,37 @@
       "source_url": "https://www.boatrace.jp/owpc/pc/race/resultlist?hd=20260710&jcd=11",
       "collection_status": "saved",
       "http_status": 200,
-      "bytes": 26002,
+      "bytes": 93166,
       "title": "結果一覧｜BOAT RACE オフィシャルウェブサイト",
       "has_result_content": true,
-      "race_count_detected": 0,
-      "races": [],
+      "race_count_detected": 5,
+      "races": [
+        {
+          "race_id": "2026-07-10-11-1",
+          "race_no": 1,
+          "source_url": "https://www.boatrace.jp/owpc/pc/race/raceresult?rno=1&jcd=11&hd=20260710"
+        },
+        {
+          "race_id": "2026-07-10-11-2",
+          "race_no": 2,
+          "source_url": "https://www.boatrace.jp/owpc/pc/race/raceresult?rno=2&jcd=11&hd=20260710"
+        },
+        {
+          "race_id": "2026-07-10-11-3",
+          "race_no": 3,
+          "source_url": "https://www.boatrace.jp/owpc/pc/race/raceresult?rno=3&jcd=11&hd=20260710"
+        },
+        {
+          "race_id": "2026-07-10-11-4",
+          "race_no": 4,
+          "source_url": "https://www.boatrace.jp/owpc/pc/race/raceresult?rno=4&jcd=11&hd=20260710"
+        },
+        {
+          "race_id": "2026-07-10-11-5",
+          "race_no": 5,
+          "source_url": "https://www.boatrace.jp/owpc/pc/race/raceresult?rno=5&jcd=11&hd=20260710"
+        }
+      ],
       "raw_saved_files": [
         "data/raw/official/2026-07-10/11/resultlist.html",
         "data/raw/official/2026-07-10/11/metadata.json"
@@ -276,7 +457,7 @@
       "source_url": "https://www.boatrace.jp/owpc/pc/race/resultlist?hd=20260710&jcd=12",
       "collection_status": "saved",
       "http_status": 200,
-      "bytes": 14311,
+      "bytes": 14322,
       "title": "BOAT RACE オフィシャルウェブサイト",
       "has_result_content": true,
       "race_count_detected": 0,
@@ -300,7 +481,7 @@
       "source_url": "https://www.boatrace.jp/owpc/pc/race/resultlist?hd=20260710&jcd=13",
       "collection_status": "saved",
       "http_status": 200,
-      "bytes": 14311,
+      "bytes": 14322,
       "title": "BOAT RACE オフィシャルウェブサイト",
       "has_result_content": true,
       "race_count_detected": 0,
@@ -324,11 +505,57 @@
       "source_url": "https://www.boatrace.jp/owpc/pc/race/resultlist?hd=20260710&jcd=14",
       "collection_status": "saved",
       "http_status": 200,
-      "bytes": 25784,
+      "bytes": 121668,
       "title": "結果一覧｜BOAT RACE オフィシャルウェブサイト",
       "has_result_content": true,
-      "race_count_detected": 0,
-      "races": [],
+      "race_count_detected": 9,
+      "races": [
+        {
+          "race_id": "2026-07-10-14-1",
+          "race_no": 1,
+          "source_url": "https://www.boatrace.jp/owpc/pc/race/raceresult?rno=1&jcd=14&hd=20260710"
+        },
+        {
+          "race_id": "2026-07-10-14-2",
+          "race_no": 2,
+          "source_url": "https://www.boatrace.jp/owpc/pc/race/raceresult?rno=2&jcd=14&hd=20260710"
+        },
+        {
+          "race_id": "2026-07-10-14-3",
+          "race_no": 3,
+          "source_url": "https://www.boatrace.jp/owpc/pc/race/raceresult?rno=3&jcd=14&hd=20260710"
+        },
+        {
+          "race_id": "2026-07-10-14-4",
+          "race_no": 4,
+          "source_url": "https://www.boatrace.jp/owpc/pc/race/raceresult?rno=4&jcd=14&hd=20260710"
+        },
+        {
+          "race_id": "2026-07-10-14-5",
+          "race_no": 5,
+          "source_url": "https://www.boatrace.jp/owpc/pc/race/raceresult?rno=5&jcd=14&hd=20260710"
+        },
+        {
+          "race_id": "2026-07-10-14-6",
+          "race_no": 6,
+          "source_url": "https://www.boatrace.jp/owpc/pc/race/raceresult?rno=6&jcd=14&hd=20260710"
+        },
+        {
+          "race_id": "2026-07-10-14-7",
+          "race_no": 7,
+          "source_url": "https://www.boatrace.jp/owpc/pc/race/raceresult?rno=7&jcd=14&hd=20260710"
+        },
+        {
+          "race_id": "2026-07-10-14-8",
+          "race_no": 8,
+          "source_url": "https://www.boatrace.jp/owpc/pc/race/raceresult?rno=8&jcd=14&hd=20260710"
+        },
+        {
+          "race_id": "2026-07-10-14-9",
+          "race_no": 9,
+          "source_url": "https://www.boatrace.jp/owpc/pc/race/raceresult?rno=9&jcd=14&hd=20260710"
+        }
+      ],
       "raw_saved_files": [
         "data/raw/official/2026-07-10/14/resultlist.html",
         "data/raw/official/2026-07-10/14/metadata.json"
@@ -348,7 +575,7 @@
       "source_url": "https://www.boatrace.jp/owpc/pc/race/resultlist?hd=20260710&jcd=15",
       "collection_status": "saved",
       "http_status": 200,
-      "bytes": 25802,
+      "bytes": 26035,
       "title": "結果一覧｜BOAT RACE オフィシャルウェブサイト",
       "has_result_content": true,
       "race_count_detected": 0,
@@ -372,11 +599,27 @@
       "source_url": "https://www.boatrace.jp/owpc/pc/race/resultlist?hd=20260710&jcd=16",
       "collection_status": "saved",
       "http_status": 200,
-      "bytes": 25784,
+      "bytes": 74001,
       "title": "結果一覧｜BOAT RACE オフィシャルウェブサイト",
       "has_result_content": true,
-      "race_count_detected": 0,
-      "races": [],
+      "race_count_detected": 3,
+      "races": [
+        {
+          "race_id": "2026-07-10-16-1",
+          "race_no": 1,
+          "source_url": "https://www.boatrace.jp/owpc/pc/race/raceresult?rno=1&jcd=16&hd=20260710"
+        },
+        {
+          "race_id": "2026-07-10-16-2",
+          "race_no": 2,
+          "source_url": "https://www.boatrace.jp/owpc/pc/race/raceresult?rno=2&jcd=16&hd=20260710"
+        },
+        {
+          "race_id": "2026-07-10-16-3",
+          "race_no": 3,
+          "source_url": "https://www.boatrace.jp/owpc/pc/race/raceresult?rno=3&jcd=16&hd=20260710"
+        }
+      ],
       "raw_saved_files": [
         "data/raw/official/2026-07-10/16/resultlist.html",
         "data/raw/official/2026-07-10/16/metadata.json"
@@ -396,7 +639,7 @@
       "source_url": "https://www.boatrace.jp/owpc/pc/race/resultlist?hd=20260710&jcd=17",
       "collection_status": "saved",
       "http_status": 200,
-      "bytes": 14311,
+      "bytes": 14322,
       "title": "BOAT RACE オフィシャルウェブサイト",
       "has_result_content": true,
       "race_count_detected": 0,
@@ -420,7 +663,7 @@
       "source_url": "https://www.boatrace.jp/owpc/pc/race/resultlist?hd=20260710&jcd=18",
       "collection_status": "saved",
       "http_status": 200,
-      "bytes": 14311,
+      "bytes": 14322,
       "title": "BOAT RACE オフィシャルウェブサイト",
       "has_result_content": true,
       "race_count_detected": 0,
@@ -444,7 +687,7 @@
       "source_url": "https://www.boatrace.jp/owpc/pc/race/resultlist?hd=20260710&jcd=19",
       "collection_status": "saved",
       "http_status": 200,
-      "bytes": 25670,
+      "bytes": 25903,
       "title": "結果一覧｜BOAT RACE オフィシャルウェブサイト",
       "has_result_content": true,
       "race_count_detected": 0,
@@ -468,7 +711,7 @@
       "source_url": "https://www.boatrace.jp/owpc/pc/race/resultlist?hd=20260710&jcd=20",
       "collection_status": "saved",
       "http_status": 200,
-      "bytes": 25914,
+      "bytes": 26147,
       "title": "結果一覧｜BOAT RACE オフィシャルウェブサイト",
       "has_result_content": true,
       "race_count_detected": 0,
@@ -492,7 +735,7 @@
       "source_url": "https://www.boatrace.jp/owpc/pc/race/resultlist?hd=20260710&jcd=21",
       "collection_status": "saved",
       "http_status": 200,
-      "bytes": 14311,
+      "bytes": 14322,
       "title": "BOAT RACE オフィシャルウェブサイト",
       "has_result_content": true,
       "race_count_detected": 0,
@@ -516,11 +759,22 @@
       "source_url": "https://www.boatrace.jp/owpc/pc/race/resultlist?hd=20260710&jcd=22",
       "collection_status": "saved",
       "http_status": 200,
-      "bytes": 25838,
+      "bytes": 71514,
       "title": "結果一覧｜BOAT RACE オフィシャルウェブサイト",
       "has_result_content": true,
-      "race_count_detected": 0,
-      "races": [],
+      "race_count_detected": 2,
+      "races": [
+        {
+          "race_id": "2026-07-10-22-1",
+          "race_no": 1,
+          "source_url": "https://www.boatrace.jp/owpc/pc/race/raceresult?rno=1&jcd=22&hd=20260710"
+        },
+        {
+          "race_id": "2026-07-10-22-2",
+          "race_no": 2,
+          "source_url": "https://www.boatrace.jp/owpc/pc/race/raceresult?rno=2&jcd=22&hd=20260710"
+        }
+      ],
       "raw_saved_files": [
         "data/raw/official/2026-07-10/22/resultlist.html",
         "data/raw/official/2026-07-10/22/metadata.json"
@@ -540,11 +794,62 @@
       "source_url": "https://www.boatrace.jp/owpc/pc/race/resultlist?hd=20260710&jcd=23",
       "collection_status": "saved",
       "http_status": 200,
-      "bytes": 25760,
+      "bytes": 128842,
       "title": "結果一覧｜BOAT RACE オフィシャルウェブサイト",
       "has_result_content": true,
-      "race_count_detected": 0,
-      "races": [],
+      "race_count_detected": 10,
+      "races": [
+        {
+          "race_id": "2026-07-10-23-1",
+          "race_no": 1,
+          "source_url": "https://www.boatrace.jp/owpc/pc/race/raceresult?rno=1&jcd=23&hd=20260710"
+        },
+        {
+          "race_id": "2026-07-10-23-2",
+          "race_no": 2,
+          "source_url": "https://www.boatrace.jp/owpc/pc/race/raceresult?rno=2&jcd=23&hd=20260710"
+        },
+        {
+          "race_id": "2026-07-10-23-3",
+          "race_no": 3,
+          "source_url": "https://www.boatrace.jp/owpc/pc/race/raceresult?rno=3&jcd=23&hd=20260710"
+        },
+        {
+          "race_id": "2026-07-10-23-4",
+          "race_no": 4,
+          "source_url": "https://www.boatrace.jp/owpc/pc/race/raceresult?rno=4&jcd=23&hd=20260710"
+        },
+        {
+          "race_id": "2026-07-10-23-5",
+          "race_no": 5,
+          "source_url": "https://www.boatrace.jp/owpc/pc/race/raceresult?rno=5&jcd=23&hd=20260710"
+        },
+        {
+          "race_id": "2026-07-10-23-6",
+          "race_no": 6,
+          "source_url": "https://www.boatrace.jp/owpc/pc/race/raceresult?rno=6&jcd=23&hd=20260710"
+        },
+        {
+          "race_id": "2026-07-10-23-7",
+          "race_no": 7,
+          "source_url": "https://www.boatrace.jp/owpc/pc/race/raceresult?rno=7&jcd=23&hd=20260710"
+        },
+        {
+          "race_id": "2026-07-10-23-8",
+          "race_no": 8,
+          "source_url": "https://www.boatrace.jp/owpc/pc/race/raceresult?rno=8&jcd=23&hd=20260710"
+        },
+        {
+          "race_id": "2026-07-10-23-9",
+          "race_no": 9,
+          "source_url": "https://www.boatrace.jp/owpc/pc/race/raceresult?rno=9&jcd=23&hd=20260710"
+        },
+        {
+          "race_id": "2026-07-10-23-10",
+          "race_no": 10,
+          "source_url": "https://www.boatrace.jp/owpc/pc/race/raceresult?rno=10&jcd=23&hd=20260710"
+        }
+      ],
       "raw_saved_files": [
         "data/raw/official/2026-07-10/23/resultlist.html",
         "data/raw/official/2026-07-10/23/metadata.json"
@@ -564,7 +869,7 @@
       "source_url": "https://www.boatrace.jp/owpc/pc/race/resultlist?hd=20260710&jcd=24",
       "collection_status": "saved",
       "http_status": 200,
-      "bytes": 14311,
+      "bytes": 14322,
       "title": "BOAT RACE オフィシャルウェブサイト",
       "has_result_content": true,
       "race_count_detected": 0,
