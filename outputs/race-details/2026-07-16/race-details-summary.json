@@ -4,15 +4,120 @@
     "2026-07-16"
   ],
   "max_races": 120,
-  "targets": 38,
+  "targets": 111,
   "counts": {
-    "saved": 38,
+    "saved": 111,
     "skipped_existing": 0,
     "dry_run": 0,
     "http_error": 0,
     "error": 0
   },
   "results": [
+    {
+      "date": "2026-07-16",
+      "venue_code": "01",
+      "venue_name": "桐生",
+      "race_id": "2026-07-16-01-1",
+      "race_no": 1,
+      "source_url": "https://www.boatrace.jp/owpc/pc/race/raceresult?rno=1&jcd=01&hd=20260716",
+      "live": true,
+      "status": "saved",
+      "http_status": 200,
+      "bytes": 59112,
+      "title": "結果｜BOAT RACE オフィシャルウェブサイト",
+      "has_race_detail_content": true,
+      "saved_files": [
+        "data/raw/official/2026-07-16/01/races/01.html",
+        "data/raw/official/2026-07-16/01/races/01.metadata.json"
+      ],
+      "started_at": "2026-07-16T08:32:12.814Z",
+      "finished_at": "2026-07-16T08:32:13.277Z",
+      "error": null
+    },
+    {
+      "date": "2026-07-16",
+      "venue_code": "01",
+      "venue_name": "桐生",
+      "race_id": "2026-07-16-01-2",
+      "race_no": 2,
+      "source_url": "https://www.boatrace.jp/owpc/pc/race/raceresult?rno=2&jcd=01&hd=20260716",
+      "live": true,
+      "status": "saved",
+      "http_status": 200,
+      "bytes": 59098,
+      "title": "結果｜BOAT RACE オフィシャルウェブサイト",
+      "has_race_detail_content": true,
+      "saved_files": [
+        "data/raw/official/2026-07-16/01/races/02.html",
+        "data/raw/official/2026-07-16/01/races/02.metadata.json"
+      ],
+      "started_at": "2026-07-16T08:32:15.080Z",
+      "finished_at": "2026-07-16T08:32:15.319Z",
+      "error": null
+    },
+    {
+      "date": "2026-07-16",
+      "venue_code": "01",
+      "venue_name": "桐生",
+      "race_id": "2026-07-16-01-3",
+      "race_no": 3,
+      "source_url": "https://www.boatrace.jp/owpc/pc/race/raceresult?rno=3&jcd=01&hd=20260716",
+      "live": true,
+      "status": "saved",
+      "http_status": 200,
+      "bytes": 59107,
+      "title": "結果｜BOAT RACE オフィシャルウェブサイト",
+      "has_race_detail_content": true,
+      "saved_files": [
+        "data/raw/official/2026-07-16/01/races/03.html",
+        "data/raw/official/2026-07-16/01/races/03.metadata.json"
+      ],
+      "started_at": "2026-07-16T08:32:17.121Z",
+      "finished_at": "2026-07-16T08:32:17.309Z",
+      "error": null
+    },
+    {
+      "date": "2026-07-16",
+      "venue_code": "01",
+      "venue_name": "桐生",
+      "race_id": "2026-07-16-01-4",
+      "race_no": 4,
+      "source_url": "https://www.boatrace.jp/owpc/pc/race/raceresult?rno=4&jcd=01&hd=20260716",
+      "live": true,
+      "status": "saved",
+      "http_status": 200,
+      "bytes": 59097,
+      "title": "結果｜BOAT RACE オフィシャルウェブサイト",
+      "has_race_detail_content": true,
+      "saved_files": [
+        "data/raw/official/2026-07-16/01/races/04.html",
+        "data/raw/official/2026-07-16/01/races/04.metadata.json"
+      ],
+      "started_at": "2026-07-16T08:32:19.112Z",
+      "finished_at": "2026-07-16T08:32:19.319Z",
+      "error": null
+    },
+    {
+      "date": "2026-07-16",
+      "venue_code": "01",
+      "venue_name": "桐生",
+      "race_id": "2026-07-16-01-5",
+      "race_no": 5,
+      "source_url": "https://www.boatrace.jp/owpc/pc/race/raceresult?rno=5&jcd=01&hd=20260716",
+      "live": true,
+      "status": "saved",
+      "http_status": 200,
+      "bytes": 59114,
+      "title": "結果｜BOAT RACE オフィシャルウェブサイト",
+      "has_race_detail_content": true,
+      "saved_files": [
+        "data/raw/official/2026-07-16/01/races/05.html",
+        "data/raw/official/2026-07-16/01/races/05.metadata.json"
+      ],
+      "started_at": "2026-07-16T08:32:21.120Z",
+      "finished_at": "2026-07-16T08:32:21.327Z",
+      "error": null
+    },
     {
       "date": "2026-07-16",
       "venue_code": "03",
@@ -23,15 +128,15 @@
       "live": true,
       "status": "saved",
       "http_status": 200,
-      "bytes": 59529,
+      "bytes": 59307,
       "title": "結果｜BOAT RACE オフィシャルウェブサイト",
       "has_race_detail_content": true,
       "saved_files": [
         "data/raw/official/2026-07-16/03/races/01.html",
         "data/raw/official/2026-07-16/03/races/01.metadata.json"
       ],
-      "started_at": "2026-07-16T03:34:46.736Z",
-      "finished_at": "2026-07-16T03:34:47.128Z",
+      "started_at": "2026-07-16T08:32:23.130Z",
+      "finished_at": "2026-07-16T08:32:23.358Z",
       "error": null
     },
     {
@@ -44,15 +149,15 @@
       "live": true,
       "status": "saved",
       "http_status": 200,
-      "bytes": 59545,
+      "bytes": 59323,
       "title": "結果｜BOAT RACE オフィシャルウェブサイト",
       "has_race_detail_content": true,
       "saved_files": [
         "data/raw/official/2026-07-16/03/races/02.html",
         "data/raw/official/2026-07-16/03/races/02.metadata.json"
       ],
-      "started_at": "2026-07-16T03:34:48.932Z",
-      "finished_at": "2026-07-16T03:34:49.124Z",
+      "started_at": "2026-07-16T08:32:25.160Z",
+      "finished_at": "2026-07-16T08:32:25.358Z",
       "error": null
     },
     {
@@ -65,15 +170,204 @@
       "live": true,
       "status": "saved",
       "http_status": 200,
-      "bytes": 46678,
+      "bytes": 59344,
       "title": "結果｜BOAT RACE オフィシャルウェブサイト",
       "has_race_detail_content": true,
       "saved_files": [
         "data/raw/official/2026-07-16/03/races/03.html",
         "data/raw/official/2026-07-16/03/races/03.metadata.json"
       ],
-      "started_at": "2026-07-16T03:34:50.926Z",
-      "finished_at": "2026-07-16T03:34:51.121Z",
+      "started_at": "2026-07-16T08:32:27.160Z",
+      "finished_at": "2026-07-16T08:32:27.398Z",
+      "error": null
+    },
+    {
+      "date": "2026-07-16",
+      "venue_code": "03",
+      "venue_name": "江戸川",
+      "race_id": "2026-07-16-03-4",
+      "race_no": 4,
+      "source_url": "https://www.boatrace.jp/owpc/pc/race/raceresult?rno=4&jcd=03&hd=20260716",
+      "live": true,
+      "status": "saved",
+      "http_status": 200,
+      "bytes": 59313,
+      "title": "結果｜BOAT RACE オフィシャルウェブサイト",
+      "has_race_detail_content": true,
+      "saved_files": [
+        "data/raw/official/2026-07-16/03/races/04.html",
+        "data/raw/official/2026-07-16/03/races/04.metadata.json"
+      ],
+      "started_at": "2026-07-16T08:32:29.201Z",
+      "finished_at": "2026-07-16T08:32:29.424Z",
+      "error": null
+    },
+    {
+      "date": "2026-07-16",
+      "venue_code": "03",
+      "venue_name": "江戸川",
+      "race_id": "2026-07-16-03-5",
+      "race_no": 5,
+      "source_url": "https://www.boatrace.jp/owpc/pc/race/raceresult?rno=5&jcd=03&hd=20260716",
+      "live": true,
+      "status": "saved",
+      "http_status": 200,
+      "bytes": 59312,
+      "title": "結果｜BOAT RACE オフィシャルウェブサイト",
+      "has_race_detail_content": true,
+      "saved_files": [
+        "data/raw/official/2026-07-16/03/races/05.html",
+        "data/raw/official/2026-07-16/03/races/05.metadata.json"
+      ],
+      "started_at": "2026-07-16T08:32:31.227Z",
+      "finished_at": "2026-07-16T08:32:31.461Z",
+      "error": null
+    },
+    {
+      "date": "2026-07-16",
+      "venue_code": "03",
+      "venue_name": "江戸川",
+      "race_id": "2026-07-16-03-6",
+      "race_no": 6,
+      "source_url": "https://www.boatrace.jp/owpc/pc/race/raceresult?rno=6&jcd=03&hd=20260716",
+      "live": true,
+      "status": "saved",
+      "http_status": 200,
+      "bytes": 59311,
+      "title": "結果｜BOAT RACE オフィシャルウェブサイト",
+      "has_race_detail_content": true,
+      "saved_files": [
+        "data/raw/official/2026-07-16/03/races/06.html",
+        "data/raw/official/2026-07-16/03/races/06.metadata.json"
+      ],
+      "started_at": "2026-07-16T08:32:33.264Z",
+      "finished_at": "2026-07-16T08:32:33.492Z",
+      "error": null
+    },
+    {
+      "date": "2026-07-16",
+      "venue_code": "03",
+      "venue_name": "江戸川",
+      "race_id": "2026-07-16-03-7",
+      "race_no": 7,
+      "source_url": "https://www.boatrace.jp/owpc/pc/race/raceresult?rno=7&jcd=03&hd=20260716",
+      "live": true,
+      "status": "saved",
+      "http_status": 200,
+      "bytes": 59312,
+      "title": "結果｜BOAT RACE オフィシャルウェブサイト",
+      "has_race_detail_content": true,
+      "saved_files": [
+        "data/raw/official/2026-07-16/03/races/07.html",
+        "data/raw/official/2026-07-16/03/races/07.metadata.json"
+      ],
+      "started_at": "2026-07-16T08:32:35.294Z",
+      "finished_at": "2026-07-16T08:32:35.526Z",
+      "error": null
+    },
+    {
+      "date": "2026-07-16",
+      "venue_code": "03",
+      "venue_name": "江戸川",
+      "race_id": "2026-07-16-03-8",
+      "race_no": 8,
+      "source_url": "https://www.boatrace.jp/owpc/pc/race/raceresult?rno=8&jcd=03&hd=20260716",
+      "live": true,
+      "status": "saved",
+      "http_status": 200,
+      "bytes": 59318,
+      "title": "結果｜BOAT RACE オフィシャルウェブサイト",
+      "has_race_detail_content": true,
+      "saved_files": [
+        "data/raw/official/2026-07-16/03/races/08.html",
+        "data/raw/official/2026-07-16/03/races/08.metadata.json"
+      ],
+      "started_at": "2026-07-16T08:32:37.328Z",
+      "finished_at": "2026-07-16T08:32:37.564Z",
+      "error": null
+    },
+    {
+      "date": "2026-07-16",
+      "venue_code": "03",
+      "venue_name": "江戸川",
+      "race_id": "2026-07-16-03-9",
+      "race_no": 9,
+      "source_url": "https://www.boatrace.jp/owpc/pc/race/raceresult?rno=9&jcd=03&hd=20260716",
+      "live": true,
+      "status": "saved",
+      "http_status": 200,
+      "bytes": 59307,
+      "title": "結果｜BOAT RACE オフィシャルウェブサイト",
+      "has_race_detail_content": true,
+      "saved_files": [
+        "data/raw/official/2026-07-16/03/races/09.html",
+        "data/raw/official/2026-07-16/03/races/09.metadata.json"
+      ],
+      "started_at": "2026-07-16T08:32:39.366Z",
+      "finished_at": "2026-07-16T08:32:39.560Z",
+      "error": null
+    },
+    {
+      "date": "2026-07-16",
+      "venue_code": "03",
+      "venue_name": "江戸川",
+      "race_id": "2026-07-16-03-10",
+      "race_no": 10,
+      "source_url": "https://www.boatrace.jp/owpc/pc/race/raceresult?rno=10&jcd=03&hd=20260716",
+      "live": true,
+      "status": "saved",
+      "http_status": 200,
+      "bytes": 59320,
+      "title": "結果｜BOAT RACE オフィシャルウェブサイト",
+      "has_race_detail_content": true,
+      "saved_files": [
+        "data/raw/official/2026-07-16/03/races/10.html",
+        "data/raw/official/2026-07-16/03/races/10.metadata.json"
+      ],
+      "started_at": "2026-07-16T08:32:41.363Z",
+      "finished_at": "2026-07-16T08:32:41.589Z",
+      "error": null
+    },
+    {
+      "date": "2026-07-16",
+      "venue_code": "03",
+      "venue_name": "江戸川",
+      "race_id": "2026-07-16-03-11",
+      "race_no": 11,
+      "source_url": "https://www.boatrace.jp/owpc/pc/race/raceresult?rno=11&jcd=03&hd=20260716",
+      "live": true,
+      "status": "saved",
+      "http_status": 200,
+      "bytes": 59323,
+      "title": "結果｜BOAT RACE オフィシャルウェブサイト",
+      "has_race_detail_content": true,
+      "saved_files": [
+        "data/raw/official/2026-07-16/03/races/11.html",
+        "data/raw/official/2026-07-16/03/races/11.metadata.json"
+      ],
+      "started_at": "2026-07-16T08:32:43.392Z",
+      "finished_at": "2026-07-16T08:32:43.621Z",
+      "error": null
+    },
+    {
+      "date": "2026-07-16",
+      "venue_code": "03",
+      "venue_name": "江戸川",
+      "race_id": "2026-07-16-03-12",
+      "race_no": 12,
+      "source_url": "https://www.boatrace.jp/owpc/pc/race/raceresult?rno=12&jcd=03&hd=20260716",
+      "live": true,
+      "status": "saved",
+      "http_status": 200,
+      "bytes": 59310,
+      "title": "結果｜BOAT RACE オフィシャルウェブサイト",
+      "has_race_detail_content": true,
+      "saved_files": [
+        "data/raw/official/2026-07-16/03/races/12.html",
+        "data/raw/official/2026-07-16/03/races/12.metadata.json"
+      ],
+      "started_at": "2026-07-16T08:32:45.424Z",
+      "finished_at": "2026-07-16T08:32:45.671Z",
       "error": null
     },
     {
@@ -86,15 +380,15 @@
       "live": true,
       "status": "saved",
       "http_status": 200,
-      "bytes": 59154,
+      "bytes": 59134,
       "title": "結果｜BOAT RACE オフィシャルウェブサイト",
       "has_race_detail_content": true,
       "saved_files": [
         "data/raw/official/2026-07-16/05/races/01.html",
         "data/raw/official/2026-07-16/05/races/01.metadata.json"
       ],
-      "started_at": "2026-07-16T03:34:52.924Z",
-      "finished_at": "2026-07-16T03:34:53.081Z",
+      "started_at": "2026-07-16T08:32:47.474Z",
+      "finished_at": "2026-07-16T08:32:47.703Z",
       "error": null
     },
     {
@@ -107,15 +401,330 @@
       "live": true,
       "status": "saved",
       "http_status": 200,
-      "bytes": 59149,
+      "bytes": 59129,
       "title": "結果｜BOAT RACE オフィシャルウェブサイト",
       "has_race_detail_content": true,
       "saved_files": [
         "data/raw/official/2026-07-16/05/races/02.html",
         "data/raw/official/2026-07-16/05/races/02.metadata.json"
       ],
-      "started_at": "2026-07-16T03:34:54.883Z",
-      "finished_at": "2026-07-16T03:34:55.086Z",
+      "started_at": "2026-07-16T08:32:49.505Z",
+      "finished_at": "2026-07-16T08:32:49.735Z",
+      "error": null
+    },
+    {
+      "date": "2026-07-16",
+      "venue_code": "05",
+      "venue_name": "多摩川",
+      "race_id": "2026-07-16-05-3",
+      "race_no": 3,
+      "source_url": "https://www.boatrace.jp/owpc/pc/race/raceresult?rno=3&jcd=05&hd=20260716",
+      "live": true,
+      "status": "saved",
+      "http_status": 200,
+      "bytes": 59153,
+      "title": "結果｜BOAT RACE オフィシャルウェブサイト",
+      "has_race_detail_content": true,
+      "saved_files": [
+        "data/raw/official/2026-07-16/05/races/03.html",
+        "data/raw/official/2026-07-16/05/races/03.metadata.json"
+      ],
+      "started_at": "2026-07-16T08:32:51.537Z",
+      "finished_at": "2026-07-16T08:32:51.768Z",
+      "error": null
+    },
+    {
+      "date": "2026-07-16",
+      "venue_code": "05",
+      "venue_name": "多摩川",
+      "race_id": "2026-07-16-05-4",
+      "race_no": 4,
+      "source_url": "https://www.boatrace.jp/owpc/pc/race/raceresult?rno=4&jcd=05&hd=20260716",
+      "live": true,
+      "status": "saved",
+      "http_status": 200,
+      "bytes": 59136,
+      "title": "結果｜BOAT RACE オフィシャルウェブサイト",
+      "has_race_detail_content": true,
+      "saved_files": [
+        "data/raw/official/2026-07-16/05/races/04.html",
+        "data/raw/official/2026-07-16/05/races/04.metadata.json"
+      ],
+      "started_at": "2026-07-16T08:32:53.571Z",
+      "finished_at": "2026-07-16T08:32:53.789Z",
+      "error": null
+    },
+    {
+      "date": "2026-07-16",
+      "venue_code": "05",
+      "venue_name": "多摩川",
+      "race_id": "2026-07-16-05-5",
+      "race_no": 5,
+      "source_url": "https://www.boatrace.jp/owpc/pc/race/raceresult?rno=5&jcd=05&hd=20260716",
+      "live": true,
+      "status": "saved",
+      "http_status": 200,
+      "bytes": 59132,
+      "title": "結果｜BOAT RACE オフィシャルウェブサイト",
+      "has_race_detail_content": true,
+      "saved_files": [
+        "data/raw/official/2026-07-16/05/races/05.html",
+        "data/raw/official/2026-07-16/05/races/05.metadata.json"
+      ],
+      "started_at": "2026-07-16T08:32:55.592Z",
+      "finished_at": "2026-07-16T08:32:55.811Z",
+      "error": null
+    },
+    {
+      "date": "2026-07-16",
+      "venue_code": "05",
+      "venue_name": "多摩川",
+      "race_id": "2026-07-16-05-6",
+      "race_no": 6,
+      "source_url": "https://www.boatrace.jp/owpc/pc/race/raceresult?rno=6&jcd=05&hd=20260716",
+      "live": true,
+      "status": "saved",
+      "http_status": 200,
+      "bytes": 59127,
+      "title": "結果｜BOAT RACE オフィシャルウェブサイト",
+      "has_race_detail_content": true,
+      "saved_files": [
+        "data/raw/official/2026-07-16/05/races/06.html",
+        "data/raw/official/2026-07-16/05/races/06.metadata.json"
+      ],
+      "started_at": "2026-07-16T08:32:57.614Z",
+      "finished_at": "2026-07-16T08:32:57.842Z",
+      "error": null
+    },
+    {
+      "date": "2026-07-16",
+      "venue_code": "05",
+      "venue_name": "多摩川",
+      "race_id": "2026-07-16-05-7",
+      "race_no": 7,
+      "source_url": "https://www.boatrace.jp/owpc/pc/race/raceresult?rno=7&jcd=05&hd=20260716",
+      "live": true,
+      "status": "saved",
+      "http_status": 200,
+      "bytes": 59130,
+      "title": "結果｜BOAT RACE オフィシャルウェブサイト",
+      "has_race_detail_content": true,
+      "saved_files": [
+        "data/raw/official/2026-07-16/05/races/07.html",
+        "data/raw/official/2026-07-16/05/races/07.metadata.json"
+      ],
+      "started_at": "2026-07-16T08:32:59.644Z",
+      "finished_at": "2026-07-16T08:32:59.877Z",
+      "error": null
+    },
+    {
+      "date": "2026-07-16",
+      "venue_code": "05",
+      "venue_name": "多摩川",
+      "race_id": "2026-07-16-05-8",
+      "race_no": 8,
+      "source_url": "https://www.boatrace.jp/owpc/pc/race/raceresult?rno=8&jcd=05&hd=20260716",
+      "live": true,
+      "status": "saved",
+      "http_status": 200,
+      "bytes": 59148,
+      "title": "結果｜BOAT RACE オフィシャルウェブサイト",
+      "has_race_detail_content": true,
+      "saved_files": [
+        "data/raw/official/2026-07-16/05/races/08.html",
+        "data/raw/official/2026-07-16/05/races/08.metadata.json"
+      ],
+      "started_at": "2026-07-16T08:33:01.679Z",
+      "finished_at": "2026-07-16T08:33:01.882Z",
+      "error": null
+    },
+    {
+      "date": "2026-07-16",
+      "venue_code": "05",
+      "venue_name": "多摩川",
+      "race_id": "2026-07-16-05-9",
+      "race_no": 9,
+      "source_url": "https://www.boatrace.jp/owpc/pc/race/raceresult?rno=9&jcd=05&hd=20260716",
+      "live": true,
+      "status": "saved",
+      "http_status": 200,
+      "bytes": 59131,
+      "title": "結果｜BOAT RACE オフィシャルウェブサイト",
+      "has_race_detail_content": true,
+      "saved_files": [
+        "data/raw/official/2026-07-16/05/races/09.html",
+        "data/raw/official/2026-07-16/05/races/09.metadata.json"
+      ],
+      "started_at": "2026-07-16T08:33:03.685Z",
+      "finished_at": "2026-07-16T08:33:03.907Z",
+      "error": null
+    },
+    {
+      "date": "2026-07-16",
+      "venue_code": "05",
+      "venue_name": "多摩川",
+      "race_id": "2026-07-16-05-10",
+      "race_no": 10,
+      "source_url": "https://www.boatrace.jp/owpc/pc/race/raceresult?rno=10&jcd=05&hd=20260716",
+      "live": true,
+      "status": "saved",
+      "http_status": 200,
+      "bytes": 59164,
+      "title": "結果｜BOAT RACE オフィシャルウェブサイト",
+      "has_race_detail_content": true,
+      "saved_files": [
+        "data/raw/official/2026-07-16/05/races/10.html",
+        "data/raw/official/2026-07-16/05/races/10.metadata.json"
+      ],
+      "started_at": "2026-07-16T08:33:05.710Z",
+      "finished_at": "2026-07-16T08:33:05.937Z",
+      "error": null
+    },
+    {
+      "date": "2026-07-16",
+      "venue_code": "05",
+      "venue_name": "多摩川",
+      "race_id": "2026-07-16-05-11",
+      "race_no": 11,
+      "source_url": "https://www.boatrace.jp/owpc/pc/race/raceresult?rno=11&jcd=05&hd=20260716",
+      "live": true,
+      "status": "saved",
+      "http_status": 200,
+      "bytes": 59137,
+      "title": "結果｜BOAT RACE オフィシャルウェブサイト",
+      "has_race_detail_content": true,
+      "saved_files": [
+        "data/raw/official/2026-07-16/05/races/11.html",
+        "data/raw/official/2026-07-16/05/races/11.metadata.json"
+      ],
+      "started_at": "2026-07-16T08:33:07.740Z",
+      "finished_at": "2026-07-16T08:33:07.969Z",
+      "error": null
+    },
+    {
+      "date": "2026-07-16",
+      "venue_code": "05",
+      "venue_name": "多摩川",
+      "race_id": "2026-07-16-05-12",
+      "race_no": 12,
+      "source_url": "https://www.boatrace.jp/owpc/pc/race/raceresult?rno=12&jcd=05&hd=20260716",
+      "live": true,
+      "status": "saved",
+      "http_status": 200,
+      "bytes": 59135,
+      "title": "結果｜BOAT RACE オフィシャルウェブサイト",
+      "has_race_detail_content": true,
+      "saved_files": [
+        "data/raw/official/2026-07-16/05/races/12.html",
+        "data/raw/official/2026-07-16/05/races/12.metadata.json"
+      ],
+      "started_at": "2026-07-16T08:33:09.772Z",
+      "finished_at": "2026-07-16T08:33:10.006Z",
+      "error": null
+    },
+    {
+      "date": "2026-07-16",
+      "venue_code": "07",
+      "venue_name": "蒲郡",
+      "race_id": "2026-07-16-07-1",
+      "race_no": 1,
+      "source_url": "https://www.boatrace.jp/owpc/pc/race/raceresult?rno=1&jcd=07&hd=20260716",
+      "live": true,
+      "status": "saved",
+      "http_status": 200,
+      "bytes": 59504,
+      "title": "結果｜BOAT RACE オフィシャルウェブサイト",
+      "has_race_detail_content": true,
+      "saved_files": [
+        "data/raw/official/2026-07-16/07/races/01.html",
+        "data/raw/official/2026-07-16/07/races/01.metadata.json"
+      ],
+      "started_at": "2026-07-16T08:33:11.808Z",
+      "finished_at": "2026-07-16T08:33:12.006Z",
+      "error": null
+    },
+    {
+      "date": "2026-07-16",
+      "venue_code": "07",
+      "venue_name": "蒲郡",
+      "race_id": "2026-07-16-07-2",
+      "race_no": 2,
+      "source_url": "https://www.boatrace.jp/owpc/pc/race/raceresult?rno=2&jcd=07&hd=20260716",
+      "live": true,
+      "status": "saved",
+      "http_status": 200,
+      "bytes": 59495,
+      "title": "結果｜BOAT RACE オフィシャルウェブサイト",
+      "has_race_detail_content": true,
+      "saved_files": [
+        "data/raw/official/2026-07-16/07/races/02.html",
+        "data/raw/official/2026-07-16/07/races/02.metadata.json"
+      ],
+      "started_at": "2026-07-16T08:33:13.809Z",
+      "finished_at": "2026-07-16T08:33:14.042Z",
+      "error": null
+    },
+    {
+      "date": "2026-07-16",
+      "venue_code": "07",
+      "venue_name": "蒲郡",
+      "race_id": "2026-07-16-07-3",
+      "race_no": 3,
+      "source_url": "https://www.boatrace.jp/owpc/pc/race/raceresult?rno=3&jcd=07&hd=20260716",
+      "live": true,
+      "status": "saved",
+      "http_status": 200,
+      "bytes": 59528,
+      "title": "結果｜BOAT RACE オフィシャルウェブサイト",
+      "has_race_detail_content": true,
+      "saved_files": [
+        "data/raw/official/2026-07-16/07/races/03.html",
+        "data/raw/official/2026-07-16/07/races/03.metadata.json"
+      ],
+      "started_at": "2026-07-16T08:33:15.844Z",
+      "finished_at": "2026-07-16T08:33:16.082Z",
+      "error": null
+    },
+    {
+      "date": "2026-07-16",
+      "venue_code": "07",
+      "venue_name": "蒲郡",
+      "race_id": "2026-07-16-07-4",
+      "race_no": 4,
+      "source_url": "https://www.boatrace.jp/owpc/pc/race/raceresult?rno=4&jcd=07&hd=20260716",
+      "live": true,
+      "status": "saved",
+      "http_status": 200,
+      "bytes": 59500,
+      "title": "結果｜BOAT RACE オフィシャルウェブサイト",
+      "has_race_detail_content": true,
+      "saved_files": [
+        "data/raw/official/2026-07-16/07/races/04.html",
+        "data/raw/official/2026-07-16/07/races/04.metadata.json"
+      ],
+      "started_at": "2026-07-16T08:33:17.884Z",
+      "finished_at": "2026-07-16T08:33:18.114Z",
+      "error": null
+    },
+    {
+      "date": "2026-07-16",
+      "venue_code": "07",
+      "venue_name": "蒲郡",
+      "race_id": "2026-07-16-07-5",
+      "race_no": 5,
+      "source_url": "https://www.boatrace.jp/owpc/pc/race/raceresult?rno=5&jcd=07&hd=20260716",
+      "live": true,
+      "status": "saved",
+      "http_status": 200,
+      "bytes": 59504,
+      "title": "結果｜BOAT RACE オフィシャルウェブサイト",
+      "has_race_detail_content": true,
+      "saved_files": [
+        "data/raw/official/2026-07-16/07/races/05.html",
+        "data/raw/official/2026-07-16/07/races/05.metadata.json"
+      ],
+      "started_at": "2026-07-16T08:33:19.917Z",
+      "finished_at": "2026-07-16T08:33:20.152Z",
       "error": null
     },
     {
@@ -128,15 +737,15 @@
       "live": true,
       "status": "saved",
       "http_status": 200,
-      "bytes": 59136,
+      "bytes": 58914,
       "title": "結果｜BOAT RACE オフィシャルウェブサイト",
       "has_race_detail_content": true,
       "saved_files": [
         "data/raw/official/2026-07-16/08/races/01.html",
         "data/raw/official/2026-07-16/08/races/01.metadata.json"
       ],
-      "started_at": "2026-07-16T03:34:56.888Z",
-      "finished_at": "2026-07-16T03:34:57.070Z",
+      "started_at": "2026-07-16T08:33:21.954Z",
+      "finished_at": "2026-07-16T08:33:22.179Z",
       "error": null
     },
     {
@@ -149,15 +758,15 @@
       "live": true,
       "status": "saved",
       "http_status": 200,
-      "bytes": 59136,
+      "bytes": 58914,
       "title": "結果｜BOAT RACE オフィシャルウェブサイト",
       "has_race_detail_content": true,
       "saved_files": [
         "data/raw/official/2026-07-16/08/races/02.html",
         "data/raw/official/2026-07-16/08/races/02.metadata.json"
       ],
-      "started_at": "2026-07-16T03:34:58.872Z",
-      "finished_at": "2026-07-16T03:34:59.034Z",
+      "started_at": "2026-07-16T08:33:23.981Z",
+      "finished_at": "2026-07-16T08:33:24.219Z",
       "error": null
     },
     {
@@ -170,15 +779,15 @@
       "live": true,
       "status": "saved",
       "http_status": 200,
-      "bytes": 59134,
+      "bytes": 58912,
       "title": "結果｜BOAT RACE オフィシャルウェブサイト",
       "has_race_detail_content": true,
       "saved_files": [
         "data/raw/official/2026-07-16/08/races/03.html",
         "data/raw/official/2026-07-16/08/races/03.metadata.json"
       ],
-      "started_at": "2026-07-16T03:35:00.836Z",
-      "finished_at": "2026-07-16T03:35:01.037Z",
+      "started_at": "2026-07-16T08:33:26.021Z",
+      "finished_at": "2026-07-16T08:33:26.254Z",
       "error": null
     },
     {
@@ -191,15 +800,183 @@
       "live": true,
       "status": "saved",
       "http_status": 200,
-      "bytes": 59142,
+      "bytes": 58920,
       "title": "結果｜BOAT RACE オフィシャルウェブサイト",
       "has_race_detail_content": true,
       "saved_files": [
         "data/raw/official/2026-07-16/08/races/04.html",
         "data/raw/official/2026-07-16/08/races/04.metadata.json"
       ],
-      "started_at": "2026-07-16T03:35:02.840Z",
-      "finished_at": "2026-07-16T03:35:03.010Z",
+      "started_at": "2026-07-16T08:33:28.057Z",
+      "finished_at": "2026-07-16T08:33:28.249Z",
+      "error": null
+    },
+    {
+      "date": "2026-07-16",
+      "venue_code": "08",
+      "venue_name": "常滑",
+      "race_id": "2026-07-16-08-5",
+      "race_no": 5,
+      "source_url": "https://www.boatrace.jp/owpc/pc/race/raceresult?rno=5&jcd=08&hd=20260716",
+      "live": true,
+      "status": "saved",
+      "http_status": 200,
+      "bytes": 58918,
+      "title": "結果｜BOAT RACE オフィシャルウェブサイト",
+      "has_race_detail_content": true,
+      "saved_files": [
+        "data/raw/official/2026-07-16/08/races/05.html",
+        "data/raw/official/2026-07-16/08/races/05.metadata.json"
+      ],
+      "started_at": "2026-07-16T08:33:30.051Z",
+      "finished_at": "2026-07-16T08:33:30.288Z",
+      "error": null
+    },
+    {
+      "date": "2026-07-16",
+      "venue_code": "08",
+      "venue_name": "常滑",
+      "race_id": "2026-07-16-08-6",
+      "race_no": 6,
+      "source_url": "https://www.boatrace.jp/owpc/pc/race/raceresult?rno=6&jcd=08&hd=20260716",
+      "live": true,
+      "status": "saved",
+      "http_status": 200,
+      "bytes": 58936,
+      "title": "結果｜BOAT RACE オフィシャルウェブサイト",
+      "has_race_detail_content": true,
+      "saved_files": [
+        "data/raw/official/2026-07-16/08/races/06.html",
+        "data/raw/official/2026-07-16/08/races/06.metadata.json"
+      ],
+      "started_at": "2026-07-16T08:33:32.091Z",
+      "finished_at": "2026-07-16T08:33:32.321Z",
+      "error": null
+    },
+    {
+      "date": "2026-07-16",
+      "venue_code": "08",
+      "venue_name": "常滑",
+      "race_id": "2026-07-16-08-7",
+      "race_no": 7,
+      "source_url": "https://www.boatrace.jp/owpc/pc/race/raceresult?rno=7&jcd=08&hd=20260716",
+      "live": true,
+      "status": "saved",
+      "http_status": 200,
+      "bytes": 58914,
+      "title": "結果｜BOAT RACE オフィシャルウェブサイト",
+      "has_race_detail_content": true,
+      "saved_files": [
+        "data/raw/official/2026-07-16/08/races/07.html",
+        "data/raw/official/2026-07-16/08/races/07.metadata.json"
+      ],
+      "started_at": "2026-07-16T08:33:34.123Z",
+      "finished_at": "2026-07-16T08:33:34.359Z",
+      "error": null
+    },
+    {
+      "date": "2026-07-16",
+      "venue_code": "08",
+      "venue_name": "常滑",
+      "race_id": "2026-07-16-08-8",
+      "race_no": 8,
+      "source_url": "https://www.boatrace.jp/owpc/pc/race/raceresult?rno=8&jcd=08&hd=20260716",
+      "live": true,
+      "status": "saved",
+      "http_status": 200,
+      "bytes": 58916,
+      "title": "結果｜BOAT RACE オフィシャルウェブサイト",
+      "has_race_detail_content": true,
+      "saved_files": [
+        "data/raw/official/2026-07-16/08/races/08.html",
+        "data/raw/official/2026-07-16/08/races/08.metadata.json"
+      ],
+      "started_at": "2026-07-16T08:33:36.161Z",
+      "finished_at": "2026-07-16T08:33:36.401Z",
+      "error": null
+    },
+    {
+      "date": "2026-07-16",
+      "venue_code": "08",
+      "venue_name": "常滑",
+      "race_id": "2026-07-16-08-9",
+      "race_no": 9,
+      "source_url": "https://www.boatrace.jp/owpc/pc/race/raceresult?rno=9&jcd=08&hd=20260716",
+      "live": true,
+      "status": "saved",
+      "http_status": 200,
+      "bytes": 58915,
+      "title": "結果｜BOAT RACE オフィシャルウェブサイト",
+      "has_race_detail_content": true,
+      "saved_files": [
+        "data/raw/official/2026-07-16/08/races/09.html",
+        "data/raw/official/2026-07-16/08/races/09.metadata.json"
+      ],
+      "started_at": "2026-07-16T08:33:38.204Z",
+      "finished_at": "2026-07-16T08:33:38.432Z",
+      "error": null
+    },
+    {
+      "date": "2026-07-16",
+      "venue_code": "08",
+      "venue_name": "常滑",
+      "race_id": "2026-07-16-08-10",
+      "race_no": 10,
+      "source_url": "https://www.boatrace.jp/owpc/pc/race/raceresult?rno=10&jcd=08&hd=20260716",
+      "live": true,
+      "status": "saved",
+      "http_status": 200,
+      "bytes": 58926,
+      "title": "結果｜BOAT RACE オフィシャルウェブサイト",
+      "has_race_detail_content": true,
+      "saved_files": [
+        "data/raw/official/2026-07-16/08/races/10.html",
+        "data/raw/official/2026-07-16/08/races/10.metadata.json"
+      ],
+      "started_at": "2026-07-16T08:33:40.235Z",
+      "finished_at": "2026-07-16T08:33:40.474Z",
+      "error": null
+    },
+    {
+      "date": "2026-07-16",
+      "venue_code": "08",
+      "venue_name": "常滑",
+      "race_id": "2026-07-16-08-11",
+      "race_no": 11,
+      "source_url": "https://www.boatrace.jp/owpc/pc/race/raceresult?rno=11&jcd=08&hd=20260716",
+      "live": true,
+      "status": "saved",
+      "http_status": 200,
+      "bytes": 58929,
+      "title": "結果｜BOAT RACE オフィシャルウェブサイト",
+      "has_race_detail_content": true,
+      "saved_files": [
+        "data/raw/official/2026-07-16/08/races/11.html",
+        "data/raw/official/2026-07-16/08/races/11.metadata.json"
+      ],
+      "started_at": "2026-07-16T08:33:42.277Z",
+      "finished_at": "2026-07-16T08:33:42.510Z",
+      "error": null
+    },
+    {
+      "date": "2026-07-16",
+      "venue_code": "08",
+      "venue_name": "常滑",
+      "race_id": "2026-07-16-08-12",
+      "race_no": 12,
+      "source_url": "https://www.boatrace.jp/owpc/pc/race/raceresult?rno=12&jcd=08&hd=20260716",
+      "live": true,
+      "status": "saved",
+      "http_status": 200,
+      "bytes": 58940,
+      "title": "結果｜BOAT RACE オフィシャルウェブサイト",
+      "has_race_detail_content": true,
+      "saved_files": [
+        "data/raw/official/2026-07-16/08/races/12.html",
+        "data/raw/official/2026-07-16/08/races/12.metadata.json"
+      ],
+      "started_at": "2026-07-16T08:33:44.312Z",
+      "finished_at": "2026-07-16T08:33:44.509Z",
       "error": null
     },
     {
@@ -212,15 +989,15 @@
       "live": true,
       "status": "saved",
       "http_status": 200,
-      "bytes": 58954,
+      "bytes": 58934,
       "title": "結果｜BOAT RACE オフィシャルウェブサイト",
       "has_race_detail_content": true,
       "saved_files": [
         "data/raw/official/2026-07-16/11/races/01.html",
         "data/raw/official/2026-07-16/11/races/01.metadata.json"
       ],
-      "started_at": "2026-07-16T03:35:04.811Z",
-      "finished_at": "2026-07-16T03:35:05.013Z",
+      "started_at": "2026-07-16T08:33:46.312Z",
+      "finished_at": "2026-07-16T08:33:46.551Z",
       "error": null
     },
     {
@@ -233,15 +1010,15 @@
       "live": true,
       "status": "saved",
       "http_status": 200,
-      "bytes": 58949,
+      "bytes": 58929,
       "title": "結果｜BOAT RACE オフィシャルウェブサイト",
       "has_race_detail_content": true,
       "saved_files": [
         "data/raw/official/2026-07-16/11/races/02.html",
         "data/raw/official/2026-07-16/11/races/02.metadata.json"
       ],
-      "started_at": "2026-07-16T03:35:06.815Z",
-      "finished_at": "2026-07-16T03:35:07.011Z",
+      "started_at": "2026-07-16T08:33:48.352Z",
+      "finished_at": "2026-07-16T08:33:48.601Z",
       "error": null
     },
     {
@@ -254,15 +1031,15 @@
       "live": true,
       "status": "saved",
       "http_status": 200,
-      "bytes": 58949,
+      "bytes": 58929,
       "title": "結果｜BOAT RACE オフィシャルウェブサイト",
       "has_race_detail_content": true,
       "saved_files": [
         "data/raw/official/2026-07-16/11/races/03.html",
         "data/raw/official/2026-07-16/11/races/03.metadata.json"
       ],
-      "started_at": "2026-07-16T03:35:08.814Z",
-      "finished_at": "2026-07-16T03:35:08.972Z",
+      "started_at": "2026-07-16T08:33:50.403Z",
+      "finished_at": "2026-07-16T08:33:50.627Z",
       "error": null
     },
     {
@@ -275,15 +1052,288 @@
       "live": true,
       "status": "saved",
       "http_status": 200,
-      "bytes": 46096,
+      "bytes": 58943,
       "title": "結果｜BOAT RACE オフィシャルウェブサイト",
       "has_race_detail_content": true,
       "saved_files": [
         "data/raw/official/2026-07-16/11/races/04.html",
         "data/raw/official/2026-07-16/11/races/04.metadata.json"
       ],
-      "started_at": "2026-07-16T03:35:10.774Z",
-      "finished_at": "2026-07-16T03:35:10.974Z",
+      "started_at": "2026-07-16T08:33:52.430Z",
+      "finished_at": "2026-07-16T08:33:52.626Z",
+      "error": null
+    },
+    {
+      "date": "2026-07-16",
+      "venue_code": "11",
+      "venue_name": "びわこ",
+      "race_id": "2026-07-16-11-5",
+      "race_no": 5,
+      "source_url": "https://www.boatrace.jp/owpc/pc/race/raceresult?rno=5&jcd=11&hd=20260716",
+      "live": true,
+      "status": "saved",
+      "http_status": 200,
+      "bytes": 58933,
+      "title": "結果｜BOAT RACE オフィシャルウェブサイト",
+      "has_race_detail_content": true,
+      "saved_files": [
+        "data/raw/official/2026-07-16/11/races/05.html",
+        "data/raw/official/2026-07-16/11/races/05.metadata.json"
+      ],
+      "started_at": "2026-07-16T08:33:54.428Z",
+      "finished_at": "2026-07-16T08:33:54.655Z",
+      "error": null
+    },
+    {
+      "date": "2026-07-16",
+      "venue_code": "11",
+      "venue_name": "びわこ",
+      "race_id": "2026-07-16-11-6",
+      "race_no": 6,
+      "source_url": "https://www.boatrace.jp/owpc/pc/race/raceresult?rno=6&jcd=11&hd=20260716",
+      "live": true,
+      "status": "saved",
+      "http_status": 200,
+      "bytes": 58935,
+      "title": "結果｜BOAT RACE オフィシャルウェブサイト",
+      "has_race_detail_content": true,
+      "saved_files": [
+        "data/raw/official/2026-07-16/11/races/06.html",
+        "data/raw/official/2026-07-16/11/races/06.metadata.json"
+      ],
+      "started_at": "2026-07-16T08:33:56.457Z",
+      "finished_at": "2026-07-16T08:33:56.672Z",
+      "error": null
+    },
+    {
+      "date": "2026-07-16",
+      "venue_code": "11",
+      "venue_name": "びわこ",
+      "race_id": "2026-07-16-11-7",
+      "race_no": 7,
+      "source_url": "https://www.boatrace.jp/owpc/pc/race/raceresult?rno=7&jcd=11&hd=20260716",
+      "live": true,
+      "status": "saved",
+      "http_status": 200,
+      "bytes": 59064,
+      "title": "結果｜BOAT RACE オフィシャルウェブサイト",
+      "has_race_detail_content": true,
+      "saved_files": [
+        "data/raw/official/2026-07-16/11/races/07.html",
+        "data/raw/official/2026-07-16/11/races/07.metadata.json"
+      ],
+      "started_at": "2026-07-16T08:33:58.474Z",
+      "finished_at": "2026-07-16T08:33:58.682Z",
+      "error": null
+    },
+    {
+      "date": "2026-07-16",
+      "venue_code": "11",
+      "venue_name": "びわこ",
+      "race_id": "2026-07-16-11-8",
+      "race_no": 8,
+      "source_url": "https://www.boatrace.jp/owpc/pc/race/raceresult?rno=8&jcd=11&hd=20260716",
+      "live": true,
+      "status": "saved",
+      "http_status": 200,
+      "bytes": 58932,
+      "title": "結果｜BOAT RACE オフィシャルウェブサイト",
+      "has_race_detail_content": true,
+      "saved_files": [
+        "data/raw/official/2026-07-16/11/races/08.html",
+        "data/raw/official/2026-07-16/11/races/08.metadata.json"
+      ],
+      "started_at": "2026-07-16T08:34:00.483Z",
+      "finished_at": "2026-07-16T08:34:00.708Z",
+      "error": null
+    },
+    {
+      "date": "2026-07-16",
+      "venue_code": "11",
+      "venue_name": "びわこ",
+      "race_id": "2026-07-16-11-9",
+      "race_no": 9,
+      "source_url": "https://www.boatrace.jp/owpc/pc/race/raceresult?rno=9&jcd=11&hd=20260716",
+      "live": true,
+      "status": "saved",
+      "http_status": 200,
+      "bytes": 58929,
+      "title": "結果｜BOAT RACE オフィシャルウェブサイト",
+      "has_race_detail_content": true,
+      "saved_files": [
+        "data/raw/official/2026-07-16/11/races/09.html",
+        "data/raw/official/2026-07-16/11/races/09.metadata.json"
+      ],
+      "started_at": "2026-07-16T08:34:02.510Z",
+      "finished_at": "2026-07-16T08:34:02.715Z",
+      "error": null
+    },
+    {
+      "date": "2026-07-16",
+      "venue_code": "11",
+      "venue_name": "びわこ",
+      "race_id": "2026-07-16-11-10",
+      "race_no": 10,
+      "source_url": "https://www.boatrace.jp/owpc/pc/race/raceresult?rno=10&jcd=11&hd=20260716",
+      "live": true,
+      "status": "saved",
+      "http_status": 200,
+      "bytes": 58934,
+      "title": "結果｜BOAT RACE オフィシャルウェブサイト",
+      "has_race_detail_content": true,
+      "saved_files": [
+        "data/raw/official/2026-07-16/11/races/10.html",
+        "data/raw/official/2026-07-16/11/races/10.metadata.json"
+      ],
+      "started_at": "2026-07-16T08:34:04.517Z",
+      "finished_at": "2026-07-16T08:34:04.752Z",
+      "error": null
+    },
+    {
+      "date": "2026-07-16",
+      "venue_code": "11",
+      "venue_name": "びわこ",
+      "race_id": "2026-07-16-11-11",
+      "race_no": 11,
+      "source_url": "https://www.boatrace.jp/owpc/pc/race/raceresult?rno=11&jcd=11&hd=20260716",
+      "live": true,
+      "status": "saved",
+      "http_status": 200,
+      "bytes": 58941,
+      "title": "結果｜BOAT RACE オフィシャルウェブサイト",
+      "has_race_detail_content": true,
+      "saved_files": [
+        "data/raw/official/2026-07-16/11/races/11.html",
+        "data/raw/official/2026-07-16/11/races/11.metadata.json"
+      ],
+      "started_at": "2026-07-16T08:34:06.554Z",
+      "finished_at": "2026-07-16T08:34:06.748Z",
+      "error": null
+    },
+    {
+      "date": "2026-07-16",
+      "venue_code": "11",
+      "venue_name": "びわこ",
+      "race_id": "2026-07-16-11-12",
+      "race_no": 12,
+      "source_url": "https://www.boatrace.jp/owpc/pc/race/raceresult?rno=12&jcd=11&hd=20260716",
+      "live": true,
+      "status": "saved",
+      "http_status": 200,
+      "bytes": 58932,
+      "title": "結果｜BOAT RACE オフィシャルウェブサイト",
+      "has_race_detail_content": true,
+      "saved_files": [
+        "data/raw/official/2026-07-16/11/races/12.html",
+        "data/raw/official/2026-07-16/11/races/12.metadata.json"
+      ],
+      "started_at": "2026-07-16T08:34:08.550Z",
+      "finished_at": "2026-07-16T08:34:08.787Z",
+      "error": null
+    },
+    {
+      "date": "2026-07-16",
+      "venue_code": "12",
+      "venue_name": "住之江",
+      "race_id": "2026-07-16-12-1",
+      "race_no": 1,
+      "source_url": "https://www.boatrace.jp/owpc/pc/race/raceresult?rno=1&jcd=12&hd=20260716",
+      "live": true,
+      "status": "saved",
+      "http_status": 200,
+      "bytes": 59183,
+      "title": "結果｜BOAT RACE オフィシャルウェブサイト",
+      "has_race_detail_content": true,
+      "saved_files": [
+        "data/raw/official/2026-07-16/12/races/01.html",
+        "data/raw/official/2026-07-16/12/races/01.metadata.json"
+      ],
+      "started_at": "2026-07-16T08:34:10.590Z",
+      "finished_at": "2026-07-16T08:34:10.831Z",
+      "error": null
+    },
+    {
+      "date": "2026-07-16",
+      "venue_code": "12",
+      "venue_name": "住之江",
+      "race_id": "2026-07-16-12-2",
+      "race_no": 2,
+      "source_url": "https://www.boatrace.jp/owpc/pc/race/raceresult?rno=2&jcd=12&hd=20260716",
+      "live": true,
+      "status": "saved",
+      "http_status": 200,
+      "bytes": 59164,
+      "title": "結果｜BOAT RACE オフィシャルウェブサイト",
+      "has_race_detail_content": true,
+      "saved_files": [
+        "data/raw/official/2026-07-16/12/races/02.html",
+        "data/raw/official/2026-07-16/12/races/02.metadata.json"
+      ],
+      "started_at": "2026-07-16T08:34:12.633Z",
+      "finished_at": "2026-07-16T08:34:12.873Z",
+      "error": null
+    },
+    {
+      "date": "2026-07-16",
+      "venue_code": "12",
+      "venue_name": "住之江",
+      "race_id": "2026-07-16-12-3",
+      "race_no": 3,
+      "source_url": "https://www.boatrace.jp/owpc/pc/race/raceresult?rno=3&jcd=12&hd=20260716",
+      "live": true,
+      "status": "saved",
+      "http_status": 200,
+      "bytes": 59176,
+      "title": "結果｜BOAT RACE オフィシャルウェブサイト",
+      "has_race_detail_content": true,
+      "saved_files": [
+        "data/raw/official/2026-07-16/12/races/03.html",
+        "data/raw/official/2026-07-16/12/races/03.metadata.json"
+      ],
+      "started_at": "2026-07-16T08:34:14.674Z",
+      "finished_at": "2026-07-16T08:34:14.908Z",
+      "error": null
+    },
+    {
+      "date": "2026-07-16",
+      "venue_code": "12",
+      "venue_name": "住之江",
+      "race_id": "2026-07-16-12-4",
+      "race_no": 4,
+      "source_url": "https://www.boatrace.jp/owpc/pc/race/raceresult?rno=4&jcd=12&hd=20260716",
+      "live": true,
+      "status": "saved",
+      "http_status": 200,
+      "bytes": 59161,
+      "title": "結果｜BOAT RACE オフィシャルウェブサイト",
+      "has_race_detail_content": true,
+      "saved_files": [
+        "data/raw/official/2026-07-16/12/races/04.html",
+        "data/raw/official/2026-07-16/12/races/04.metadata.json"
+      ],
+      "started_at": "2026-07-16T08:34:16.710Z",
+      "finished_at": "2026-07-16T08:34:16.918Z",
+      "error": null
+    },
+    {
+      "date": "2026-07-16",
+      "venue_code": "12",
+      "venue_name": "住之江",
+      "race_id": "2026-07-16-12-5",
+      "race_no": 5,
+      "source_url": "https://www.boatrace.jp/owpc/pc/race/raceresult?rno=5&jcd=12&hd=20260716",
+      "live": true,
+      "status": "saved",
+      "http_status": 200,
+      "bytes": 59163,
+      "title": "結果｜BOAT RACE オフィシャルウェブサイト",
+      "has_race_detail_content": true,
+      "saved_files": [
+        "data/raw/official/2026-07-16/12/races/05.html",
+        "data/raw/official/2026-07-16/12/races/05.metadata.json"
+      ],
+      "started_at": "2026-07-16T08:34:18.719Z",
+      "finished_at": "2026-07-16T08:34:18.916Z",
       "error": null
     },
     {
@@ -296,15 +1346,15 @@
       "live": true,
       "status": "saved",
       "http_status": 200,
-      "bytes": 59220,
+      "bytes": 59200,
       "title": "結果｜BOAT RACE オフィシャルウェブサイト",
       "has_race_detail_content": true,
       "saved_files": [
         "data/raw/official/2026-07-16/13/races/01.html",
         "data/raw/official/2026-07-16/13/races/01.metadata.json"
       ],
-      "started_at": "2026-07-16T03:35:12.776Z",
-      "finished_at": "2026-07-16T03:35:12.942Z",
+      "started_at": "2026-07-16T08:34:20.718Z",
+      "finished_at": "2026-07-16T08:34:20.914Z",
       "error": null
     },
     {
@@ -317,15 +1367,15 @@
       "live": true,
       "status": "saved",
       "http_status": 200,
-      "bytes": 59226,
+      "bytes": 59206,
       "title": "結果｜BOAT RACE オフィシャルウェブサイト",
       "has_race_detail_content": true,
       "saved_files": [
         "data/raw/official/2026-07-16/13/races/02.html",
         "data/raw/official/2026-07-16/13/races/02.metadata.json"
       ],
-      "started_at": "2026-07-16T03:35:14.745Z",
-      "finished_at": "2026-07-16T03:35:14.958Z",
+      "started_at": "2026-07-16T08:34:22.716Z",
+      "finished_at": "2026-07-16T08:34:22.921Z",
       "error": null
     },
     {
@@ -338,15 +1388,15 @@
       "live": true,
       "status": "saved",
       "http_status": 200,
-      "bytes": 59219,
+      "bytes": 59199,
       "title": "結果｜BOAT RACE オフィシャルウェブサイト",
       "has_race_detail_content": true,
       "saved_files": [
         "data/raw/official/2026-07-16/13/races/03.html",
         "data/raw/official/2026-07-16/13/races/03.metadata.json"
       ],
-      "started_at": "2026-07-16T03:35:16.761Z",
-      "finished_at": "2026-07-16T03:35:16.955Z",
+      "started_at": "2026-07-16T08:34:24.722Z",
+      "finished_at": "2026-07-16T08:34:24.949Z",
       "error": null
     },
     {
@@ -359,15 +1409,183 @@
       "live": true,
       "status": "saved",
       "http_status": 200,
-      "bytes": 59227,
+      "bytes": 59207,
       "title": "結果｜BOAT RACE オフィシャルウェブサイト",
       "has_race_detail_content": true,
       "saved_files": [
         "data/raw/official/2026-07-16/13/races/04.html",
         "data/raw/official/2026-07-16/13/races/04.metadata.json"
       ],
-      "started_at": "2026-07-16T03:35:18.757Z",
-      "finished_at": "2026-07-16T03:35:18.956Z",
+      "started_at": "2026-07-16T08:34:26.750Z",
+      "finished_at": "2026-07-16T08:34:26.985Z",
+      "error": null
+    },
+    {
+      "date": "2026-07-16",
+      "venue_code": "13",
+      "venue_name": "尼崎",
+      "race_id": "2026-07-16-13-5",
+      "race_no": 5,
+      "source_url": "https://www.boatrace.jp/owpc/pc/race/raceresult?rno=5&jcd=13&hd=20260716",
+      "live": true,
+      "status": "saved",
+      "http_status": 200,
+      "bytes": 59193,
+      "title": "結果｜BOAT RACE オフィシャルウェブサイト",
+      "has_race_detail_content": true,
+      "saved_files": [
+        "data/raw/official/2026-07-16/13/races/05.html",
+        "data/raw/official/2026-07-16/13/races/05.metadata.json"
+      ],
+      "started_at": "2026-07-16T08:34:28.786Z",
+      "finished_at": "2026-07-16T08:34:29.024Z",
+      "error": null
+    },
+    {
+      "date": "2026-07-16",
+      "venue_code": "13",
+      "venue_name": "尼崎",
+      "race_id": "2026-07-16-13-6",
+      "race_no": 6,
+      "source_url": "https://www.boatrace.jp/owpc/pc/race/raceresult?rno=6&jcd=13&hd=20260716",
+      "live": true,
+      "status": "saved",
+      "http_status": 200,
+      "bytes": 59222,
+      "title": "結果｜BOAT RACE オフィシャルウェブサイト",
+      "has_race_detail_content": true,
+      "saved_files": [
+        "data/raw/official/2026-07-16/13/races/06.html",
+        "data/raw/official/2026-07-16/13/races/06.metadata.json"
+      ],
+      "started_at": "2026-07-16T08:34:30.826Z",
+      "finished_at": "2026-07-16T08:34:31.054Z",
+      "error": null
+    },
+    {
+      "date": "2026-07-16",
+      "venue_code": "13",
+      "venue_name": "尼崎",
+      "race_id": "2026-07-16-13-7",
+      "race_no": 7,
+      "source_url": "https://www.boatrace.jp/owpc/pc/race/raceresult?rno=7&jcd=13&hd=20260716",
+      "live": true,
+      "status": "saved",
+      "http_status": 200,
+      "bytes": 59211,
+      "title": "結果｜BOAT RACE オフィシャルウェブサイト",
+      "has_race_detail_content": true,
+      "saved_files": [
+        "data/raw/official/2026-07-16/13/races/07.html",
+        "data/raw/official/2026-07-16/13/races/07.metadata.json"
+      ],
+      "started_at": "2026-07-16T08:34:32.855Z",
+      "finished_at": "2026-07-16T08:34:33.047Z",
+      "error": null
+    },
+    {
+      "date": "2026-07-16",
+      "venue_code": "13",
+      "venue_name": "尼崎",
+      "race_id": "2026-07-16-13-8",
+      "race_no": 8,
+      "source_url": "https://www.boatrace.jp/owpc/pc/race/raceresult?rno=8&jcd=13&hd=20260716",
+      "live": true,
+      "status": "saved",
+      "http_status": 200,
+      "bytes": 59193,
+      "title": "結果｜BOAT RACE オフィシャルウェブサイト",
+      "has_race_detail_content": true,
+      "saved_files": [
+        "data/raw/official/2026-07-16/13/races/08.html",
+        "data/raw/official/2026-07-16/13/races/08.metadata.json"
+      ],
+      "started_at": "2026-07-16T08:34:34.849Z",
+      "finished_at": "2026-07-16T08:34:35.087Z",
+      "error": null
+    },
+    {
+      "date": "2026-07-16",
+      "venue_code": "13",
+      "venue_name": "尼崎",
+      "race_id": "2026-07-16-13-9",
+      "race_no": 9,
+      "source_url": "https://www.boatrace.jp/owpc/pc/race/raceresult?rno=9&jcd=13&hd=20260716",
+      "live": true,
+      "status": "saved",
+      "http_status": 200,
+      "bytes": 59213,
+      "title": "結果｜BOAT RACE オフィシャルウェブサイト",
+      "has_race_detail_content": true,
+      "saved_files": [
+        "data/raw/official/2026-07-16/13/races/09.html",
+        "data/raw/official/2026-07-16/13/races/09.metadata.json"
+      ],
+      "started_at": "2026-07-16T08:34:36.889Z",
+      "finished_at": "2026-07-16T08:34:37.120Z",
+      "error": null
+    },
+    {
+      "date": "2026-07-16",
+      "venue_code": "13",
+      "venue_name": "尼崎",
+      "race_id": "2026-07-16-13-10",
+      "race_no": 10,
+      "source_url": "https://www.boatrace.jp/owpc/pc/race/raceresult?rno=10&jcd=13&hd=20260716",
+      "live": true,
+      "status": "saved",
+      "http_status": 200,
+      "bytes": 59198,
+      "title": "結果｜BOAT RACE オフィシャルウェブサイト",
+      "has_race_detail_content": true,
+      "saved_files": [
+        "data/raw/official/2026-07-16/13/races/10.html",
+        "data/raw/official/2026-07-16/13/races/10.metadata.json"
+      ],
+      "started_at": "2026-07-16T08:34:38.921Z",
+      "finished_at": "2026-07-16T08:34:39.155Z",
+      "error": null
+    },
+    {
+      "date": "2026-07-16",
+      "venue_code": "13",
+      "venue_name": "尼崎",
+      "race_id": "2026-07-16-13-11",
+      "race_no": 11,
+      "source_url": "https://www.boatrace.jp/owpc/pc/race/raceresult?rno=11&jcd=13&hd=20260716",
+      "live": true,
+      "status": "saved",
+      "http_status": 200,
+      "bytes": 59198,
+      "title": "結果｜BOAT RACE オフィシャルウェブサイト",
+      "has_race_detail_content": true,
+      "saved_files": [
+        "data/raw/official/2026-07-16/13/races/11.html",
+        "data/raw/official/2026-07-16/13/races/11.metadata.json"
+      ],
+      "started_at": "2026-07-16T08:34:40.957Z",
+      "finished_at": "2026-07-16T08:34:41.194Z",
+      "error": null
+    },
+    {
+      "date": "2026-07-16",
+      "venue_code": "13",
+      "venue_name": "尼崎",
+      "race_id": "2026-07-16-13-12",
+      "race_no": 12,
+      "source_url": "https://www.boatrace.jp/owpc/pc/race/raceresult?rno=12&jcd=13&hd=20260716",
+      "live": true,
+      "status": "saved",
+      "http_status": 200,
+      "bytes": 59203,
+      "title": "結果｜BOAT RACE オフィシャルウェブサイト",
+      "has_race_detail_content": true,
+      "saved_files": [
+        "data/raw/official/2026-07-16/13/races/12.html",
+        "data/raw/official/2026-07-16/13/races/12.metadata.json"
+      ],
+      "started_at": "2026-07-16T08:34:42.996Z",
+      "finished_at": "2026-07-16T08:34:43.227Z",
       "error": null
     },
     {
@@ -380,15 +1598,15 @@
       "live": true,
       "status": "saved",
       "http_status": 200,
-      "bytes": 58953,
+      "bytes": 58933,
       "title": "結果｜BOAT RACE オフィシャルウェブサイト",
       "has_race_detail_content": true,
       "saved_files": [
         "data/raw/official/2026-07-16/17/races/01.html",
         "data/raw/official/2026-07-16/17/races/01.metadata.json"
       ],
-      "started_at": "2026-07-16T03:35:20.758Z",
-      "finished_at": "2026-07-16T03:35:20.939Z",
+      "started_at": "2026-07-16T08:34:45.029Z",
+      "finished_at": "2026-07-16T08:34:45.224Z",
       "error": null
     },
     {
@@ -401,15 +1619,15 @@
       "live": true,
       "status": "saved",
       "http_status": 200,
-      "bytes": 58920,
+      "bytes": 58900,
       "title": "結果｜BOAT RACE オフィシャルウェブサイト",
       "has_race_detail_content": true,
       "saved_files": [
         "data/raw/official/2026-07-16/17/races/02.html",
         "data/raw/official/2026-07-16/17/races/02.metadata.json"
       ],
-      "started_at": "2026-07-16T03:35:22.742Z",
-      "finished_at": "2026-07-16T03:35:22.944Z",
+      "started_at": "2026-07-16T08:34:47.026Z",
+      "finished_at": "2026-07-16T08:34:47.254Z",
       "error": null
     },
     {
@@ -422,15 +1640,15 @@
       "live": true,
       "status": "saved",
       "http_status": 200,
-      "bytes": 58920,
+      "bytes": 58900,
       "title": "結果｜BOAT RACE オフィシャルウェブサイト",
       "has_race_detail_content": true,
       "saved_files": [
         "data/raw/official/2026-07-16/17/races/03.html",
         "data/raw/official/2026-07-16/17/races/03.metadata.json"
       ],
-      "started_at": "2026-07-16T03:35:24.747Z",
-      "finished_at": "2026-07-16T03:35:24.941Z",
+      "started_at": "2026-07-16T08:34:49.056Z",
+      "finished_at": "2026-07-16T08:34:49.249Z",
       "error": null
     },
     {
@@ -443,15 +1661,183 @@
       "live": true,
       "status": "saved",
       "http_status": 200,
-      "bytes": 58950,
+      "bytes": 58930,
       "title": "結果｜BOAT RACE オフィシャルウェブサイト",
       "has_race_detail_content": true,
       "saved_files": [
         "data/raw/official/2026-07-16/17/races/04.html",
         "data/raw/official/2026-07-16/17/races/04.metadata.json"
       ],
-      "started_at": "2026-07-16T03:35:26.742Z",
-      "finished_at": "2026-07-16T03:35:26.937Z",
+      "started_at": "2026-07-16T08:34:51.051Z",
+      "finished_at": "2026-07-16T08:34:51.287Z",
+      "error": null
+    },
+    {
+      "date": "2026-07-16",
+      "venue_code": "17",
+      "venue_name": "宮島",
+      "race_id": "2026-07-16-17-5",
+      "race_no": 5,
+      "source_url": "https://www.boatrace.jp/owpc/pc/race/raceresult?rno=5&jcd=17&hd=20260716",
+      "live": true,
+      "status": "saved",
+      "http_status": 200,
+      "bytes": 58908,
+      "title": "結果｜BOAT RACE オフィシャルウェブサイト",
+      "has_race_detail_content": true,
+      "saved_files": [
+        "data/raw/official/2026-07-16/17/races/05.html",
+        "data/raw/official/2026-07-16/17/races/05.metadata.json"
+      ],
+      "started_at": "2026-07-16T08:34:53.089Z",
+      "finished_at": "2026-07-16T08:34:53.327Z",
+      "error": null
+    },
+    {
+      "date": "2026-07-16",
+      "venue_code": "17",
+      "venue_name": "宮島",
+      "race_id": "2026-07-16-17-6",
+      "race_no": 6,
+      "source_url": "https://www.boatrace.jp/owpc/pc/race/raceresult?rno=6&jcd=17&hd=20260716",
+      "live": true,
+      "status": "saved",
+      "http_status": 200,
+      "bytes": 58909,
+      "title": "結果｜BOAT RACE オフィシャルウェブサイト",
+      "has_race_detail_content": true,
+      "saved_files": [
+        "data/raw/official/2026-07-16/17/races/06.html",
+        "data/raw/official/2026-07-16/17/races/06.metadata.json"
+      ],
+      "started_at": "2026-07-16T08:34:55.129Z",
+      "finished_at": "2026-07-16T08:34:55.364Z",
+      "error": null
+    },
+    {
+      "date": "2026-07-16",
+      "venue_code": "17",
+      "venue_name": "宮島",
+      "race_id": "2026-07-16-17-7",
+      "race_no": 7,
+      "source_url": "https://www.boatrace.jp/owpc/pc/race/raceresult?rno=7&jcd=17&hd=20260716",
+      "live": true,
+      "status": "saved",
+      "http_status": 200,
+      "bytes": 58914,
+      "title": "結果｜BOAT RACE オフィシャルウェブサイト",
+      "has_race_detail_content": true,
+      "saved_files": [
+        "data/raw/official/2026-07-16/17/races/07.html",
+        "data/raw/official/2026-07-16/17/races/07.metadata.json"
+      ],
+      "started_at": "2026-07-16T08:34:57.166Z",
+      "finished_at": "2026-07-16T08:34:57.403Z",
+      "error": null
+    },
+    {
+      "date": "2026-07-16",
+      "venue_code": "17",
+      "venue_name": "宮島",
+      "race_id": "2026-07-16-17-8",
+      "race_no": 8,
+      "source_url": "https://www.boatrace.jp/owpc/pc/race/raceresult?rno=8&jcd=17&hd=20260716",
+      "live": true,
+      "status": "saved",
+      "http_status": 200,
+      "bytes": 58903,
+      "title": "結果｜BOAT RACE オフィシャルウェブサイト",
+      "has_race_detail_content": true,
+      "saved_files": [
+        "data/raw/official/2026-07-16/17/races/08.html",
+        "data/raw/official/2026-07-16/17/races/08.metadata.json"
+      ],
+      "started_at": "2026-07-16T08:34:59.205Z",
+      "finished_at": "2026-07-16T08:34:59.437Z",
+      "error": null
+    },
+    {
+      "date": "2026-07-16",
+      "venue_code": "17",
+      "venue_name": "宮島",
+      "race_id": "2026-07-16-17-9",
+      "race_no": 9,
+      "source_url": "https://www.boatrace.jp/owpc/pc/race/raceresult?rno=9&jcd=17&hd=20260716",
+      "live": true,
+      "status": "saved",
+      "http_status": 200,
+      "bytes": 58903,
+      "title": "結果｜BOAT RACE オフィシャルウェブサイト",
+      "has_race_detail_content": true,
+      "saved_files": [
+        "data/raw/official/2026-07-16/17/races/09.html",
+        "data/raw/official/2026-07-16/17/races/09.metadata.json"
+      ],
+      "started_at": "2026-07-16T08:35:01.239Z",
+      "finished_at": "2026-07-16T08:35:01.475Z",
+      "error": null
+    },
+    {
+      "date": "2026-07-16",
+      "venue_code": "17",
+      "venue_name": "宮島",
+      "race_id": "2026-07-16-17-10",
+      "race_no": 10,
+      "source_url": "https://www.boatrace.jp/owpc/pc/race/raceresult?rno=10&jcd=17&hd=20260716",
+      "live": true,
+      "status": "saved",
+      "http_status": 200,
+      "bytes": 58917,
+      "title": "結果｜BOAT RACE オフィシャルウェブサイト",
+      "has_race_detail_content": true,
+      "saved_files": [
+        "data/raw/official/2026-07-16/17/races/10.html",
+        "data/raw/official/2026-07-16/17/races/10.metadata.json"
+      ],
+      "started_at": "2026-07-16T08:35:03.276Z",
+      "finished_at": "2026-07-16T08:35:03.506Z",
+      "error": null
+    },
+    {
+      "date": "2026-07-16",
+      "venue_code": "17",
+      "venue_name": "宮島",
+      "race_id": "2026-07-16-17-11",
+      "race_no": 11,
+      "source_url": "https://www.boatrace.jp/owpc/pc/race/raceresult?rno=11&jcd=17&hd=20260716",
+      "live": true,
+      "status": "saved",
+      "http_status": 200,
+      "bytes": 58914,
+      "title": "結果｜BOAT RACE オフィシャルウェブサイト",
+      "has_race_detail_content": true,
+      "saved_files": [
+        "data/raw/official/2026-07-16/17/races/11.html",
+        "data/raw/official/2026-07-16/17/races/11.metadata.json"
+      ],
+      "started_at": "2026-07-16T08:35:05.308Z",
+      "finished_at": "2026-07-16T08:35:05.537Z",
+      "error": null
+    },
+    {
+      "date": "2026-07-16",
+      "venue_code": "17",
+      "venue_name": "宮島",
+      "race_id": "2026-07-16-17-12",
+      "race_no": 12,
+      "source_url": "https://www.boatrace.jp/owpc/pc/race/raceresult?rno=12&jcd=17&hd=20260716",
+      "live": true,
+      "status": "saved",
+      "http_status": 200,
+      "bytes": 58906,
+      "title": "結果｜BOAT RACE オフィシャルウェブサイト",
+      "has_race_detail_content": true,
+      "saved_files": [
+        "data/raw/official/2026-07-16/17/races/12.html",
+        "data/raw/official/2026-07-16/17/races/12.metadata.json"
+      ],
+      "started_at": "2026-07-16T08:35:07.339Z",
+      "finished_at": "2026-07-16T08:35:07.577Z",
       "error": null
     },
     {
@@ -464,15 +1850,15 @@
       "live": true,
       "status": "saved",
       "http_status": 200,
-      "bytes": 59247,
+      "bytes": 59025,
       "title": "結果｜BOAT RACE オフィシャルウェブサイト",
       "has_race_detail_content": true,
       "saved_files": [
         "data/raw/official/2026-07-16/18/races/01.html",
         "data/raw/official/2026-07-16/18/races/01.metadata.json"
       ],
-      "started_at": "2026-07-16T03:35:28.738Z",
-      "finished_at": "2026-07-16T03:35:28.954Z",
+      "started_at": "2026-07-16T08:35:09.379Z",
+      "finished_at": "2026-07-16T08:35:09.614Z",
       "error": null
     },
     {
@@ -485,15 +1871,15 @@
       "live": true,
       "status": "saved",
       "http_status": 200,
-      "bytes": 59273,
+      "bytes": 59051,
       "title": "結果｜BOAT RACE オフィシャルウェブサイト",
       "has_race_detail_content": true,
       "saved_files": [
         "data/raw/official/2026-07-16/18/races/02.html",
         "data/raw/official/2026-07-16/18/races/02.metadata.json"
       ],
-      "started_at": "2026-07-16T03:35:30.757Z",
-      "finished_at": "2026-07-16T03:35:30.945Z",
+      "started_at": "2026-07-16T08:35:11.415Z",
+      "finished_at": "2026-07-16T08:35:11.655Z",
       "error": null
     },
     {
@@ -506,15 +1892,15 @@
       "live": true,
       "status": "saved",
       "http_status": 200,
-      "bytes": 59267,
+      "bytes": 59045,
       "title": "結果｜BOAT RACE オフィシャルウェブサイト",
       "has_race_detail_content": true,
       "saved_files": [
         "data/raw/official/2026-07-16/18/races/03.html",
         "data/raw/official/2026-07-16/18/races/03.metadata.json"
       ],
-      "started_at": "2026-07-16T03:35:32.748Z",
-      "finished_at": "2026-07-16T03:35:32.961Z",
+      "started_at": "2026-07-16T08:35:13.458Z",
+      "finished_at": "2026-07-16T08:35:13.687Z",
       "error": null
     },
     {
@@ -527,15 +1913,15 @@
       "live": true,
       "status": "saved",
       "http_status": 200,
-      "bytes": 59262,
+      "bytes": 59040,
       "title": "結果｜BOAT RACE オフィシャルウェブサイト",
       "has_race_detail_content": true,
       "saved_files": [
         "data/raw/official/2026-07-16/18/races/04.html",
         "data/raw/official/2026-07-16/18/races/04.metadata.json"
       ],
-      "started_at": "2026-07-16T03:35:34.763Z",
-      "finished_at": "2026-07-16T03:35:34.957Z",
+      "started_at": "2026-07-16T08:35:15.489Z",
+      "finished_at": "2026-07-16T08:35:15.690Z",
       "error": null
     },
     {
@@ -548,15 +1934,15 @@
       "live": true,
       "status": "saved",
       "http_status": 200,
-      "bytes": 59251,
+      "bytes": 59029,
       "title": "結果｜BOAT RACE オフィシャルウェブサイト",
       "has_race_detail_content": true,
       "saved_files": [
         "data/raw/official/2026-07-16/18/races/05.html",
         "data/raw/official/2026-07-16/18/races/05.metadata.json"
       ],
-      "started_at": "2026-07-16T03:35:36.759Z",
-      "finished_at": "2026-07-16T03:35:36.961Z",
+      "started_at": "2026-07-16T08:35:17.492Z",
+      "finished_at": "2026-07-16T08:35:17.726Z",
       "error": null
     },
     {
@@ -569,15 +1955,15 @@
       "live": true,
       "status": "saved",
       "http_status": 200,
-      "bytes": 59254,
+      "bytes": 59032,
       "title": "結果｜BOAT RACE オフィシャルウェブサイト",
       "has_race_detail_content": true,
       "saved_files": [
         "data/raw/official/2026-07-16/18/races/06.html",
         "data/raw/official/2026-07-16/18/races/06.metadata.json"
       ],
-      "started_at": "2026-07-16T03:35:38.763Z",
-      "finished_at": "2026-07-16T03:35:38.970Z",
+      "started_at": "2026-07-16T08:35:19.528Z",
+      "finished_at": "2026-07-16T08:35:19.724Z",
       "error": null
     },
     {
@@ -590,15 +1976,15 @@
       "live": true,
       "status": "saved",
       "http_status": 200,
-      "bytes": 59249,
+      "bytes": 59027,
       "title": "結果｜BOAT RACE オフィシャルウェブサイト",
       "has_race_detail_content": true,
       "saved_files": [
         "data/raw/official/2026-07-16/18/races/07.html",
         "data/raw/official/2026-07-16/18/races/07.metadata.json"
       ],
-      "started_at": "2026-07-16T03:35:40.772Z",
-      "finished_at": "2026-07-16T03:35:40.930Z",
+      "started_at": "2026-07-16T08:35:21.526Z",
+      "finished_at": "2026-07-16T08:35:21.756Z",
       "error": null
     },
     {
@@ -611,15 +1997,99 @@
       "live": true,
       "status": "saved",
       "http_status": 200,
-      "bytes": 59251,
+      "bytes": 59029,
       "title": "結果｜BOAT RACE オフィシャルウェブサイト",
       "has_race_detail_content": true,
       "saved_files": [
         "data/raw/official/2026-07-16/18/races/08.html",
         "data/raw/official/2026-07-16/18/races/08.metadata.json"
       ],
-      "started_at": "2026-07-16T03:35:42.733Z",
-      "finished_at": "2026-07-16T03:35:42.928Z",
+      "started_at": "2026-07-16T08:35:23.558Z",
+      "finished_at": "2026-07-16T08:35:23.793Z",
+      "error": null
+    },
+    {
+      "date": "2026-07-16",
+      "venue_code": "18",
+      "venue_name": "徳山",
+      "race_id": "2026-07-16-18-9",
+      "race_no": 9,
+      "source_url": "https://www.boatrace.jp/owpc/pc/race/raceresult?rno=9&jcd=18&hd=20260716",
+      "live": true,
+      "status": "saved",
+      "http_status": 200,
+      "bytes": 59027,
+      "title": "結果｜BOAT RACE オフィシャルウェブサイト",
+      "has_race_detail_content": true,
+      "saved_files": [
+        "data/raw/official/2026-07-16/18/races/09.html",
+        "data/raw/official/2026-07-16/18/races/09.metadata.json"
+      ],
+      "started_at": "2026-07-16T08:35:25.596Z",
+      "finished_at": "2026-07-16T08:35:25.838Z",
+      "error": null
+    },
+    {
+      "date": "2026-07-16",
+      "venue_code": "18",
+      "venue_name": "徳山",
+      "race_id": "2026-07-16-18-10",
+      "race_no": 10,
+      "source_url": "https://www.boatrace.jp/owpc/pc/race/raceresult?rno=10&jcd=18&hd=20260716",
+      "live": true,
+      "status": "saved",
+      "http_status": 200,
+      "bytes": 59030,
+      "title": "結果｜BOAT RACE オフィシャルウェブサイト",
+      "has_race_detail_content": true,
+      "saved_files": [
+        "data/raw/official/2026-07-16/18/races/10.html",
+        "data/raw/official/2026-07-16/18/races/10.metadata.json"
+      ],
+      "started_at": "2026-07-16T08:35:27.639Z",
+      "finished_at": "2026-07-16T08:35:27.869Z",
+      "error": null
+    },
+    {
+      "date": "2026-07-16",
+      "venue_code": "18",
+      "venue_name": "徳山",
+      "race_id": "2026-07-16-18-11",
+      "race_no": 11,
+      "source_url": "https://www.boatrace.jp/owpc/pc/race/raceresult?rno=11&jcd=18&hd=20260716",
+      "live": true,
+      "status": "saved",
+      "http_status": 200,
+      "bytes": 59035,
+      "title": "結果｜BOAT RACE オフィシャルウェブサイト",
+      "has_race_detail_content": true,
+      "saved_files": [
+        "data/raw/official/2026-07-16/18/races/11.html",
+        "data/raw/official/2026-07-16/18/races/11.metadata.json"
+      ],
+      "started_at": "2026-07-16T08:35:29.671Z",
+      "finished_at": "2026-07-16T08:35:29.911Z",
+      "error": null
+    },
+    {
+      "date": "2026-07-16",
+      "venue_code": "18",
+      "venue_name": "徳山",
+      "race_id": "2026-07-16-18-12",
+      "race_no": 12,
+      "source_url": "https://www.boatrace.jp/owpc/pc/race/raceresult?rno=12&jcd=18&hd=20260716",
+      "live": true,
+      "status": "saved",
+      "http_status": 200,
+      "bytes": 59043,
+      "title": "結果｜BOAT RACE オフィシャルウェブサイト",
+      "has_race_detail_content": true,
+      "saved_files": [
+        "data/raw/official/2026-07-16/18/races/12.html",
+        "data/raw/official/2026-07-16/18/races/12.metadata.json"
+      ],
+      "started_at": "2026-07-16T08:35:31.713Z",
+      "finished_at": "2026-07-16T08:35:31.943Z",
       "error": null
     },
     {
@@ -632,15 +2102,15 @@
       "live": true,
       "status": "saved",
       "http_status": 200,
-      "bytes": 59094,
+      "bytes": 59074,
       "title": "結果｜BOAT RACE オフィシャルウェブサイト",
       "has_race_detail_content": true,
       "saved_files": [
         "data/raw/official/2026-07-16/21/races/01.html",
         "data/raw/official/2026-07-16/21/races/01.metadata.json"
       ],
-      "started_at": "2026-07-16T03:35:44.731Z",
-      "finished_at": "2026-07-16T03:35:44.934Z",
+      "started_at": "2026-07-16T08:35:33.744Z",
+      "finished_at": "2026-07-16T08:35:33.979Z",
       "error": null
     },
     {
@@ -653,15 +2123,15 @@
       "live": true,
       "status": "saved",
       "http_status": 200,
-      "bytes": 59097,
+      "bytes": 59077,
       "title": "結果｜BOAT RACE オフィシャルウェブサイト",
       "has_race_detail_content": true,
       "saved_files": [
         "data/raw/official/2026-07-16/21/races/02.html",
         "data/raw/official/2026-07-16/21/races/02.metadata.json"
       ],
-      "started_at": "2026-07-16T03:35:46.735Z",
-      "finished_at": "2026-07-16T03:35:46.894Z",
+      "started_at": "2026-07-16T08:35:35.781Z",
+      "finished_at": "2026-07-16T08:35:36.011Z",
       "error": null
     },
     {
@@ -674,15 +2144,15 @@
       "live": true,
       "status": "saved",
       "http_status": 200,
-      "bytes": 59081,
+      "bytes": 59061,
       "title": "結果｜BOAT RACE オフィシャルウェブサイト",
       "has_race_detail_content": true,
       "saved_files": [
         "data/raw/official/2026-07-16/21/races/03.html",
         "data/raw/official/2026-07-16/21/races/03.metadata.json"
       ],
-      "started_at": "2026-07-16T03:35:48.696Z",
-      "finished_at": "2026-07-16T03:35:48.864Z",
+      "started_at": "2026-07-16T08:35:37.813Z",
+      "finished_at": "2026-07-16T08:35:38.053Z",
       "error": null
     },
     {
@@ -695,15 +2165,15 @@
       "live": true,
       "status": "saved",
       "http_status": 200,
-      "bytes": 59145,
+      "bytes": 59125,
       "title": "結果｜BOAT RACE オフィシャルウェブサイト",
       "has_race_detail_content": true,
       "saved_files": [
         "data/raw/official/2026-07-16/21/races/04.html",
         "data/raw/official/2026-07-16/21/races/04.metadata.json"
       ],
-      "started_at": "2026-07-16T03:35:50.664Z",
-      "finished_at": "2026-07-16T03:35:50.856Z",
+      "started_at": "2026-07-16T08:35:39.856Z",
+      "finished_at": "2026-07-16T08:35:40.090Z",
       "error": null
     },
     {
@@ -716,15 +2186,15 @@
       "live": true,
       "status": "saved",
       "http_status": 200,
-      "bytes": 59081,
+      "bytes": 59061,
       "title": "結果｜BOAT RACE オフィシャルウェブサイト",
       "has_race_detail_content": true,
       "saved_files": [
         "data/raw/official/2026-07-16/21/races/05.html",
         "data/raw/official/2026-07-16/21/races/05.metadata.json"
       ],
-      "started_at": "2026-07-16T03:35:52.659Z",
-      "finished_at": "2026-07-16T03:35:52.875Z",
+      "started_at": "2026-07-16T08:35:41.893Z",
+      "finished_at": "2026-07-16T08:35:42.134Z",
       "error": null
     },
     {
@@ -737,15 +2207,15 @@
       "live": true,
       "status": "saved",
       "http_status": 200,
-      "bytes": 59088,
+      "bytes": 59068,
       "title": "結果｜BOAT RACE オフィシャルウェブサイト",
       "has_race_detail_content": true,
       "saved_files": [
         "data/raw/official/2026-07-16/21/races/06.html",
         "data/raw/official/2026-07-16/21/races/06.metadata.json"
       ],
-      "started_at": "2026-07-16T03:35:54.677Z",
-      "finished_at": "2026-07-16T03:35:54.883Z",
+      "started_at": "2026-07-16T08:35:43.936Z",
+      "finished_at": "2026-07-16T08:35:44.163Z",
       "error": null
     },
     {
@@ -758,15 +2228,15 @@
       "live": true,
       "status": "saved",
       "http_status": 200,
-      "bytes": 59145,
+      "bytes": 59125,
       "title": "結果｜BOAT RACE オフィシャルウェブサイト",
       "has_race_detail_content": true,
       "saved_files": [
         "data/raw/official/2026-07-16/21/races/07.html",
         "data/raw/official/2026-07-16/21/races/07.metadata.json"
       ],
-      "started_at": "2026-07-16T03:35:56.685Z",
-      "finished_at": "2026-07-16T03:35:56.881Z",
+      "started_at": "2026-07-16T08:35:45.965Z",
+      "finished_at": "2026-07-16T08:35:46.166Z",
       "error": null
     },
     {
@@ -779,15 +2249,15 @@
       "live": true,
       "status": "saved",
       "http_status": 200,
-      "bytes": 59091,
+      "bytes": 59071,
       "title": "結果｜BOAT RACE オフィシャルウェブサイト",
       "has_race_detail_content": true,
       "saved_files": [
         "data/raw/official/2026-07-16/21/races/08.html",
         "data/raw/official/2026-07-16/21/races/08.metadata.json"
       ],
-      "started_at": "2026-07-16T03:35:58.683Z",
-      "finished_at": "2026-07-16T03:35:58.884Z",
+      "started_at": "2026-07-16T08:35:47.968Z",
+      "finished_at": "2026-07-16T08:35:48.192Z",
       "error": null
     },
     {
@@ -800,18 +2270,81 @@
       "live": true,
       "status": "saved",
       "http_status": 200,
-      "bytes": 59087,
+      "bytes": 59067,
       "title": "結果｜BOAT RACE オフィシャルウェブサイト",
       "has_race_detail_content": true,
       "saved_files": [
         "data/raw/official/2026-07-16/21/races/09.html",
         "data/raw/official/2026-07-16/21/races/09.metadata.json"
       ],
-      "started_at": "2026-07-16T03:36:00.685Z",
-      "finished_at": "2026-07-16T03:36:00.883Z",
+      "started_at": "2026-07-16T08:35:49.995Z",
+      "finished_at": "2026-07-16T08:35:50.187Z",
+      "error": null
+    },
+    {
+      "date": "2026-07-16",
+      "venue_code": "21",
+      "venue_name": "芦屋",
+      "race_id": "2026-07-16-21-10",
+      "race_no": 10,
+      "source_url": "https://www.boatrace.jp/owpc/pc/race/raceresult?rno=10&jcd=21&hd=20260716",
+      "live": true,
+      "status": "saved",
+      "http_status": 200,
+      "bytes": 59079,
+      "title": "結果｜BOAT RACE オフィシャルウェブサイト",
+      "has_race_detail_content": true,
+      "saved_files": [
+        "data/raw/official/2026-07-16/21/races/10.html",
+        "data/raw/official/2026-07-16/21/races/10.metadata.json"
+      ],
+      "started_at": "2026-07-16T08:35:51.988Z",
+      "finished_at": "2026-07-16T08:35:52.192Z",
+      "error": null
+    },
+    {
+      "date": "2026-07-16",
+      "venue_code": "21",
+      "venue_name": "芦屋",
+      "race_id": "2026-07-16-21-11",
+      "race_no": 11,
+      "source_url": "https://www.boatrace.jp/owpc/pc/race/raceresult?rno=11&jcd=21&hd=20260716",
+      "live": true,
+      "status": "saved",
+      "http_status": 200,
+      "bytes": 59102,
+      "title": "結果｜BOAT RACE オフィシャルウェブサイト",
+      "has_race_detail_content": true,
+      "saved_files": [
+        "data/raw/official/2026-07-16/21/races/11.html",
+        "data/raw/official/2026-07-16/21/races/11.metadata.json"
+      ],
+      "started_at": "2026-07-16T08:35:53.994Z",
+      "finished_at": "2026-07-16T08:35:54.220Z",
+      "error": null
+    },
+    {
+      "date": "2026-07-16",
+      "venue_code": "21",
+      "venue_name": "芦屋",
+      "race_id": "2026-07-16-21-12",
+      "race_no": 12,
+      "source_url": "https://www.boatrace.jp/owpc/pc/race/raceresult?rno=12&jcd=21&hd=20260716",
+      "live": true,
+      "status": "saved",
+      "http_status": 200,
+      "bytes": 59068,
+      "title": "結果｜BOAT RACE オフィシャルウェブサイト",
+      "has_race_detail_content": true,
+      "saved_files": [
+        "data/raw/official/2026-07-16/21/races/12.html",
+        "data/raw/official/2026-07-16/21/races/12.metadata.json"
+      ],
+      "started_at": "2026-07-16T08:35:56.023Z",
+      "finished_at": "2026-07-16T08:35:56.261Z",
       "error": null
     }
   ],
-  "generated_at": "2026-07-16T03:36:02.686Z",
+  "generated_at": "2026-07-16T08:35:58.063Z",
   "compliance_note": "的中や利益を保証するものではありません。生活費とは分けた予算内で楽しむためのデータ活用を目的とし、見送り判断も重視します。"
 }
